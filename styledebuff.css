@@ -285,6 +285,7 @@ footer {
     text-align: center;
     color: #fff;
     width: 100%;
+    margin-top: auto; /* Assurez-vous que le footer soit en bas */
 }
 
 
