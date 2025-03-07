@@ -6,7 +6,7 @@
     <title>Marvel Champions</title>
     <link rel="stylesheet" href="styledebuff.css">
     <style>
-        /* Masquer le message mobile par défaut */
+        /* Masquer tout le message mobile par défaut */
         .mobile-message {
             display: none;
             text-align: center;
@@ -15,7 +15,7 @@
 
         /* Afficher le message mobile uniquement sur les petits écrans */
         @media (max-width: 768px) {
-            /* Cacher tout le contenu normal sauf le message mobile */
+            /* Cacher le contenu normal sauf le message mobile */
             body > *:not(.mobile-message) {
                 display: none; /* Cacher tout sauf le message mobile */
             }
@@ -24,7 +24,7 @@
             .mobile-message {
                 display: block;
                 padding: 20px;
-                margin-top: 50px; /* Plus d'espace vers le haut */
+                margin-top: 50px; /* Ajuster la position vers le haut */
             }
 
             /* Style pour les images */
@@ -61,7 +61,7 @@
                 display: block; /* Afficher tous les éléments normalement */
             }
 
-            /* Cacher le message mobile */
+            /* Cacher le message mobile sur grand écran */
             .mobile-message {
                 display: none;
             }
