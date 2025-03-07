@@ -5,45 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marvel Champions</title>
     <link rel="stylesheet" href="styledebuff.css">
-       <style>
-        /* Style pour cacher tout le contenu sauf les images */
-        .mobile-message {
-            display: none; /* Par défaut, caché */
-            text-align: center;
-            margin-top: 100px;
-        }
-
-        /* Cacher tout le contenu pour mobile et afficher les images */
-        @media (max-width: 768px) {
-            /* Cacher tout le contenu */
-            body > *:not(.mobile-message) {
-                display: none;
-            }
-
-            /* Afficher les images */
-            .mobile-message {
-                display: block;
-                overflow-y: scroll; /* Permet de faire défiler la page */
-            }
-
-            /* Ajouter un peu de style aux images */
-            .mobile-message img {
-                width: 50%;
-                margin: 20px auto;
-                display: block;
-            }
-        }
-    </style>
-    <script>
+       <script>
         // Vérifie la taille de l'écran (moins de 768px => mobile)
         if (window.innerWidth <= 768) {
-            // Remplace tout le contenu par les images
-            document.body.innerHTML = `
-                <div class="mobile-message">
-                    <img src="oups.png" alt="Oups">
-                    <img src="oups1.png" alt="Oups">
-                </div>
-            `;
+            // Affiche le message d'avertissement et bloque le contenu
+            document.body.innerHTML = '<div class="mobile-message">Ce site n\'est pas encore disponible sur mobile. Veuillez utiliser un ordinateur pour y accéder.</div>';
         }
     </script>
 </head>
