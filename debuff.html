@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Champions</title>
+    <link rel="stylesheet" href="styledebuff.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="logo">Marvel Champions</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#champions">Champions</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Menu</a>
+                    <div class="dropdown-content">
+                        <a href="#option1">Option 1</a>
+                        <a href="#option2">Option 2</a>
+                        <a href="#option3">Option 3</a>
+                        <a href="#option4">Option 4</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Filtre et liste des personnages -->
+    <section id="home">
+        <select id="immunite-filter">
+            <option value="all">Tous</option>
+            <option value="Saignement">Saignement</option>
+            <option value="Poison">Poison</option>
+            <option value="Fatigue">Fatigue</option>
+            <option value="Dégénération">Dégénération</option>
+            <option value="Debuffs DOT">Debuffs DOT</option>
+            <option value="Buffs">Buffs</option>
+            <option value="Brise-Armure">Brise-Armure</option>
+            <option value="Incinération">Incinération</option>
+            <option value="Décharge">Décharge</option>
+            <option value="Armure pulvérisée">Armure pulvérisée</option>
+            <option value="Vague de Froid">Vague de Froid</option>
+            <option value="Engelure">Engelure</option>
+            <option value="Effets sans dégâts">Effets sans dégâts</option>
+            <option value="Debuffs">Tout les Debuffs</option>
+        </select>
+
+        <div id="personnages-list" class="personnages-list"></div>
+
+        <!-- Zone pour afficher le nom du débuff -->
+        <div id="debuff-name-display" class="debuff-name-display"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Marvel Champions. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
