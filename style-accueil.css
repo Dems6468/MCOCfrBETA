@@ -9,7 +9,6 @@ body {
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Cette ligne force le body à occuper toute la hauteur de la fenêtre */
 }
 
 /* Header */
