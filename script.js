@@ -29,10 +29,10 @@ async function populateImmunityFilter() {
     uniqueImmunities = Array.from(uniqueImmunities).sort();
 
     // Ajouter les options au menu déroulant
-    filterSelect.innerHTML = `<option value="all">Tous</option>`; // Option par défaut
+    filterSelect.innerHTML = <option value="all">Tous</option>; // Option par défaut
 
     uniqueImmunities.forEach(immunite => {
-        filterSelect.innerHTML += `<option value="${immunite}">${immunite}</option>`;
+        filterSelect.innerHTML += <option value="${immunite}">${immunite}</option>;
     });
 }
 
@@ -128,31 +128,10 @@ const debuffIcons = {
 
 };
 
-// Fonction pour charger toutes les images de débuffs et des personnages
-async function loadImages(images) {
-    const promises = images.map(src => {
-        return new Promise((resolve, reject) => {
-            const img = new Image();
-            img.src = src;
-            img.onload = resolve;  // Résolu lorsque l'image est chargée
-            img.onerror = reject;  // Rejeté en cas d'échec de chargement
-        });
-    });
-
-    try {
-        await Promise.all(promises);  // Attend que toutes les images soient chargées
-        return true;  // Tout est chargé avec succès
-    } catch (error) {
-        console.error("Erreur lors du chargement des images", error);
-        return false;  // Si une image échoue à se charger, on retourne false
-    }
-}
-
-// Fonction principale pour afficher les personnages et gérer le chargement
+// Fonction pour afficher les debuffs
 async function displayDebuffs(event) {
     const filter = event.target.value;
-    const personnagesList = document.getElementById('personnages-list');
-    const loader = document.getElementById('loader');
+    const personnagesList = document.getElementById('personnages-list'); // Assurez-vous que l'ID correspond
     personnagesList.innerHTML = ''; // Effacer les personnages précédemment affichés
 
     // Récupérer les données des personnages via fetch
@@ -168,50 +147,27 @@ async function displayDebuffs(event) {
     if (filteredDebuffs.length === 0) {
         personnagesList.innerHTML = '<p>Aucun personnage trouvé pour ce filtre.</p>';
     } else {
-        // Liste des URLs d'images à charger (personnages + debuffs)
-        const imageSources = [];
-
-        // Ajouter les images des personnages
-        filteredDebuffs.forEach(character => {
-            imageSources.push(character.photo); // Image des personnages
-
-            // Ajouter les images des immunités
-            Object.keys(character.immunite).forEach(immunite => {
-                imageSources.push(debuffIcons[immunite]); // Image des debuffs
-            });
-        });
-
-        // Charger toutes les images avant d'afficher le contenu
-        const allImagesLoaded = await loadImages(imageSources);
-
-        if (allImagesLoaded) {
-            // Une fois toutes les images chargées, on cache le loader et on affiche les personnages
-            loader.style.display = 'none';  // Cacher le loader
-            personnagesList.style.display = 'block';  // Afficher le contenu
-        } else {
-            // Si une image a échoué à se charger, on affiche un message d'erreur
-            loader.innerHTML = 'Une erreur est survenue lors du chargement des images.';
-        }
-
         // Affichage des personnages
         filteredDebuffs.forEach(character => {
+            // Récupérer les images des immunités avec la description associée
             const immuniteImages = Object.keys(character.immunite).map(immunite => {
-                const description = character.immunite[immunite].join(', ');
-                return `
+                const description = character.immunite[immunite].join(', '); // On récupère la description, si elle existe
+                return 
                     <div class="debuff-icon-container" style="position: relative;">
                         <img src="${debuffIcons[immunite]}" alt="${immunite}" class="debuff-icon" onclick="toggleDebuffInfo(event, '${immunite}')"/>
                         <div class="debuff-tooltip" style="display:none; position: absolute; top: 25px; background-color: #333; color: white; padding: 5px; border-radius: 5px; font-size: 14px; text-align: center;">
-                            <img src="${debuffIcons[immunite]}" alt="${immunite}" style="width: 30px; height: 30px; margin-bottom: 5px;"><br/>
-                            <strong>${immunite}</strong><br/>
-                            ${description ? description : ''}
-                        </div>
-                    </div>`;
-            }).join('');
+    <img src="${debuffIcons[immunite]}" alt="${immunite}" style="width: 30px; height: 30px; margin-bottom: 5px;"><br/>
+    <strong>${immunite}</strong><br/>
+    ${description ? description : ''}
+</div>
 
-            const characterClass = character.classe.toLowerCase();
+                    </div>;
+            }).join(''); // Joindre les images des immunités avec leur description
+
+            const characterClass = character.classe.toLowerCase(); // Assure-toi que la classe est en minuscule
 
             // Ajouter l'élément HTML avec la classe correcte
-            personnagesList.innerHTML += `
+            personnagesList.innerHTML += 
                 <div class="personnage-card ${characterClass}">
                     <div class="photo-container">
                         <img src="${character.photo}" alt="${character.nom}">
@@ -220,16 +176,34 @@ async function displayDebuffs(event) {
                     <p>${character.description}</p>
                     <div class="immunite-icons">${immuniteImages}</div>
                 </div>
-            `;
+            ;
         });
     }
 }
 
-// Ajouter un gestionnaire d'événements pour le changement de filtre
-document.getElementById('immunite-filter').addEventListener('change', displayDebuffs);
+// Fonction pour afficher/masquer l'info du débuff (tooltip)
+function toggleDebuffInfo(event, immunite) {
+    const tooltip = event.target.nextElementSibling; // Trouve le tooltip juste après l'icône
+    const allTooltips = document.querySelectorAll('.debuff-tooltip');
+    
+    // Ferme tous les tooltips ouverts sauf celui sur lequel on a cliqué
+    allTooltips.forEach(tip => {
+        if (tip !== tooltip) {
+            tip.style.display = 'none';
+        }
+    });
 
-// Appeler la fonction pour afficher les debuffs au départ
-displayDebuffs({ target: { value: 'all' } });
+    // Si le tooltip est déjà visible, le fermer
+    tooltip.style.display = tooltip.style.display === 'block' ? 'none' : 'block';
+}
+
+// Ajouter un gestionnaire d'événements pour fermer les infos en dehors
+document.addEventListener('click', function(event) {
+    const tooltip = document.querySelector('.debuff-tooltip');
+    if (tooltip && !tooltip.contains(event.target) && !event.target.classList.contains('debuff-icon')) {
+        tooltip.style.display = 'none';
+    }
+});
 
 // Initialiser l'affichage des debuffs (sans filtre)
 document.getElementById('immunite-filter').addEventListener('change', displayDebuffs);
@@ -247,6 +221,3 @@ document.addEventListener('click', function (event) {
         }
     });
 });
-
-
-
