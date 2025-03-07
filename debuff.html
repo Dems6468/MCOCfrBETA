@@ -17,14 +17,14 @@
         @media (max-width: 768px) {
             /* Cacher le contenu normal sauf le message mobile */
             body > *:not(.mobile-message) {
-                display: block; /* Afficher tout sauf le message mobile */
+                display: none; /* Cacher tout sauf le message mobile */
             }
 
             /* Afficher le message mobile */
             .mobile-message {
                 display: block;
                 padding: 20px;
-                margin-top: 20px;
+                margin-top: 50px; /* Plus d'espace vers le haut */
             }
 
             /* Style pour les images */
@@ -51,6 +51,14 @@
                 width: 100%;
                 height: 600px;
                 border: none;
+            }
+        }
+
+        /* Styles par défaut pour les écrans plus larges (ordinateur) */
+        @media (min-width: 769px) {
+            /* Afficher tous les éléments normalement sur grand écran */
+            body > * {
+                display: block; /* Afficher tous les éléments normalement */
             }
         }
     </style>
@@ -88,6 +96,37 @@
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd3PYMXinB3XVXIp_UrqRhJPBP_O-aCjCRmOplsPYpwSZhAww/viewform?embedded=true"  frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
         </div>
     </div>
+
+    <!-- Contenu principal : liste des personnages (sur les grands écrans) -->
+    <section id="home">
+        <select id="immunite-filter">
+            <option value="all">Tous</option>
+            <option value="Saignement">Saignement</option>
+            <option value="Poison">Poison</option>
+            <option value="Fatigue">Fatigue</option>
+            <option value="Dégénération">Dégénération</option>
+            <option value="Debuffs DOT">Debuffs DOT</option>
+            <option value="Buffs">Buffs</option>
+            <option value="Brise-Armure">Brise-Armure</option>
+            <option value="Incinération">Incinération</option>
+            <option value="Décharge">Décharge</option>
+            <option value="Armure pulvérisée">Armure pulvérisée</option>
+            <option value="Vague de Froid">Vague de Froid</option>
+            <option value="Engelure">Engelure</option>
+            <option value="Effets sans dégâts">Effets sans dégâts</option>
+            <option value="Debuffs">Tout les Debuffs</option>
+        </select>
+
+        <div id="personnages-list" class="personnages-list"></div>
+
+        <!-- Zone pour afficher le nom du débuff -->
+        <div id="debuff-name-display" class="debuff-name-display"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Marvel Champions. Tous droits réservés.</p>
+    </footer>
 
     <script src="script.js"></script>
 
