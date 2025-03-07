@@ -7,6 +7,9 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* S'assure que le contenu occupe toute la hauteur de la page */
 }
 
 /* Header */
@@ -82,11 +85,14 @@ header nav ul li a:hover {
 /* Personnages */
 #personnage-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
-    padding: 20px;
+    padding: 100px 20px 20px; /* Espace pour éviter le chevauchement avec le header */
+    margin-top: 100px; /* Pour que le contenu commence en dessous du header */
+    z-index: 5;
 }
 
+/* Cartes des personnages */
 .personnage-card {
     background: rgba(34, 34, 34, 0.7);
     border-radius: 12px;
@@ -116,40 +122,6 @@ header nav ul li a:hover {
     margin: 10px 0;
 }
 
-/* Cards de détail de personnage */
-.character-card {
-    background: rgba(44, 62, 80, 0.9);
-    padding: 25px;
-    border-radius: 12px;
-    text-align: center;
-    max-width: 600px;
-    margin: auto;
-}
-
-.character-card h2 {
-    color: #ff5722;
-    margin-bottom: 20px;
-}
-
-.character-info {
-    background-color: rgba(44, 62, 80, 0.8);
-    padding: 15px;
-    border-radius: 8px;
-    margin-top: 20px;
-}
-
-.character-info p {
-    font-size: 18px;
-}
-
-.character-image {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin-top: 20px;
-    object-fit: cover;
-}
-
 /* Footer */
 footer {
     background-color: #111;
@@ -157,8 +129,9 @@ footer {
     text-align: center;
     color: #fff;
     width: 100%;
-    margin-top: auto;
+    margin-top: 20px; /* Espace entre le contenu et le footer */
     font-size: 14px;
+    z-index: 1;
 }
 
 /* Animation du header */
