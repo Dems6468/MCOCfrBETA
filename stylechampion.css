@@ -88,6 +88,27 @@ body {
     transform: scaleX(1);
     transform-origin: left;
 }
+.search-container {
+    margin: 20px;
+    text-align: center;
+}
+
+.search-container input {
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+    max-width: 400px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+}
+
+.search-container input:focus {
+    outline: none;
+    border-color: #ff5722;
+}
 
 /* Menu déroulant */
 .dropdown .dropbtn {
