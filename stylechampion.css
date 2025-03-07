@@ -7,9 +7,6 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* S'assure que le contenu occupe toute la hauteur de la page */
 }
 
 /* Header */
@@ -30,6 +27,7 @@ body {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     transform: translateY(0);
 }
+
 
 #header.scrolled {
     background-color: #333; /* Changement de couleur lorsque la page est scrollée */
