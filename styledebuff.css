@@ -433,9 +433,9 @@ height: min(10vw, 120px);
     margin-bottom: 5px; /* Espace entre l'image et le texte */
 }
 
-/* Masquer le message par défaut */
+/* Style pour le message sur mobile */
 .mobile-message {
-    display: none;
+    display: none; /* Par défaut, caché */
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
     font-size: 20px;
@@ -447,16 +447,26 @@ height: min(10vw, 120px);
     transform: translate(-50%, -50%);
     z-index: 1000;
     border-radius: 10px;
+    width: 80%; /* Ajuste la largeur du message */
+    max-width: 400px; /* Limite la taille du message */
 }
 
-/* Afficher le message sur les petits écrans (moins de 768px) */
+/* Cacher tout le contenu pour mobile et afficher le message */
 @media (max-width: 768px) {
+    /* Cacher tout le contenu */
+    body > *:not(.mobile-message) {
+        display: none;
+    }
+
+    /* Afficher le message */
     .mobile-message {
         display: block;
     }
 
+    /* Empêcher le défilement de la page */
     body {
-        overflow: hidden; /* Empêche le défilement de la page */
+        overflow: hidden;
     }
 }
+
 
