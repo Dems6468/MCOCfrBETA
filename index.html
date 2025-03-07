@@ -2,10 +2,58 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0;url=debuff.html">
-    <title>Redirection...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil | Marvel Champions</title>
+    <link rel="stylesheet" href="style-accueil.css"> <!-- Nouveau fichier CSS -->
 </head>
 <body>
-    <p>Redirection vers la page principale...</p>
+    <header id="header">
+        <div class="logo">Marvel Champions</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="debuff.html">Debuffs</a></li>
+                <li><a href="#champions">Champions</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Menu</a>
+                    <div class="dropdown-content">
+                        <a href="#option1">Option 1</a>
+                        <a href="#option2">Option 2</a>
+                        <a href="#option3">Option 3</a>
+                        <a href="#option4">Option 4</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <h1>Bienvenue sur Marvel Champions</h1>
+            <p>Explorez l'univers de vos héros préférés et découvrez leurs compétences spéciales.</p>
+            <a href="debuff.html" class="btn-primary">Voir les Debuffs</a>
+        </section>
+
+        <section class="features">
+            <h2>Fonctionnalités</h2>
+            <div class="feature-card">
+                <h3>Champions</h3>
+                <p>Explorez les héros de Marvel et leurs capacités uniques.</p>
+                <a href="#champions" class="btn-secondary">Découvrir</a>
+            </div>
+            <div class="feature-card">
+                <h3>Debuffs</h3>
+                <p>Découvrez les effets de debuffs dans le jeu et leurs interactions.</p>
+                <a href="debuff.html" class="btn-secondary">Explorer</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Marvel Champions. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
