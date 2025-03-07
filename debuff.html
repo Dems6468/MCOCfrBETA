@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marvel Champions</title>
     <link rel="stylesheet" href="styledebuff.css">
+    <script>
+        // Vérifie la taille de l'écran (moins de 768px => mobile)
+        if (window.innerWidth <= 768) {
+            // Affiche le message d'avertissement et bloque le contenu
+            document.body.innerHTML = '<div class="mobile-message">Ce site n\'est pas encore disponible sur mobile. Veuillez utiliser un ordinateur pour y accéder.</div>';
+        }
+    </script>
 </head>
 <body>
     <!-- Message pour les appareils mobiles --
@@ -30,9 +37,6 @@
             </ul>
         </nav>
     </header>
-<div class="mobile-message">
-    Ce site n'est pas encore disponible sur mobile. Veuillez utiliser un ordinateur pour y accéder.
-</div>
     <!-- Filtre et liste des personnages -->
     <section id="home">
         <select id="immunite-filter">
