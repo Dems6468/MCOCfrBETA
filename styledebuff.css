@@ -24,24 +24,9 @@ body {
     align-items: center;
     box-sizing: border-box;
     animation: slide-down 0.5s ease-out;
-    transition: background-color 0.3s ease;
-}
-
-/* Effet du changement de couleur du header lors du scroll */
-#header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #111;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    z-index: 10;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 #header.scrolled {
     background-color: #333; /* Changement de couleur lorsque la page est scrollée */
@@ -50,7 +35,7 @@ body {
 
 /* Effet de survol des liens du header */
 #header nav ul li a:hover {
-    color: #9106a9;
+    color: #ff5722;
 }
 
 /* Effet de survol des liens du header */
@@ -82,7 +67,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #9106a9;
+    background-color: #FF5722;
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.4s ease-in-out;
@@ -116,7 +101,7 @@ body {
 }
 
 .dropdown:hover .dropbtn {
-    background-color: #7c027a;
+    background-color: #FF5722;
 }
 
 .dropdown-content {
@@ -141,7 +126,7 @@ body {
 }
 
 .dropdown-content a:hover {
-    background-color: #b002c3;
+    background-color: #FF5722;
 }
 
 /* Filtre et Liste des personnages */
@@ -163,24 +148,26 @@ body {
 }
 
 #immunite-filter:hover {
-    background-color: #9106a9;
+    background-color: #FF5722;
 }
 
 .personnage-card {
     background: rgba(34, 34, 34, 0.5); /* Fond semi-transparent */
-    backdrop-filter: blur(5px); /* Effet de flou */
-    padding: 8px;
+    backdrop-filter: blur(5px);
+    padding: 10px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     text-align: center;
     position: relative;
+    display: flex;
+    flex-direction: column; /* Arrange le contenu verticalement */
+    align-items: center;
 }
 
 .personnage-card:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(87, 1, 186, 0.6);
-    
+    box-shadow: 0 6px 12px rgba(137, 34, 255, 0.6);
 }
 
 /* Tooltip bien positionné même sur les bords */
@@ -198,12 +185,6 @@ body {
     white-space: nowrap;
     z-index: 1000;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-}
-/* Augmenter le nombre de cartes affichées */
-.personnages-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    gap: 0px;
 }
 
 
@@ -223,37 +204,59 @@ body {
 /* Réduction de la taille des cartes pour en afficher plus */
 .personnages-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Colonnes dynamiques */
     gap: 15px;
+    justify-content: center;
+    padding: 20px;
 }
 
 
 .personnage-card img {
-    width: 80px;
-    height: 80px;
+    width: 100%;
+    max-width: 120px; /* Taille max pour éviter qu'elles ne deviennent trop grandes */
+    height: auto; /* Ajustement automatique */
     border-radius: 50%;
-    margin-bottom: 8px;
+    object-fit: cover;
+    
 }
 
 .personnage-card h3 {
-    font-size: 20px;
+    font-size: 18px;
     margin: 10px 0;
     color: #e89f00;
+    text-align: center;
+    white-space: normal; /* Permet les retours à la ligne */
+    word-wrap: break-word; /* Coupe les mots longs si nécessaire */
+    overflow-wrap: break-word; /* Version alternative pour compatibilité */
+    width: 100%;
 }
+
+.personnage-card h3 {
+    min-height: 3.2em; /* Ajuste selon la longueur moyenne des noms */
+    display: flex;
+    align-items: center;
+    color: #e89f00;
+    justify-content: center;
+    text-align: center;
+}
+
 
 .immunite-icons {
     display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin: 10px 0;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center; /* Centrer les icônes */
+    max-width: 100%;
+    min-height: 40px; /* Hauteur minimum pour garder l'alignement */
 }
+
 
 /* Effet de zoom sur les icônes de debuff au survol */
 .immunite-icons img {
     width: 32px;
     height: 32px;
     object-fit: contain;
-    transition: transform 0.3s ease; /* Ajout d'une transition pour un effet fluide */
+    transition: transform 0.3s ease;
 }
 
 .immunite-icons img:hover {
@@ -261,20 +264,29 @@ body {
 }
 
 
-/* Footer */
+/* Assure que la page prend toute la hauteur de l'écran */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Fait en sorte que le contenu pousse le footer en bas */
+main {
+    flex: 1;
+}
+
+/* Footer normal, pas fixe */
 footer {
     background-color: #111;
     padding: 20px;
     text-align: center;
     color: #fff;
-    position: fixed;
-    bottom: 0;
     width: 100%;
 }
 
-footer p {
-    font-size: 14px;
-}
 
 /* Animations */
 @keyframes slide-down {
@@ -344,9 +356,12 @@ html {
 
 
 .personnage-card .photo-container img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
+    width: min(10vw, 120px);
+height: min(10vw, 120px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Ajoute ce CSS pour styler le rectangle d'info sous chaque débuff */
@@ -417,4 +432,3 @@ html {
     object-fit: contain; /* Garde la proportion */
     margin-bottom: 5px; /* Espace entre l'image et le texte */
 }
-
