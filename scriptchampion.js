@@ -21,8 +21,8 @@ document.addEventListener("DOMContentLoaded", function() {
             }
 
             // Fonction pour trier les personnages par nom
-            function sortCharacters(order) {
-                const sorted = [...data];
+            function sortCharacters(order, filteredData) {
+                const sorted = [...filteredData];
                 sorted.sort((a, b) => {
                     const nameA = a.nom.toUpperCase();
                     const nameB = b.nom.toUpperCase();
@@ -38,8 +38,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
             // Fonction de filtrage des personnages par classe
             function filterByClass(classFilter) {
-                if (!classFilter) return data;
-                return data.filter(perso => perso.classe === classFilter);
+                if (!classFilter || classFilter === 'all') return data; // Si aucune classe n'est sélectionnée, retourne tout
+                return data.filter(perso => perso.classe === classFilter); // Filtrage par classe
             }
 
             // Gestion du tri et du filtre
@@ -48,14 +48,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
             // Fonction de mise à jour de la liste après un changement de tri ou de filtre
             function updateList() {
-                const order = sortSelect.value;
-                const classFilter = classSelect.value;
+                const order = sortSelect.value;  // Récupère la valeur de tri (ascendant ou descendant)
+                const classFilter = classSelect.value; // Récupère la valeur du filtre de classe
 
-                const filtered = filterByClass(classFilter);
-                const sorted = sortCharacters(order);
-                const finalList = filtered.length ? filtered : sorted;
+                // Appliquer le filtre de classe
+                const filteredData = filterByClass(classFilter);
 
-                displayCharacters(finalList);
+                // Appliquer le tri sur les données filtrées
+                const sortedData = sortCharacters(order, filteredData);
+
+                // Afficher les personnages après filtrage et tri
+                displayCharacters(sortedData);
             }
 
             // Événements pour le tri et le filtre
@@ -67,3 +70,4 @@ document.addEventListener("DOMContentLoaded", function() {
         })
         .catch(error => console.error('Erreur de chargement du JSON:', error));
 });
+
