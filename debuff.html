@@ -15,7 +15,7 @@
 
         /* Afficher le message mobile uniquement sur les petits écrans */
         @media (max-width: 768px) {
-            /* Cacher le contenu normal sauf le message mobile */
+            /* Cacher tout le contenu normal sauf le message mobile */
             body > *:not(.mobile-message) {
                 display: none; /* Cacher tout sauf le message mobile */
             }
@@ -56,9 +56,14 @@
 
         /* Styles par défaut pour les écrans plus larges (ordinateur) */
         @media (min-width: 769px) {
-            /* Afficher tous les éléments normalement sur grand écran */
+            /* Réafficher tout le contenu normalement */
             body > * {
                 display: block; /* Afficher tous les éléments normalement */
+            }
+
+            /* Cacher le message mobile */
+            .mobile-message {
+                display: none;
             }
         }
     </style>
@@ -131,9 +136,11 @@
     <script src="script.js"></script>
 
     <script>
-        // Afficher le message uniquement pour les écrans mobiles
+        // Afficher ou cacher le message en fonction de la taille de l'écran
         if (window.innerWidth <= 768) {
             document.querySelector('.mobile-message').style.display = 'block'; // Affiche le message pour mobile
+        } else {
+            document.querySelector('.mobile-message').style.display = 'none'; // Cache le message sur les grands écrans
         }
     </script>
 
