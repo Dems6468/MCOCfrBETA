@@ -4,8 +4,8 @@ body {
     background: url('espace.webp') no-repeat center center fixed;
     background-size: cover;
     color: #fff;
-    margin: 0;
-    padding: 0;
+    margin: 10%;
+    padding: 10%;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
