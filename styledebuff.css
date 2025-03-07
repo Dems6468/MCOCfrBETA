@@ -231,15 +231,6 @@ body {
     width: 100%;
 }
 
-.personnage-card h3 {
-    min-height: 3.2em; /* Ajuste selon la longueur moyenne des noms */
-    display: flex;
-    align-items: center;
-    color: #e89f00;
-    justify-content: center;
-    text-align: center;
-}
-
 
 .immunite-icons {
     display: flex;
