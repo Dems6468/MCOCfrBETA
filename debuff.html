@@ -6,64 +6,39 @@
     <title>Marvel Champions</title>
     <link rel="stylesheet" href="styledebuff.css">
     <style>
-        /* Masquer tout le message mobile par défaut */
+        /* Style pour cacher tout le contenu sauf les images et le message sur mobile */
         .mobile-message {
-            display: none;
+            display: none; /* Par défaut, caché */
             text-align: center;
-            margin-top: 20px;
+            margin-top: 100px;
         }
 
-        /* Afficher le message mobile uniquement sur les petits écrans */
+        /* Cacher tout le contenu pour mobile et afficher les images et le message */
         @media (max-width: 768px) {
-            /* Cacher le contenu normal sauf le message mobile */
+            /* Cacher tout le contenu sauf le message */
             body > *:not(.mobile-message) {
-                display: none; /* Cacher tout sauf le message mobile */
+                display: none;
             }
 
-            /* Afficher le message mobile */
+            /* Afficher les images et le message pour les mobiles */
             .mobile-message {
                 display: block;
-                padding: 20px;
-                margin-top: 50px; /* Ajuster la position vers le haut */
+                overflow-y: scroll; /* Permet de faire défiler la page */
             }
 
-            /* Style pour les images */
+            /* Ajouter du style aux images */
             .mobile-message img {
-                width: 60%;
-                margin: 10px auto;
+                width: 50%;
+                margin: 20px auto;
                 display: block;
             }
 
             /* Style pour le message d'avertissement */
             .mobile-message p {
-                font-size: 22px;
+                font-size: 24px;
                 color: #FF5722;
                 font-weight: bold;
                 margin-bottom: 20px;
-            }
-
-            /* Formulaire Google bien placé en bas */
-            .google-form-container {
-                margin-top: 30px;
-            }
-
-            iframe {
-                width: 100%;
-                height: 600px;
-                border: none;
-            }
-        }
-
-        /* Styles par défaut pour les écrans plus larges (ordinateur) */
-        @media (min-width: 769px) {
-            /* Réafficher tout le contenu normalement */
-            body > * {
-                display: block; /* Afficher tous les éléments normalement */
-            }
-
-            /* Cacher le message mobile sur grand écran */
-            .mobile-message {
-                display: none;
             }
         }
     </style>
@@ -91,18 +66,7 @@
         </nav>
     </header>
 
-    <!-- Message pour mobile -->
-    <div class="mobile-message">
-       <p>Désolé, ce site n'est pas encore disponible sur téléphone. Veuillez utiliser un ordinateur ou mettre le mode "ordinateur".</p>
-        <img src="oups.png" alt="Oups">
-
-        <!-- Formulaire Google intégré -->
-        <div class="google-form-container">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd3PYMXinB3XVXIp_UrqRhJPBP_O-aCjCRmOplsPYpwSZhAww/viewform?embedded=true"  frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
-        </div>
-    </div>
-
-    <!-- Contenu principal : liste des personnages (sur les grands écrans) -->
+    <!-- Filtre et liste des personnages -->
     <section id="home">
         <select id="immunite-filter">
             <option value="all">Tous</option>
@@ -133,14 +97,18 @@
         <p>© 2025 Marvel Champions. Tous droits réservés.</p>
     </footer>
 
+    <!-- Message pour mobile -->
+    <div class="mobile-message">
+        <p>Désolé, ce site n'est pas encore disponible sur téléphone. Veuillez utiliser un ordinateur ou mettre le mode "ordinateur".</p>
+        <img src="oups.png" alt="Oups">
+    </div>
+
     <script src="script.js"></script>
 
     <script>
-        // Afficher ou cacher le message en fonction de la taille de l'écran
+        // Afficher le message uniquement pour les écrans mobiles
         if (window.innerWidth <= 768) {
             document.querySelector('.mobile-message').style.display = 'block'; // Affiche le message pour mobile
-        } else {
-            document.querySelector('.mobile-message').style.display = 'none'; // Cache le message sur les grands écrans
         }
     </script>
 
