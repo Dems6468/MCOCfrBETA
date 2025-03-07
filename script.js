@@ -221,3 +221,10 @@ document.addEventListener('click', function (event) {
         }
     });
 });
+
+// Attendre que la page soit complètement chargée
+window.addEventListener('load', function() {
+  // Masquer le loader une fois que la page est chargée
+  document.getElementById('loader').style.display = 'none';
+});
+
