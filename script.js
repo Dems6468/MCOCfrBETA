@@ -134,21 +134,21 @@ async function loadImages(images) {
         return new Promise((resolve, reject) => {
             const img = new Image();
             img.src = src;
-            img.onload = resolve;
-            img.onerror = reject;
+            img.onload = resolve;  // Résolu lorsque l'image est chargée
+            img.onerror = reject;  // Rejeté en cas d'échec de chargement
         });
     });
-    
+
     try {
         await Promise.all(promises);  // Attend que toutes les images soient chargées
-        return true;
+        return true;  // Tout est chargé avec succès
     } catch (error) {
         console.error("Erreur lors du chargement des images", error);
-        return false;
+        return false;  // Si une image échoue à se charger, on retourne false
     }
 }
 
-// Mettre à jour la fonction displayDebuffs pour gérer le loader et les images
+// Fonction principale pour afficher les personnages et gérer le chargement
 async function displayDebuffs(event) {
     const filter = event.target.value;
     const personnagesList = document.getElementById('personnages-list');
@@ -186,10 +186,10 @@ async function displayDebuffs(event) {
 
         if (allImagesLoaded) {
             // Une fois toutes les images chargées, on cache le loader et on affiche les personnages
-            loader.style.display = 'none'; // Cacher le loader
-            personnagesList.style.display = 'block'; // Afficher le contenu
+            loader.style.display = 'none';  // Cacher le loader
+            personnagesList.style.display = 'block';  // Afficher le contenu
         } else {
-            // Si une image a échoué à se charger, on affiche un message
+            // Si une image a échoué à se charger, on affiche un message d'erreur
             loader.innerHTML = 'Une erreur est survenue lors du chargement des images.';
         }
 
@@ -225,30 +225,11 @@ async function displayDebuffs(event) {
     }
 }
 
+// Ajouter un gestionnaire d'événements pour le changement de filtre
+document.getElementById('immunite-filter').addEventListener('change', displayDebuffs);
 
-// Fonction pour afficher/masquer l'info du débuff (tooltip)
-function toggleDebuffInfo(event, immunite) {
-    const tooltip = event.target.nextElementSibling; // Trouve le tooltip juste après l'icône
-    const allTooltips = document.querySelectorAll('.debuff-tooltip');
-    
-    // Ferme tous les tooltips ouverts sauf celui sur lequel on a cliqué
-    allTooltips.forEach(tip => {
-        if (tip !== tooltip) {
-            tip.style.display = 'none';
-        }
-    });
-
-    // Si le tooltip est déjà visible, le fermer
-    tooltip.style.display = tooltip.style.display === 'block' ? 'none' : 'block';
-}
-
-// Ajouter un gestionnaire d'événements pour fermer les infos en dehors
-document.addEventListener('click', function(event) {
-    const tooltip = document.querySelector('.debuff-tooltip');
-    if (tooltip && !tooltip.contains(event.target) && !event.target.classList.contains('debuff-icon')) {
-        tooltip.style.display = 'none';
-    }
-});
+// Appeler la fonction pour afficher les debuffs au départ
+displayDebuffs({ target: { value: 'all' } });
 
 // Initialiser l'affichage des debuffs (sans filtre)
 document.getElementById('immunite-filter').addEventListener('change', displayDebuffs);
