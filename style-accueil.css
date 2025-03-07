@@ -7,6 +7,9 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Cette ligne force le body à occuper toute la hauteur de la fenêtre */
 }
 
 /* Header */
@@ -59,30 +62,6 @@ nav ul li a:hover {
     margin: 20px auto;
     width: 80%;
     max-width: 800px;
-}
-
-.welcome h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.welcome p {
-    font-size: 18px;
-    margin-bottom: 30px;
-}
-
-.welcome .btn-primary {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #FF5722;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.welcome .btn-primary:hover {
-    background-color: #e64a19;
 }
 
 /* Section des fonctionnalités */
@@ -141,5 +120,5 @@ footer {
     text-align: center;
     color: #fff;
     width: 100%;
-    margin-top: auto;
+    margin-top: auto; /* Assurez-vous que le footer soit en bas */
 }
