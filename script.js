@@ -29,10 +29,10 @@ async function populateImmunityFilter() {
     uniqueImmunities = Array.from(uniqueImmunities).sort();
 
     // Ajouter les options au menu déroulant
-    filterSelect.innerHTML = <option value="all">Tous</option>; // Option par défaut
+    filterSelect.innerHTML = `<option value="all">Tous</option>`; // Option par défaut
 
     uniqueImmunities.forEach(immunite => {
-        filterSelect.innerHTML += <option value="${immunite}">${immunite}</option>;
+        filterSelect.innerHTML += `<option value="${immunite}">${immunite}</option>`;
     });
 }
 
@@ -152,7 +152,7 @@ async function displayDebuffs(event) {
             // Récupérer les images des immunités avec la description associée
             const immuniteImages = Object.keys(character.immunite).map(immunite => {
                 const description = character.immunite[immunite].join(', '); // On récupère la description, si elle existe
-                return 
+                return `
                     <div class="debuff-icon-container" style="position: relative;">
                         <img src="${debuffIcons[immunite]}" alt="${immunite}" class="debuff-icon" onclick="toggleDebuffInfo(event, '${immunite}')"/>
                         <div class="debuff-tooltip" style="display:none; position: absolute; top: 25px; background-color: #333; color: white; padding: 5px; border-radius: 5px; font-size: 14px; text-align: center;">
@@ -161,13 +161,13 @@ async function displayDebuffs(event) {
     ${description ? description : ''}
 </div>
 
-                    </div>;
+                    </div>`;
             }).join(''); // Joindre les images des immunités avec leur description
 
             const characterClass = character.classe.toLowerCase(); // Assure-toi que la classe est en minuscule
 
             // Ajouter l'élément HTML avec la classe correcte
-            personnagesList.innerHTML += 
+            personnagesList.innerHTML += `
                 <div class="personnage-card ${characterClass}">
                     <div class="photo-container">
                         <img src="${character.photo}" alt="${character.nom}">
@@ -176,7 +176,7 @@ async function displayDebuffs(event) {
                     <p>${character.description}</p>
                     <div class="immunite-icons">${immuniteImages}</div>
                 </div>
-            ;
+            `;
         });
     }
 }
