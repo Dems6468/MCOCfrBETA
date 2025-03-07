@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(response => response.json())
         .then(data => {
             const personnageList = document.getElementById('personnage-list');
+            const searchInput = document.getElementById('search-input');
 
             // Fonction pour afficher les personnages
             function displayCharacters(list) {
@@ -42,32 +43,44 @@ document.addEventListener("DOMContentLoaded", function() {
                 return data.filter(perso => perso.classe === classFilter); // Filtrage par classe
             }
 
-            // Gestion du tri et du filtre
+            // Fonction de recherche dynamique (filtrer par nom)
+            function searchByName(searchText, filteredData) {
+                if (!searchText) return filteredData; // Si aucun texte n'est écrit, retourne la liste filtrée actuelle
+                return filteredData.filter(perso =>
+                    perso.nom.toLowerCase().includes(searchText.toLowerCase())
+                ); // Filtrage par nom
+            }
+
+            // Gestion du tri, du filtre et de la recherche
             const sortSelect = document.getElementById('sort-names');
             const classSelect = document.getElementById('filter-class');
 
-            // Fonction de mise à jour de la liste après un changement de tri ou de filtre
+            // Fonction de mise à jour de la liste après un changement de tri, de filtre ou de recherche
             function updateList() {
                 const order = sortSelect.value;  // Récupère la valeur de tri (ascendant ou descendant)
                 const classFilter = classSelect.value; // Récupère la valeur du filtre de classe
+                const searchText = searchInput.value; // Récupère la valeur de la barre de recherche
 
                 // Appliquer le filtre de classe
-                const filteredData = filterByClass(classFilter);
+                let filteredData = filterByClass(classFilter);
 
-                // Appliquer le tri sur les données filtrées
+                // Appliquer la recherche par nom
+                filteredData = searchByName(searchText, filteredData);
+
+                // Appliquer le tri sur les données filtrées et recherchées
                 const sortedData = sortCharacters(order, filteredData);
 
-                // Afficher les personnages après filtrage et tri
+                // Afficher les personnages après filtrage, recherche et tri
                 displayCharacters(sortedData);
             }
 
-            // Événements pour le tri et le filtre
+            // Événements pour le tri, le filtre et la recherche
             sortSelect.addEventListener('change', updateList);
             classSelect.addEventListener('change', updateList);
+            searchInput.addEventListener('input', updateList); // Écouteur pour la barre de recherche
 
             // Afficher les personnages par défaut (non triés, non filtrés)
             displayCharacters(data);
         })
         .catch(error => console.error('Erreur de chargement du JSON:', error));
 });
-
