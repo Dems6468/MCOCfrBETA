@@ -10,11 +10,16 @@
         .mobile-message {
             display: none; /* Par défaut, caché */
             text-align: center;
-            margin-top: 100px;
+            margin-top: 50px;
         }
 
         /* Cacher tout le contenu pour mobile et afficher les images et le message */
         @media (max-width: 768px) {
+            /* Cacher le header et autres éléments */
+            header, nav {
+                display: none; /* Cacher header et menu */
+            }
+
             /* Cacher tout le contenu sauf le message */
             body > *:not(.mobile-message) {
                 display: none;
@@ -24,12 +29,13 @@
             .mobile-message {
                 display: block;
                 overflow-y: scroll; /* Permet de faire défiler la page */
+                margin-top: 20px; /* Ajuster la position vers le haut */
             }
 
             /* Ajouter du style aux images */
             .mobile-message img {
                 width: 50%;
-                margin: 20px auto;
+                margin: 10px auto;
                 display: block;
             }
 
@@ -39,6 +45,12 @@
                 color: #FF5722;
                 font-weight: bold;
                 margin-bottom: 20px;
+            }
+
+            /* Ajouter un peu de marge au formulaire en bas */
+            .google-form-container {
+                margin-top: 30px;
+                text-align: center;
             }
         }
     </style>
@@ -99,8 +111,13 @@
 
     <!-- Message pour mobile -->
     <div class="mobile-message">
-        <p>Désolé, ce site n'est pas encore disponible sur téléphone. Veuillez utiliser un ordinateur ou mettre le mode "ordinateur".</p>
+       <p>Désolé, ce site n'est pas encore disponible sur téléphone. Veuillez utiliser un ordinateur ou mettre le mode "ordinateur".</p>
         <img src="oups.png" alt="Oups">
+        
+        <!-- Google Form (à mettre ici) -->
+        <div class="google-form-container">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeYOI3gY7L-vTpS99oFJkaU_pNx3Wv8pxg9pPBo4C13l8heUg/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
+        </div>
     </div>
 
     <script src="script.js"></script>
