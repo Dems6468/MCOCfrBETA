@@ -60,7 +60,6 @@ nav ul li a:hover {
     margin: 20px auto;
     width: 80%;
     max-width: 800px;
-    padding-top: 120px; /* Ajouter un padding-top pour compenser la hauteur du header */
     box-sizing: border-box;
 }
 
