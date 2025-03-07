@@ -128,10 +128,31 @@ const debuffIcons = {
 
 };
 
-// Fonction pour afficher les debuffs
+// Fonction pour charger toutes les images de débuffs et des personnages
+async function loadImages(images) {
+    const promises = images.map(src => {
+        return new Promise((resolve, reject) => {
+            const img = new Image();
+            img.src = src;
+            img.onload = resolve;
+            img.onerror = reject;
+        });
+    });
+    
+    try {
+        await Promise.all(promises);  // Attend que toutes les images soient chargées
+        return true;
+    } catch (error) {
+        console.error("Erreur lors du chargement des images", error);
+        return false;
+    }
+}
+
+// Mettre à jour la fonction displayDebuffs pour gérer le loader et les images
 async function displayDebuffs(event) {
     const filter = event.target.value;
-    const personnagesList = document.getElementById('personnages-list'); // Assurez-vous que l'ID correspond
+    const personnagesList = document.getElementById('personnages-list');
+    const loader = document.getElementById('loader');
     personnagesList.innerHTML = ''; // Effacer les personnages précédemment affichés
 
     // Récupérer les données des personnages via fetch
@@ -147,24 +168,47 @@ async function displayDebuffs(event) {
     if (filteredDebuffs.length === 0) {
         personnagesList.innerHTML = '<p>Aucun personnage trouvé pour ce filtre.</p>';
     } else {
+        // Liste des URLs d'images à charger (personnages + debuffs)
+        const imageSources = [];
+
+        // Ajouter les images des personnages
+        filteredDebuffs.forEach(character => {
+            imageSources.push(character.photo); // Image des personnages
+
+            // Ajouter les images des immunités
+            Object.keys(character.immunite).forEach(immunite => {
+                imageSources.push(debuffIcons[immunite]); // Image des debuffs
+            });
+        });
+
+        // Charger toutes les images avant d'afficher le contenu
+        const allImagesLoaded = await loadImages(imageSources);
+
+        if (allImagesLoaded) {
+            // Une fois toutes les images chargées, on cache le loader et on affiche les personnages
+            loader.style.display = 'none'; // Cacher le loader
+            personnagesList.style.display = 'block'; // Afficher le contenu
+        } else {
+            // Si une image a échoué à se charger, on affiche un message
+            loader.innerHTML = 'Une erreur est survenue lors du chargement des images.';
+        }
+
         // Affichage des personnages
         filteredDebuffs.forEach(character => {
-            // Récupérer les images des immunités avec la description associée
             const immuniteImages = Object.keys(character.immunite).map(immunite => {
-                const description = character.immunite[immunite].join(', '); // On récupère la description, si elle existe
+                const description = character.immunite[immunite].join(', ');
                 return `
                     <div class="debuff-icon-container" style="position: relative;">
                         <img src="${debuffIcons[immunite]}" alt="${immunite}" class="debuff-icon" onclick="toggleDebuffInfo(event, '${immunite}')"/>
                         <div class="debuff-tooltip" style="display:none; position: absolute; top: 25px; background-color: #333; color: white; padding: 5px; border-radius: 5px; font-size: 14px; text-align: center;">
-    <img src="${debuffIcons[immunite]}" alt="${immunite}" style="width: 30px; height: 30px; margin-bottom: 5px;"><br/>
-    <strong>${immunite}</strong><br/>
-    ${description ? description : ''}
-</div>
-
+                            <img src="${debuffIcons[immunite]}" alt="${immunite}" style="width: 30px; height: 30px; margin-bottom: 5px;"><br/>
+                            <strong>${immunite}</strong><br/>
+                            ${description ? description : ''}
+                        </div>
                     </div>`;
-            }).join(''); // Joindre les images des immunités avec leur description
+            }).join('');
 
-            const characterClass = character.classe.toLowerCase(); // Assure-toi que la classe est en minuscule
+            const characterClass = character.classe.toLowerCase();
 
             // Ajouter l'élément HTML avec la classe correcte
             personnagesList.innerHTML += `
@@ -180,6 +224,7 @@ async function displayDebuffs(event) {
         });
     }
 }
+
 
 // Fonction pour afficher/masquer l'info du débuff (tooltip)
 function toggleDebuffInfo(event, immunite) {
@@ -222,9 +267,5 @@ document.addEventListener('click', function (event) {
     });
 });
 
-// Attendre que la page soit complètement chargée
-window.addEventListener('load', function() {
-  // Masquer le loader une fois que la page est chargée
-  document.getElementById('loader').style.display = 'none';
-});
+
 
