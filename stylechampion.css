@@ -211,6 +211,22 @@ footer {
     }
 }
 
+/* Fixe le footer en bas de la page */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* Permet au contenu de prendre l'espace restant */
+}
+
+footer {
+    margin-top: auto; /* Force le footer à rester en bas */
+}
+
+
 /* Mobile - Adaptation */
 @media (max-width: 768px) {
     body {
