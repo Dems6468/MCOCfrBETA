@@ -208,6 +208,8 @@ body {
     gap: 15px;
     justify-content: center;
     padding: 20px;
+    margin-left: 20px; /* Marge à gauche du conteneur */
+    margin-right: 20px; /* Marge à droite du conteneur */
 }
 
 
