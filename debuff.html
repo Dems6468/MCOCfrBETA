@@ -5,17 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marvel Champions</title>
     <link rel="stylesheet" href="styledebuff.css">
-       <script>
-        // Vérifie la taille de l'écran (moins de 768px => mobile)
-        if (window.innerWidth <= 768) {
-            // Affiche le message d'avertissement et bloque le contenu
-            document.body.innerHTML = '<div class="mobile-message">Ce site n\'est pas encore disponible sur mobile. Veuillez utiliser un ordinateur pour y accéder.</div>';
+    <style>
+        /* Style pour cacher tout le contenu sauf les images et le message sur mobile */
+        .mobile-message {
+            display: none; /* Par défaut, caché */
+            text-align: center;
+            margin-top: 100px;
         }
-    </script>
+
+        /* Cacher tout le contenu pour mobile et afficher les images et le message */
+        @media (max-width: 768px) {
+            /* Cacher tout le contenu sauf le message */
+            body > *:not(.mobile-message) {
+                display: none;
+            }
+
+            /* Afficher les images et le message pour les mobiles */
+            .mobile-message {
+                display: block;
+                overflow-y: scroll; /* Permet de faire défiler la page */
+            }
+
+            /* Ajouter du style aux images */
+            .mobile-message img {
+                width: 50%;
+                margin: 20px auto;
+                display: block;
+            }
+
+            /* Style pour le message d'avertissement */
+            .mobile-message p {
+                font-size: 24px;
+                color: #FF5722;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Message pour les appareils mobiles --
-
 
     <!-- Header -->
     <header id="header">
@@ -37,6 +65,7 @@
             </ul>
         </nav>
     </header>
+
     <!-- Filtre et liste des personnages -->
     <section id="home">
         <select id="immunite-filter">
@@ -68,6 +97,21 @@
         <p>© 2025 Marvel Champions. Tous droits réservés.</p>
     </footer>
 
+    <!-- Message pour mobile -->
+    <div class="mobile-message">
+        <p>Ce site n'est pas encore disponible sur téléphone. Veuillez visiter sur un ordinateur.</p>
+        <img src="oups.png" alt="Oups">
+        <img src="oups1.png" alt="Oups">
+    </div>
+
     <script src="script.js"></script>
+
+    <script>
+        // Afficher le message uniquement pour les écrans mobiles
+        if (window.innerWidth <= 768) {
+            document.querySelector('.mobile-message').style.display = 'block'; // Affiche le message pour mobile
+        }
+    </script>
+
 </body>
 </html>
