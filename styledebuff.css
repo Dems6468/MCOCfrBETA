@@ -432,18 +432,20 @@ height: min(10vw, 120px);
 }
 
 
-#loader {
-  position: fixed; /* Fixe le loader au centre de la page */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.8); /* Fond légèrement transparent pour masquer le contenu */
-  z-index: 1000; /* S'assure que le loader est au-dessus du reste du contenu */
+/* Masquer tout le contenu de la page sauf le loader */
+#personnages-list {
+    display: none;  /* Cache la liste des personnages */
 }
+
+/* Assurez-vous que le loader soit centré au milieu de la page */
+#loader {
+    display: block;  /* Affiche le loader */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 .clock-loader {
   --clock-color: var(--primary-color, #ff5722); /* Couleur de l'horloge, personnalisable */
