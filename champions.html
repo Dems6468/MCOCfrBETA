@@ -13,6 +13,23 @@
     
     <main>
         <h2>Liste des Personnages</h2>
+        <!-- Filtre et tri -->
+<div class="filters">
+    <select id="sort-names">
+        <option value="asc">A-Z</option>
+        <option value="desc">Z-A</option>
+    </select>
+
+    <select id="filter-class">
+        <option value="">Filtrer par Classe</option>
+        <option value="science">Science</option>
+        <option value="tech">Tech</option>
+        <option value="cosmique">Cosmique</option>
+        <option value="virtuose">Virtuose</option>
+        <option value="mutant">Mutant</option>
+    </select>
+</div>
+
         <div id="personnage-list">
             <!-- Liste des personnages générée ici -->
         </div>
