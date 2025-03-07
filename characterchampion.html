@@ -20,5 +20,36 @@
     </footer>
 
     <script src="scriptchampion.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const nom = urlParams.get('nom');
+
+            // Charger les données JSON
+            fetch('championsData.json')
+                .then(response => response.json())
+                .then(data => {
+                    const personnage = data.find(perso => perso.nom === nom);
+
+                    if (personnage) {
+                        const characterDetails = document.getElementById('character-details');
+                        characterDetails.innerHTML = `
+                            <div class="character-card">
+                                <h2>${personnage.nom}</h2>
+                                <img src="${personnage.image}" alt="${personnage.nom}" class="character-image">
+                                <div class="character-info">
+                                    <p><strong>Classe :</strong> ${personnage.classe}</p>
+                                    <p><strong>Description :</strong> ${personnage.description}</p>
+                                    <!-- Ajoute d'autres informations ici -->
+                                </div>
+                            </div>
+                        `;
+                    } else {
+                        document.getElementById('character-details').innerHTML = `<p>Personnage non trouvé.</p>`;
+                    }
+                })
+                .catch(error => console.error('Erreur de chargement des détails du personnage:', error));
+        });
+    </script>
 </body>
 </html>
