@@ -230,7 +230,7 @@ body {
     word-wrap: break-word; /* Coupe les mots longs si nécessaire */
     overflow-wrap: break-word; /* Version alternative pour compatibilité */
     width: 100%;
-     min-height: 2.5em; /* Ajuste selon la longueur moyenne des noms */
+     min-height: 3.2em; /* Ajuste selon la longueur moyenne des noms */
      display: flex;
     align-items: center;
      justify-content: center;
