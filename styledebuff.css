@@ -430,12 +430,3 @@ height: min(10vw, 120px);
     object-fit: contain; /* Garde la proportion */
     margin-bottom: 5px; /* Espace entre l'image et le texte */
 }
-
-
-
-
-@keyframes spin {
-  to {
-    transform: rotate(1turn);
-  }
-}
