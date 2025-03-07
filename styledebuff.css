@@ -475,115 +475,32 @@ height: min(10vw, 120px);
 
 /* Styles pour petits écrans (tablettes et téléphones) */
 @media (max-width: 768px) {
-    /* Style global */
-    body {
-        font-family: 'Arial', sans-serif;
-        background: url('espace.webp') no-repeat center center fixed;
-        background-size: cover;
-        color: #fff;
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-    }
-
     /* Header */
     #header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background-color: #111;
-        padding: 15px; /* Réduit l'espace */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-        z-index: 10;
-        display: flex;
-        justify-content: space-between;
+        padding: 10px; /* Réduit le padding */
+        flex-direction: column; /* Empile les éléments du header pour éviter qu'ils ne se chevauchent */
         align-items: center;
-        box-sizing: border-box;
-        animation: slide-down 0.5s ease-out;
-        transition: background-color 0.3s ease, box-shadow 0.3s ease;
     }
 
-    /* Menu du header pour petits écrans */
     #header nav ul {
         display: flex;
-        flex-direction: column; /* Menu empilé */
+        flex-direction: column; /* Empile les éléments du menu */
         align-items: center;
-        list-style: none;
-        margin: 0;
         padding: 0;
+        margin: 0;
+        width: 100%; /* Occupe toute la largeur pour éviter les chevauchements */
     }
 
     #header nav ul li {
-        margin-bottom: 10px;
+        margin-bottom: 10px; /* Espacement entre les éléments du menu */
     }
 
     #header nav ul li a {
-        color: #fff;
-        text-decoration: none;
         font-size: 14px; /* Réduit la taille des liens */
-        font-weight: bold;
-        transition: all 0.3s ease;
+        padding: 8px 10px; /* Plus petit padding */
     }
 
-    #header nav ul li a:hover {
-        color: #ff5722;
-    }
-
-    /* Effet de survol des liens */
-    #header nav ul li a::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #FF5722;
-        transform: scaleX(0);
-        transform-origin: right;
-        transition: transform 0.4s ease-in-out;
-        z-index: -1;
-    }
-
-    /* Dropdown Menu */
-    .dropdown {
-        position: relative;
-    }
-
-    .dropdown .dropbtn {
-        background-color: #111;
-        color: white;
-        padding: 10px 15px;
-        font-size: 16px;
-        border: none;
-        cursor: pointer;
-    }
-
-    .dropdown:hover .dropbtn {
-        background-color: #FF5722;
-    }
-
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #222;
-        min-width: 160px;
-        z-index: 1;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    }
-
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-
-    .dropdown-content a {
-        color: #fff;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-    }
-
-    /* Filtre et Liste des personnages */
+    /* Filtre des personnages */
     #home {
         margin-top: 120px;
         padding: 10px;
@@ -594,16 +511,10 @@ height: min(10vw, 120px);
         margin-bottom: 15px;
         padding: 10px;
         font-size: 14px;
-        border-radius: 5px;
-        background-color: #333;
-        border: 1px solid #444;
-        color: #fff;
+        width: 100%; /* Laisser le filtre occuper toute la largeur */
     }
 
-    #immunite-filter:hover {
-        background-color: #FF5722;
-    }
-
+    /* Cartes des personnages */
     .personnage-card {
         background: rgba(34, 34, 34, 0.5);
         backdrop-filter: blur(5px);
@@ -616,138 +527,79 @@ height: min(10vw, 120px);
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: 10px;
+        max-width: 150px; /* Limite la largeur des cartes */
+        width: 100%;
     }
 
-    .personnage-card:hover {
-        transform: scale(1.05);
-        box-shadow: 0 6px 12px rgba(137, 34, 255, 0.6);
-    }
-
-    /* Cartes de Personnages */
     .personnage-card img {
         width: 80px;
         height: 80px;
         border-radius: 50%;
         object-fit: cover;
-        margin-bottom: 10px;
     }
 
     .personnage-card h3 {
-        font-size: 14px;
+        font-size: 12px; /* Réduit la taille du texte */
         color: #e89f00;
         text-align: center;
         white-space: normal;
         word-wrap: break-word;
         overflow-wrap: break-word;
         width: 100%;
+        min-height: 3em; /* Evite que le texte déborde */
     }
 
-    /* Tooltip */
-    .debuff-tooltip {
-        display: none;
-        position: absolute;
-        top: 30px;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: #333;
-        color: white;
-        padding: 6px 10px;
-        border-radius: 5px;
-        font-size: 14px;
-        white-space: nowrap;
-        z-index: 1000;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-    }
-
-    /* Ajustement du tooltip */
-    .debuff-tooltip.left-align {
-        left: 0;
-        transform: translateX(0);
-    }
-
-    .debuff-tooltip.right-align {
-        right: 0;
-        left: auto;
-        transform: translateX(0);
-    }
-
-    /* Grille des personnages */
+    /* Liste des personnages */
     .personnages-list {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 10px;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Adaptation dynamique de la grille */
+        gap: 15px;
         justify-content: center;
         padding: 20px;
     }
 
-    /* Ajustement pour les petits écrans (mobile/tablette) */
-    @media (max-width: 768px) {
-        #header {
-            padding: 10px; /* Réduit le padding */
-        }
+    /* Réduction de la taille des cartes et icônes */
+    .immunite-icons img {
+        width: 18px;
+        height: 18px;
+    }
 
-        #header nav ul {
-            flex-direction: column; /* Menu empilé */
-            align-items: center;
-        }
-
+    /* Ajustements pour très petits écrans (téléphones) */
+    @media (max-width: 480px) {
         #home {
-            margin-top: 80px; /* Ajuste le top margin pour le header */
-            padding: 10px;
-        }
-
-        #immunite-filter {
-            margin-bottom: 15px;
-            font-size: 14px;
+            margin-top: 80px; /* Ajuste la marge du contenu pour le header fixe */
         }
 
         .personnage-card {
-            width: 100%; /* Cartes occupent toute la largeur */
-            max-width: 70px;
-            padding: 5px;
+            max-width: 100px; /* Limite la largeur des cartes */
+            width: 100%; /* Cartes prennent toute la largeur disponible */
+            padding: 5px; /* Réduit le padding des cartes */
         }
 
         .personnage-card img {
-            max-width: 60px;
-            max-height: 60px;
+            max-width: 60px; /* Ajuste la taille de l'image */
+            max-height: 60px; /* Ajuste la hauteur de l'image */
         }
 
         .personnage-card h3 {
-            font-size: 12px;
+            font-size: 10px; /* Réduit encore la taille du texte */
+            min-height: 2.5em; /* Evite que le texte dépasse */
         }
 
         .immunite-icons img {
-            width: 20px;
-            height: 20px;
-        }
-    }
-
-    /* Pour les très petits écrans (téléphone) */
-    @media (max-width: 480px) {
-        .personnages-list {
-            grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); /* Cartes plus petites */
-        }
-
-        .personnage-card {
-            max-width: 50px;
-            padding: 5px;
-        }
-
-        .personnage-card img {
-            max-width: 40px;
-            max-height: 40px;
-        }
-
-        .immunite-icons img {
-            width: 16px;
+            width: 16px; /* Réduit la taille des icônes */
             height: 16px;
         }
 
-        .personnage-card h3 {
-            font-size: 10px;
+        /* Améliore l'affichage du menu dans le header pour très petits écrans */
+        #header nav ul li a {
+            font-size: 12px; /* Réduit encore la taille des liens */
+            padding: 8px 10px;
         }
     }
 }
+
 
 
 
