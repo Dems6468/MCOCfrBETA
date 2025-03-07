@@ -209,6 +209,9 @@ body {
     gap: 15px;
     justify-content: center;
     padding: 20px;
+    max-width: 1200px; /* Largeur max pour limiter l'étendue de la grille */
+    margin: 0 auto; /* Centre la grille horizontalement */
+}
 }
 
 
