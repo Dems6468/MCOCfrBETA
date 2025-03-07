@@ -6,30 +6,30 @@
     <title>Marvel Champions</title>
     <link rel="stylesheet" href="styledebuff.css">
     <style>
-        /* Masquer le header et le contenu normal sur mobile */
-        @media (max-width: 768px) {
-            header, nav {
-                display: none; /* Cacher header et menu */
-            }
+        /* Masquer le message mobile par défaut */
+        .mobile-message {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
 
-            /* Cacher tout le contenu normal sauf le message mobile */
+        /* Afficher le message mobile uniquement sur les petits écrans */
+        @media (max-width: 768px) {
+            /* Cacher le contenu normal sauf le message mobile */
             body > *:not(.mobile-message) {
-                display: none;
+                display: block; /* Afficher tout sauf le message mobile */
             }
 
             /* Afficher le message mobile */
             .mobile-message {
                 display: block;
-                text-align: center;
-                margin-top: 50px;
                 padding: 20px;
-                overflow-y: auto;
-                height: 100vh; /* Pour permettre le scroll */
+                margin-top: 20px;
             }
 
             /* Style pour les images */
             .mobile-message img {
-                width: 60%; /* Taille de l'image plus petite */
+                width: 60%;
                 margin: 10px auto;
                 display: block;
             }
@@ -42,7 +42,7 @@
                 margin-bottom: 20px;
             }
 
-            /* Style pour le formulaire Google */
+            /* Formulaire Google bien placé en bas */
             .google-form-container {
                 margin-top: 30px;
             }
@@ -57,7 +57,7 @@
 </head>
 <body>
 
-    <!-- Header (masqué sur mobile) -->
+    <!-- Header -->
     <header id="header">
         <div class="logo">Marvel Champions</div>
         <nav>
@@ -85,7 +85,7 @@
 
         <!-- Formulaire Google intégré -->
         <div class="google-form-container">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeYOI3gY7L-vTpS99oFJkaU_pNx3Wv8pxg9pPBo4C13l8heUg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd3PYMXinB3XVXIp_UrqRhJPBP_O-aCjCRmOplsPYpwSZhAww/viewform?embedded=true"  frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
         </div>
     </div>
 
