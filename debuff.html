@@ -16,6 +16,11 @@
         /* Cacher tout le contenu pour mobile et afficher les images et le message */
         @media (max-width: 768px) {
             /* Cacher tout le contenu sauf le message */
+             header, nav {
+                display: none; /* Masquer le header et le menu sur mobile */
+            }
+
+            /* Cacher tout le contenu normal sur mobile */
             body > *:not(.mobile-message) {
                 display: none;
             }
