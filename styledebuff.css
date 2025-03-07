@@ -472,3 +472,76 @@ height: min(10vw, 120px);
     object-fit: contain; /* Garde la proportion */
     margin-bottom: 5px; /* Espace entre l'image et le texte */
 }
+
+
+
+
+/* Règles pour les tablettes (max-width: 1024px) */
+@media (max-width: 1024px) {
+    body {
+        font-size: 14px;
+    }
+    #header {
+        padding: 15px;
+    }
+    #header nav ul {
+        flex-direction: column;
+    }
+    .personnage-card {
+        padding: 12px;
+    }
+    .personnage-card img {
+        max-width: 100px;
+    }
+}
+
+/* Règles pour les téléphones mobiles (max-width: 768px) */
+@media (max-width: 768px) {
+    body {
+        font-size: 12px;
+    }
+    #header {
+        padding: 10px;
+    }
+    #header nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    #header nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .personnage-card {
+        padding: 8px;
+    }
+    .personnage-card img {
+        max-width: 80px;
+    }
+    .immunite-icons img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+/* Règles pour les très petits écrans (max-width: 480px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 10px;
+    }
+    #header {
+        padding: 8px;
+    }
+    .personnage-card {
+        padding: 5px;
+    }
+    .personnage-card img {
+        max-width: 60px;
+    }
+    .immunite-icons img {
+        width: 20px;
+        height: 20px;
+    }
+    .dropdown-content {
+        display: none;
+    }
+}
