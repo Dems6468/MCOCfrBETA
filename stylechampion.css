@@ -1,64 +1,126 @@
+/* Style global */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #2c3e50;
-    color: white;
+    font-family: 'Arial', sans-serif;
+    background: url('espace.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
+/* Header */
 header {
-    background-color: #111;
-    padding: 20px;
-    text-align: center;
-}
-
-main {
-    padding: 20px;
-    margin-top: 80px;
-}
-
-footer {
-    background-color: #111;
-    padding: 10px;
-    text-align: center;
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    bottom: 0;
+    background-color: rgba(17, 17, 17, 0.85);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: slide-down 0.5s ease-out;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-h1 {
-    font-size: 36px;
+/* Effet au survol des liens du header */
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+header nav ul li a:hover {
     color: #ff5722;
+    transform: translateY(-5px) rotate(-5deg);
 }
 
-h2 {
-    font-size: 28px;
-    color: #ff9800;
+/* Menu déroulant */
+.dropdown .dropbtn {
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #FF5722;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #222;
+    min-width: 160px;
+    z-index: 1;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.dropdown-content a:hover {
+    background-color: #FF5722;
+}
+
+/* Personnages */
+#personnage-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
 }
 
 .personnage-card {
-    background-color: #34495e;
-    margin: 10px;
-    padding: 20px;
-    border-radius: 8px;
+    background: rgba(34, 34, 34, 0.7);
+    border-radius: 12px;
+    padding: 15px;
     text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.personnage-card a {
+.personnage-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.personnage-card img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.personnage-card h3 {
     color: #ff5722;
-    text-decoration: none;
-    font-size: 22px;
-    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 0;
 }
 
-.personnage-card a:hover {
-    color: #ff9800;
-}
-
+/* Cards de détail de personnage */
 .character-card {
-    background-color: #34495e;
-    padding: 20px;
-    border-radius: 8px;
+    background: rgba(44, 62, 80, 0.9);
+    padding: 25px;
+    border-radius: 12px;
     text-align: center;
     max-width: 600px;
     margin: auto;
@@ -66,12 +128,13 @@ h2 {
 
 .character-card h2 {
     color: #ff5722;
+    margin-bottom: 20px;
 }
 
 .character-info {
-    background-color: #2c3e50;
-    padding: 10px;
-    border-radius: 5px;
+    background-color: rgba(44, 62, 80, 0.8);
+    padding: 15px;
+    border-radius: 8px;
     margin-top: 20px;
 }
 
@@ -84,15 +147,63 @@ h2 {
     height: 200px;
     border-radius: 50%;
     margin-top: 20px;
+    object-fit: cover;
 }
 
-#personnage-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+/* Footer */
+footer {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    margin-top: auto;
+    font-size: 14px;
 }
 
-#personnage-list .personnage-card {
-    width: 200px;
-    margin: 10px;
+/* Animation du header */
+@keyframes slide-down {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Mobile - Adaptation */
+@media (max-width: 768px) {
+    body {
+        overflow: hidden;
+    }
+
+    .mobile-message {
+        display: block;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+        border-radius: 10px;
+        width: 80%;
+        max-width: 400px;
+    }
+
+    header nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    #personnage-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .personnage-card {
+        padding: 15px;
+    }
 }
