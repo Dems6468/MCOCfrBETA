@@ -122,4 +122,5 @@ footer {
     color: #fff;
     width: 100%;
     margin-top: auto; /* Assurez-vous que le footer soit en bas */
+    margin-bottom: auto;
 }
