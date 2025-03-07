@@ -9,6 +9,7 @@ body {
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
+    min-height: 100vh; /* Assure que le body occupe au moins la hauteur de la fenêtre */
 }
 
 /* Header */
@@ -122,5 +123,4 @@ footer {
     color: #fff;
     width: 100%;
     margin-top: auto; /* Assurez-vous que le footer soit en bas */
-    margin-bottom: auto;
 }
