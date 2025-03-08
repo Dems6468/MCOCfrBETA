@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marvel Champions</title>
-    <link rel="stylesheet" href="styledebuff.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styledebuff.css"
 
     <!-- Header -->
     <header id="header">
-        <div class="logo">Marvel Champions</div>
+        <div class="logo">
+            <a href="index.html">Marvel Contest of Champions FR BETA V.0</a>
+        </div>
         <nav>
             <ul>
-                <li><a href="#home">Accueil</a></li>
-                <li><a href="#champions">Champions</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="debuff.html">Debuffs</a></li>
+                <li><a href="champions.html">Champions</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropbtn">Menu</a>
@@ -28,7 +29,6 @@
             </ul>
         </nav>
     </header>
-
     <!-- Filtre et liste des personnages -->
     <section id="home">
         <select id="immunite-filter">
@@ -57,9 +57,24 @@
 
     <!-- Footer -->
     <footer>
-        <p>© 2025 Marvel Champions. Tous droits réservés.</p>
+        <p>Version 0.0 • DERNIERE MISE A JOUR LE 08 MARS 2025 • Made in FRANCE FR • .</p>
+        <p>Ce site n'est pas sponsorisé, endossé ou affilié à Kabam ou Marvel.</p>
     </footer>
 
+    <!-- Message pour mobile -->
+    <div class="mobile-message">
+        <p>Désolé, ce site n'est pas encore disponible sur téléphone. Veuillez utiliser un ordinateur ou mettre le mode "ordinateur".</p>
+        <img src="oups.png" alt="Oups">
+    </div>
+
     <script src="script.js"></script>
+
+    <script>
+        // Afficher le message uniquement pour les écrans mobiles
+        if (window.innerWidth <= 768) {
+            document.querySelector('.mobile-message').style.display = 'block'; // Affiche le message pour mobile
+        }
+    </script>
+
 </body>
 </html>

@@ -2,10 +2,118 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0;url=debuff.html">
-    <title>Redirection...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil | MCOCFR</title>
+    <link rel="stylesheet" href="style-accueil.css"> <!-- Nouveau fichier CSS -->
+</head>
+<style>
+    /* Style pour cacher tout le contenu sauf les images et le message sur mobile */
+    .mobile-message {
+        display: none; /* Par défaut, caché */
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    /* Cacher tout le contenu pour mobile et afficher les images et le message */
+    @media (max-width: 768px) {
+        /* Cacher tout le contenu sauf le message */
+         header, nav {
+            display: none; /* Masquer le header et le menu sur mobile */
+        }
+
+        /* Cacher tout le contenu normal sur mobile */
+        body > *:not(.mobile-message) {
+            display: none;
+        }
+
+        /* Afficher les images et le message pour les mobiles */
+        .mobile-message {
+            display: block;
+        }
+
+        /* Ajouter du style aux images */
+        .mobile-message img {
+            width: 50%;
+            margin: 20px auto;
+            display: block;
+        }
+
+        /* Style pour le message d'avertissement */
+        .mobile-message p {
+            font-size: 24px;
+            color: #FF5722;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    }
+</style>
 </head>
 <body>
-    <p>Redirection vers la page principale...</p>
+<body>
+    <header id="header">
+        <div class="logo">
+            <a href="index.html">Marvel Contest of Champions FR BETA V.0</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="debuff.html">Debuffs</a></li>
+                <li><a href="champions.html">Champions</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Menu</a>
+                    <div class="dropdown-content">
+                        <a href="#option1">Option 1</a>
+                        <a href="#option2">Option 2</a>
+                        <a href="#option3">Option 3</a>
+                        <a href="#option4">Option 4</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <h1>Bienvenue sur Marvel Contest of Champions FR</h1>
+            <p>Site encore en construction</p>
+        </section>
+
+        <section class="features">
+            <h2>Fonctionnalités</h2>
+            <div class="feature-card">
+                <h3>Champions</h3>
+                <p>Explorez les héros de MCOC et leurs capacités uniques.</p>
+                <a href="champions.html" class="btn-secondary">Découvrir</a>
+            </div>
+            <div class="feature-card">
+                <h3>Debuffs</h3>
+                <p>Trouvez vos champions immunisés.</p>
+                <a href="debuff.html" class="btn-secondary">Explorer</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Version 0.0 • DERNIERE MISE A JOUR LE 08 MARS 2025 • Made in FRANCE FR • .</p>
+        <p>Ce site n'est pas sponsorisé, endossé ou affilié à Kabam ou Marvel.</p>
+    </footer>
+
+
+    
+ <!-- Message pour mobile -->
+ <div class="mobile-message">
+    <p>Désolé, ce site n'est pas encore disponible sur téléphone. Veuillez utiliser un ordinateur ou mettre le mode "ordinateur".</p>
+    
+    <img src="oups.png" alt="Oups">
+</div>
+
+<script>
+    // Afficher le message uniquement pour les écrans mobiles
+    if (window.innerWidth <= 768) {
+        document.querySelector('.mobile-message').style.display = 'block'; // Affiche le message pour mobile
+    }
+</script>
+
 </body>
 </html>

@@ -1,2060 +1,2648 @@
-[
+﻿[
     {
         "nom": "Abomination", 
         "Short Name": "Abomination", 
         "classe": "Science", 
+        "classe2": "faces/class_chemicalf5fb.png", 
         "immunite": {"Poison": []}, 
-        "photo": "faces/portrait_abominationed8d.png"
+        "photo": "faces/portrait_abominationed8d.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Abomination (Immortal)", 
         "Short Name": "Abomination", 
         "classe": "Science", 
+        "classe2": "faces/class_chemicalf5fb.png", 
         "immunite": {"Poison": ["100% Resistance"]}, 
-        "photo": "faces/portrait_abomination_immortal33a7.png"
+        "photo": "faces/portrait_abomination_immortal33a7.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Absorbing Man", 
         "Short Name": "Absorbing Man", 
         "classe": "Mystique", 
-        "immunite": {"Armor Break": [], "Armor Shatter": [], "Bleed": ["Black Uru Form, SP1"], "Shock": ["Black Uru Form, SP1"], "Incinerate": ["Magma Form, SP2"], "Coldsnap": ["Magma Form, SP2"], "Frostbite": ["Magma Form, SP2"], "Poison": ["Synergie [Abomination Immortal, Hulk Immortal]"]}, 
-        "photo": "faces/portrait_absorbingman3399.png"
+        "classe2": "faces/class_mystic0b9f.png", 
+        "immunite": {"Brise-Armure": [], "Armure Pulverisée": [], "Saignement": ["Black Uru Form, SP1"], "Décharges": ["Black Uru Form, SP1"], "Incinération": ["Magma Form, SP2"], "Vague de Froid": ["Magma Form, SP2"], "Engelure": ["Magma Form, SP2"], "Poison": ["Synergie [Abomination Immortal, Hulk Immortal]"]}, 
+        "photo": "faces/portrait_absorbingman3399.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Adam Warlock", 
         "Short Name": "Adam Warlock", 
         "classe": "Cosmique", 
-        "immunite": {"Nullify": ["Sovereignty Buff"], "Stagger": ["Sovereignty Buff"], "Fate Seal": ["Sovereignty Buff"], "Stun": ["Sovereignty Buff ? 100% Parry Stun Ability Accuracy Reduction"], "Shock": ["Stasis Pod"], "Incinerate": ["Stasis Pod"], "Coldsnap": ["Stasis Pod"], "Frostbite": ["Stasis Pod"], "Ability Power Rate Reduction": ["Against Non-Mystique"]}, 
-        "photo": "faces/portrait_adamwarlock33d7.png"
+        "classe2": "faces/class_cosmic2e67.png", 
+        "immunite": {"Purge": ["Sovereignty Buff"], "Chancellement": ["Sovereignty Buff"], "Destin Scellé": ["Sovereignty Buff"], "Etourdissement": ["Sovereignty Buff → 100% Parry Etourdissement Réduction Précision Compétence"], "Décharges": ["Stasis Pod"], "Incinération": ["Stasis Pod"], "Vague de Froid": ["Stasis Pod"], "Engelure": ["Stasis Pod"], "Réduction Taux de Pouvoir de Compétence": ["Against Non-Mystique"]}, 
+        "photo": "faces/portrait_adamwarlock33d7.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Aegon", 
         "Short Name": "Aegon", 
         "classe": "Virtuose", 
+        "classe2": "faces/class_trainede488.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_aegona6b7.png"
+        "photo": "faces/portrait_aegona6b7.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Agent Venom", 
         "Short Name": "Agent Venom", 
         "classe": "Virtuose", 
+        "classe2": "faces/class_trainede488.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_agent_venom013d.png"
+        "photo": "faces/portrait_agent_venom013d.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Air-Walker", 
         "Short Name": "Air-Walker", 
         "classe": "Cosmique", 
-        "immunite": {"Power Drain": ["Against Tech & The Dark Tide ? 70% Less Potency and Duration"], "Power Lock": ["Against Tech & The Dark Tide ? 70% Less Potency and Duration"], "Power Burn": ["Against Tech & The Dark Tide ? 70% Less Potency and Duration"]}, 
-        "photo": "faces/portrait_airwalker0f54.png"
+        "classe2": "faces/class_cosmic2e67.png", 
+        "immunite": {"Drain Pouvoir": ["Against Tech & The Dark Tide → 70% Less Potency and Duration"], "Bloque Pouvoir": ["Against Tech & The Dark Tide → 70% Less Potency and Duration"], "Brûle Pouvoir": ["Against Tech & The Dark Tide → 70% Less Potency and Duration"]}, 
+        "photo": "faces/portrait_airwalker0f54.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "America Chavez", 
         "Short Name": "America Chavez", 
         "classe": "Mystique", 
-        "immunite": {"Bleed": ["Synergie [Purgatory] & Synergie [Mephisto, The Hood, Magik, Dormammu]"]}, 
-        "photo": "faces/portrait_americachavez317b.png"
+        "classe2": "faces/class_mystic0b9f.png", 
+        "immunite": {"Saignement": ["Synergie [Purgatory] & Synergie [Mephisto, The Hood, Magik, Dormammu]"]}, 
+        "photo": "faces/portrait_americachavez317b.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Angela", 
         "Short Name": "Angela", 
         "classe": "Cosmique", 
-        "immunite": {"Nullify": ["10-35% Nullify Ability Accuracy Reduction per Buff"]}, 
-        "photo": "faces/portrait_angela8c7b.png"
+        "classe2": "faces/class_cosmic2e67.png", 
+        "immunite": {"Purge": ["10-35% Purge Réduction Précision Compétence per Buff"]}, 
+        "photo": "faces/portrait_angela8c7b.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Annihilus", 
         "Short Name": "Annihilus", 
         "classe": "Cosmique", 
-        "immunite": {"Incinerate": ["Cosmique Control Rod"], "Coldsnap": ["Cosmique Control Rod"], "Frostbite": ["Cosmique Control Rod"], "Power Drain": ["Cosmique Control Rod"], "Power Burn": ["Cosmique Control Rod"], "Power Steal": ["Cosmique Control Rod"], "Power Lock": ["Cosmique Control Rod"], "Enervate": ["Cosmique Control Rod"], "Stun": ["While Attacking ? 60%"]}, 
-        "photo": "faces/portrait_annihilus622a.png"
+        "classe2": "faces/class_cosmic2e67.png", 
+        "immunite": {"Incinération": ["Cosmique Control Rod"], "Vague de Froid": ["Cosmique Control Rod"], "Engelure": ["Cosmique Control Rod"], "Drain Pouvoir": ["Cosmique Control Rod"], "Brûle Pouvoir": ["Cosmique Control Rod"], "Vol Pouvoir": ["Cosmique Control Rod"], "Bloque Pouvoir": ["Cosmique Control Rod"], "Amollir ": ["Cosmique Control Rod"], "Etourdissement": ["While Attacking → 60%"]}, 
+        "photo": "faces/portrait_annihilus622a.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Ant-Man", 
         "Short Name": "Ant-Man", 
         "classe": "Science", 
-        "immunite": {"Buffs": [], "Shock": [], "Poison": []}, 
-        "photo": "faces/portrait_antman8d63.png"
+        "classe2": "faces/class_chemicalf5fb.png", 
+        "immunite": {"Buffs": [], "Décharges": [], "Poison": []}, 
+        "photo": "faces/portrait_antman8d63.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Ant-Man (Future)", 
         "Short Name": "Ant-Man", 
         "classe": "Tech", 
-        "immunite": {"Bleed": ["Dupe ? 10-90% Duration Reduction", "Synergie [Purgatory] & Synergie [Mephisto, The Hood, Magik, Dormammu]"], "Incinerate": ["Dupe ? 10-90% Duration Reduction"], "Shock": ["Synergie [Odin, Ultron] & 60% Duration Reduction"]}, 
-        "photo": "faces/portrait_antman_future568b.png"
+        "classe2": "faces/class_techbdb1.png", 
+        "immunite": {"Saignement": ["Dupe → 10-90% Duration Reduction", "Synergie [Purgatory] & Synergie [Mephisto, The Hood, Magik, Dormammu]"], "Incinération": ["Dupe → 10-90% Duration Reduction"], "Décharges": ["Synergie [Odin, Ultron] & 60% Duration Reduction"]}, 
+        "photo": "faces/portrait_antman_future568b.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Anti-Venom", 
         "Short Name": "Anti-Venom", 
         "classe": "Science", 
-        "immunite": {"Incinerate": [], "Poison": [], "Buffs": ["Synergie [Spiderman 2099, Doctor Octopus] & only for 10s"]}, 
-        "photo": "faces/portrait_antivenomce92.png"
+        "classe2": "faces/class_chemicalf5fb.png", 
+        "immunite": {"Incinération": [], "Poison": [], "Buffs": ["Synergie [Spiderman 2099, Doctor Octopus] & only for 10s"]}, 
+        "photo": "faces/portrait_antivenomce92.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Apocalypse", 
         "Short Name": "Apocalypse", 
         "classe": "Mutant", 
-        "immunite": {"Bleed": ["8s"], "Incinerate": ["8s"], "Disorient": ["8s"], "Stun": ["3+ Charges"]}, 
-        "photo": "faces/portrait_apocalypsef698.png"
+        "classe2": "faces/class_mutant7e84.png", 
+        "immunite": {"Saignement": ["8s"], "Incinération": ["8s"], "Désorienter": ["8s"], "Etourdissement": ["3+ Charges"]}, 
+        "photo": "faces/portrait_apocalypsef698.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Arcade", 
         "Short Name": "Arcade", 
         "classe": "Tech", 
-        "immunite": {"Incinerate": ["Power-Up Pre-Fight & Non-Cosmique Opponent", "As a Defender & Non-Cosmique Opponent"], "Poison": ["Cheat Code Pre-Fight & Non-Cosmique Opponent", "As a Defender & Non-Cosmique Opponent"], "Shock": ["Game Wizard Pre-Fight & Non-Cosmique Opponent", "As a Defender & Non-Cosmique Opponent"]}, 
-        "photo": "faces/portrait_arcade7eb5.png"
+        "classe2": "faces/class_techbdb1.png", 
+        "immunite": {"Incinération": ["Power-Up Pre-Fight & Non-Cosmique Opponent", "As a Defender & Non-Cosmique Opponent"], "Poison": ["Cheat Code Pre-Fight & Non-Cosmique Opponent", "As a Defender & Non-Cosmique Opponent"], "Décharges": ["Game Wizard Pre-Fight & Non-Cosmique Opponent", "As a Defender & Non-Cosmique Opponent"]}, 
+        "photo": "faces/portrait_arcade7eb5.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Archangel", 
         "Short Name": "Archangel", 
         "classe": "Mutant", 
-        "immunite": {"Ability Accuracy Reduction": []}, 
-        "photo": "faces/portrait_archangel2e81.png"
+        "classe2": "faces/class_mutant7e84.png", 
+        "immunite": {"Réduction Précision Compétence": []}, 
+        "photo": "faces/portrait_archangel2e81.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Arnim Zola", 
         "Short Name": "Arnim Zola", 
         "classe": "Tech", 
-        "immunite": {"Bleed": [], "Poison": [], "Ability Accuracy Modification": [], "Combat Power Rate Modification": []}, 
-        "photo": "faces/portrait_arnimzoladd10.png"
+        "classe2": "faces/class_techbdb1.png", 
+        "immunite": {"Saignement": [], "Poison": [], "Modification Précision Compétence": [], "Modification Taux de Pouvoir": []}, 
+        "photo": "faces/portrait_arnimzoladd10.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Attuma", 
         "Short Name": "Attuma", 
         "classe": "Virtuose", 
-        "immunite": {"Ability Accuracy Reduction": ["Modification is reversed"], "Bleed": ["Dupe ? 50-90% Resistance"], "Incinerate": ["3+ Hydration"], "Regeneration Rate Modification": []}, 
-        "photo": "faces/portrait_attuma64c3.png"
+        "classe2": "faces/class_trainede488.png", 
+        "immunite": {"Réduction Précision Compétence": ["Modification is reversed"], "Saignement": ["Dupe → 50-90% Resistance"], "Incinération": ["3+ Hydration"], "Modification du Taux de Soin": []}, 
+        "photo": "faces/portrait_attuma64c3.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Baron Zemo", 
         "Short Name": "Baron Zemo", 
         "classe": "Virtuose", 
+        "classe2": "faces/class_trainede488.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_baronzemo9010.png"
+        "photo": "faces/portrait_baronzemo9010.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Beast", 
         "Short Name": "Beast", 
         "classe": "Mutant", 
-        "immunite": {"Bleed": ["65% Resistance and Duration Reduction"]}, 
-        "photo": "faces/portrait_beast_allnew2f2f.png"
+        "classe2": "faces/class_mutant7e84.png", 
+        "immunite": {"Saignement": ["65% Resistance and Duration Reduction"]}, 
+        "photo": "faces/portrait_beast_allnew2f2f.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Beta Ray Bill", 
         "Short Name": "Beta Ray Bill", 
         "classe": "Cosmique", 
-        "immunite": {"Shock": [], "Power Drain": [], "Bleed": ["50% Resistance"], "Poison": ["50% Resistance"]}, 
-        "photo": "faces/portrait_betaraybill0a59.png"
+        "classe2": "faces/class_cosmic2e67.png", 
+        "immunite": {"Décharges": [], "Drain Pouvoir": [], "Saignement": ["50% Resistance"], "Poison": ["50% Resistance"]}, 
+        "photo": "faces/portrait_betaraybill0a59.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Bishop", 
         "Short Name": "Bishop", 
         "classe": "Mutant", 
-        "immunite": {"Stun": ["Dupe ? Start a Fight with 1 Bar ? While Blocking"], "Ability Accuracy Reduction": ["Dupe ? Start a Fight with 1 Bar ? While Blocking ? 10-80% Reduction"]}, 
-        "photo": "faces/portrait_bishop1de4.png"
+        "classe2": "faces/class_mutant7e84.png", 
+        "immunite": {"Etourdissement": ["Dupe → Start a Fight with 1 Bar → While Blocking"], "Réduction Précision Compétence": ["Dupe → Start a Fight with 1 Bar → While Blocking → 10-80% Reduction"]}, 
+        "photo": "faces/portrait_bishop1de4.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Black Bolt", 
         "Short Name": "Black Bolt", 
         "classe": "Cosmique", 
+        "classe2": "faces/class_cosmic2e67.png", 
         "immunite": {"Poison": []}, 
-        "photo": "faces/portrait_black_bolta0ac.png"
+        "photo": "faces/portrait_black_bolta0ac.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Black Cat", 
         "Short Name": "Black Cat", 
         "classe": "Virtuose", 
+        "classe2": "faces/class_trainede488.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_blackcat013e.png"
+        "photo": "faces/portrait_blackcat013e.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Black Panther", 
         "Short Name": "Black Panther", 
         "classe": "Virtuose", 
+        "classe2": "faces/class_trainede488.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_black_panthera516.png"
+        "photo": "faces/portrait_black_panthera516.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Black Panther (Civil War)", 
         "Short Name": "Black Panther", 
         "classe": "Virtuose", 
+        "classe2": "faces/class_trainede488.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_black_panther_cw1cae.png"
+        "photo": "faces/portrait_black_panther_cw1cae.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Black Widow", 
         "Short Name": "Black Widow", 
         "classe": "Virtuose", 
+        "classe2": "faces/class_trainede488.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_black_widow87a7.png"
+        "photo": "faces/portrait_black_widow87a7.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Black Widow (Claire Voyant)", 
         "Short Name": "Black Widow", 
         "classe": "Mystique", 
-        "immunite": {"Bleed": ["Curse of Blood"], "Poison": ["Curse of Plague"], "Incinerate": ["Curse of Hellfire"], "Death Immunity": ["Dupe & After SP3"]}, 
-        "photo": "faces/portrait_black_widow_timelycbed.png"
+        "classe2": "faces/class_mystic0b9f.png", 
+        "immunite": {"Saignement": ["Curse of Blood"], "Poison": ["Curse of Plague"], "Incinération": ["Curse of Hellfire"], "Immunité Mort": ["Dupe & After SP3"]}, 
+        "photo": "faces/portrait_black_widow_timelycbed.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Black Widow (Deadly Origin)", 
         "Short Name": "Black Widow", 
         "classe": "Virtuose", 
+        "classe2": "faces/class_trainede488.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_black_widow_movie9b3f.png"
+        "photo": "faces/portrait_black_widow_movie9b3f.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Blade", 
         "Short Name": "Blade", 
         "classe": "Virtuose", 
+        "classe2": "faces/class_trainede488.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_blade5d45.png"
+        "photo": "faces/portrait_blade5d45.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Bullseye", 
         "Short Name": "Bullseye", 
         "classe": "Virtuose", 
-        "immunite": {"Precision": [], "Fatigue": []}, 
-        "photo": "faces/portrait_bullseyea5c1.png"
+        "classe2": "faces/class_trainede488.png", 
+        "immunite": {"Précision": [], "Fatigue": []}, 
+        "photo": "faces/portrait_bullseyea5c1.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Cable", 
         "Short Name": "Cable", 
         "classe": "Mutant", 
-        "immunite": {"Poison": ["20-100% Duration Reduction", "Synergie [Magneto House of X] ? 60% Resistance"]}, 
-        "photo": "faces/portrait_cablee4b1.png"
+        "classe2": "faces/class_mutant7e84.png", 
+        "immunite": {"Poison": ["20-100% Duration Reduction", "Synergie [Magneto House of X] → 60% Resistance"]}, 
+        "photo": "faces/portrait_cablee4b1.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Captain America", 
         "Short Name": "Captain America", 
         "classe": "Science", 
+        "classe2": "faces/class_chemicalf5fb.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_captain_americaa1f4.png"
+        "photo": "faces/portrait_captain_americaa1f4.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Captain America (Infinity War)", 
         "Short Name": "Captain America", 
         "classe": "Science", 
+        "classe2": "faces/class_chemicalf5fb.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_captainamerica_infinitywar56cc.png"
+        "photo": "faces/portrait_captainamerica_infinitywar56cc.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Captain America (Sam Wilson)", 
         "Short Name": "Captain America", 
         "classe": "Tech", 
-        "immunite": {"Bleed": ["25-100% Bleed AA Reduction per Armor Up"]}, 
-        "photo": "faces/portrait_captainamerica_samwilson9405.png"
+        "classe2": "faces/class_techbdb1.png", 
+        "immunite": {"Saignement": ["25-100% Saignement AA Reduction per Armor Up"]}, 
+        "photo": "faces/portrait_captainamerica_samwilson9405.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Captain America (Wwii)", 
         "Short Name": "Captain America", 
         "classe": "Science", 
+        "classe2": "faces/class_chemicalf5fb.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_capamerica_wwii6f9f.png"
+        "photo": "faces/portrait_capamerica_wwii6f9f.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Captain Britain", 
         "Short Name": "Captain Britain", 
         "classe": "Mutant", 
-        "immunite": {"Reversed Controls": ["#Psychic Shielding"]}, 
-        "photo": "faces/portrait_captainbritaind281.png"
+        "classe2": "faces/class_mutant7e84.png", 
+        "immunite": {"Contrôles Inversés": ["#Psychic Shielding"]}, 
+        "photo": "faces/portrait_captainbritaind281.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Captain Marvel", 
         "Short Name": "Captain Marvel", 
         "classe": "Cosmique", 
+        "classe2": "faces/class_cosmic2e67.png", 
         "immunite": {"Poison": []}, 
-        "photo": "faces/portrait_captain_marvel_movie2d33.png"
+        "photo": "faces/portrait_captain_marvel_movie2d33.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Captain Marvel (Classic)", 
         "Short Name": "Captain Marvel", 
         "classe": "Cosmique", 
+        "classe2": "faces/class_cosmic2e67.png", 
         "immunite": {"Poison": []}, 
-        "photo": "faces/portrait_captain_marvel3bd8.png"
+        "photo": "faces/portrait_captain_marvel3bd8.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Carnage", 
         "Short Name": "Carnage", 
         "classe": "Cosmique", 
+        "classe2": "faces/class_cosmic2e67.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_carnage9789.png"
+        "photo": "faces/portrait_carnage9789.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Cassie Lang", 
         "Short Name": "Cassie Lang", 
         "classe": "Science", 
-        "immunite": {"Power Steal": ["Dupe"], "Buffs": [], "Poison": [], "Shock": []}, 
-        "photo": "faces/portrait_cassielang135f.png"
+        "classe2": "faces/class_chemicalf5fb.png", 
+        "immunite": {"Vol Pouvoir": ["Dupe"], "Buffs": [], "Poison": [], "Décharges": []}, 
+        "photo": "faces/portrait_cassielang135f.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Chee'Ilth", 
         "Short Name": "Chee'Ilth", 
         "classe": "Virtuose", 
+        "classe2": "faces/class_trainede488.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_cheeilth38aa.png"
+        "photo": "faces/portrait_cheeilth38aa.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Civil Warrior", 
         "Short Name": "Civil Warrior", 
         "classe": "Tech", 
-        "immunite": {"Nullify": [], "Stagger": [], "Bleed": ["25% Resistance per Armor Up"], "Poison": ["25% Resistance per Armor Up"]}, 
-        "photo": "faces/portrait_civilwarriorde20.png"
+        "classe2": "faces/class_techbdb1.png", 
+        "immunite": {"Purge": [], "Chancellement": [], "Saignement": ["25% Resistance per Armor Up"], "Poison": ["25% Resistance per Armor Up"]}, 
+        "photo": "faces/portrait_civilwarriorde20.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Colossus", 
         "Short Name": "Colossus", 
         "classe": "Mutant", 
-        "immunite": {"Bleed": [], "Incinerate": [], "Coldsnap": [], "Frostbite": [], "Armor Break": ["Against Non-Tech"], "Armor Shatter": ["Against Non-Tech"]}, 
-        "photo": "faces/portrait_colossus3a4c.png"
+        "classe2": "faces/class_mutant7e84.png", 
+        "immunite": {"Saignement": [], "Incinération": [], "Vague de Froid": [], "Engelure": [], "Brise-Armure": ["Against Non-Tech"], "Armure Pulverisée": ["Against Non-Tech"]}, 
+        "photo": "faces/portrait_colossus3a4c.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Corvus Glaive", 
         "Short Name": "Corvus Glaive", 
         "classe": "Cosmique", 
-        "immunite": {"Bleed": ["Glaive's Charges"], "Coldsnap": ["Glaive's Charges"], "Shock": ["Glaive's Charges"], "Frostbite": ["Glaive's Charges"]}, 
-        "photo": "faces/portrait_corvusglaive9a1c.png"
+        "classe2": "faces/class_cosmic2e67.png", 
+        "immunite": {"Saignement": ["Glaive's Charges"], "Vague de Froid": ["Glaive's Charges"], "Décharges": ["Glaive's Charges"], "Engelure": ["Glaive's Charges"]}, 
+        "photo": "faces/portrait_corvusglaive9a1c.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Cosmique Ghost Rider", 
         "Short Name": "Cosmique Ghost Rider", 
         "classe": "Cosmique", 
-        "immunite": {"Bleed": [], "Incinerate": []}, 
-        "photo": "faces/portrait_ghost_rider_cosmic60c9.png"
+        "classe2": "faces/class_cosmic2e67.png", 
+        "immunite": {"Saignement": [], "Incinération": []}, 
+        "photo": "faces/portrait_ghost_rider_cosmic60c9.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Count Nefaria", 
         "Short Name": "Count Nefaria", 
         "classe": "Science", 
-        "immunite": {"Power Steal": [], "Bleed": [], "Shock": ["90% Resistance"], "Incinerate": ["90% Resistance"], "Degeneration": ["0-90% Resistance based on Ionic Charges"]}, 
-        "photo": "faces/portrait_countnefaria0afe.png"
+        "classe2": "faces/class_chemicalf5fb.png", 
+        "immunite": {"Vol Pouvoir": [], "Saignement": [], "Décharges": ["90% Resistance"], "Incinération": ["90% Resistance"], "Dégénerescence": ["0-90% Resistance based on Ionic Charges"]}, 
+        "photo": "faces/portrait_countnefaria0afe.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Crossbones", 
         "Short Name": "Crossbones", 
         "classe": "Virtuose", 
-        "immunite": {"Nullify": ["Synergie [Punisher 2099, Red Skull] & #Hero Opponent"], "Stagger": ["Synergie [Punisher 2099, Red Skull] & #Hero Opponent"]}, 
-        "photo": "faces/portrait_crossbones8cae.png"
+        "classe2": "faces/class_trainede488.png", 
+        "immunite": {"Purge": ["Synergie [Punisher 2099, Red Skull] & #Hero Opponent"], "Chancellement": ["Synergie [Punisher 2099, Red Skull] & #Hero Opponent"]}, 
+        "photo": "faces/portrait_crossbones8cae.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Cull Obsidian", 
         "Short Name": "Cull Obsidian", 
         "classe": "Cosmique", 
+        "classe2": "faces/class_cosmic2e67.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_cullobsidian752b.png"
+        "photo": "faces/portrait_cullobsidian752b.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Cyclops (Blue Team)", 
         "Short Name": "Cyclops", 
         "classe": "Mutant", 
+        "classe2": "faces/class_mutant7e84.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_cyclops687c.png"
+        "photo": "faces/portrait_cyclops687c.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Cyclops (New Xavier School)", 
         "Short Name": "Cyclops", 
         "classe": "Mutant", 
+        "classe2": "faces/class_mutant7e84.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_cyclops_90s1355.png"
+        "photo": "faces/portrait_cyclops_90s1355.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Dani Moonstar", 
         "Short Name": "Dani Moonstar", 
         "classe": "Mutant", 
+        "classe2": "faces/class_mutant7e84.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_danimoonstar6c9a.png"
+        "photo": "faces/portrait_danimoonstar6c9a.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Daredevil (Classic)", 
         "Short Name": "Daredevil", 
         "classe": "Virtuose", 
+        "classe2": "faces/class_trainede488.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_daredevil7120.png"
+        "photo": "faces/portrait_daredevil7120.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Daredevil (Hell'S Kitchen)", 
         "Short Name": "Daredevil (H.K.)", 
         "classe": "Virtuose", 
-        "immunite": {"Regeneration Rate Modification": ["Except Poison"]}, 
-        "photo": "faces/portrait_daredevil_netflixdcc0.png"
+        "classe2": "faces/class_trainede488.png", 
+        "immunite": {"Modification du Taux de Soin": ["Except Poison"]}, 
+        "photo": "faces/portrait_daredevil_netflixdcc0.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Darkhawk", 
         "Short Name": "Darkhawk", 
         "classe": "Tech", 
-        "immunite": {"Bleed": [], "Poison": []}, 
-        "photo": "faces/portrait_darkhawk9c83.png"
+        "classe2": "faces/class_techbdb1.png", 
+        "immunite": {"Saignement": [], "Poison": []}, 
+        "photo": "faces/portrait_darkhawk9c83.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Dazzler", 
         "Short Name": "Dazzler", 
         "classe": "Mutant", 
-        "immunite": {"Nullify": [], "Incinerate": ["Synergie [Kitty Pride]"]}, 
-        "photo": "faces/portrait_dazzler7e9a.png"
+        "classe2": "faces/class_mutant7e84.png", 
+        "immunite": {"Purge": [], "Incinération": ["Synergie [Kitty Pride]"]}, 
+        "photo": "faces/portrait_dazzler7e9a.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Deadpool", 
         "Short Name": "Deadpool", 
         "classe": "Mutant", 
+        "classe2": "faces/class_mutant7e84.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_deadpool1e08.png"
+        "photo": "faces/portrait_deadpool1e08.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Deadpool (X-Force)", 
         "Short Name": "Deadpool", 
         "classe": "Mutant", 
+        "classe2": "faces/class_mutant7e84.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_deadpool_xforce6c04.png"
+        "photo": "faces/portrait_deadpool_xforce6c04.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Diablo", 
         "Short Name": "Diablo", 
         "classe": "Mystique", 
-        "immunite": {"Poison": ["100% Potency"], "Armor Break": ["Grain of Uru"], "Stun": ["Grain of Uru"]}, 
-        "photo": "faces/portrait_diablo91af.png"
+        "classe2": "faces/class_mystic0b9f.png", 
+        "immunite": {"Poison": ["100% Potency"], "Brise-Armure": ["Grain of Uru"], "Etourdissement": ["Grain of Uru"]}, 
+        "photo": "faces/portrait_diablo91af.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Doctor Doom", 
         "Short Name": "Doctor Doom", 
         "classe": "Mystique", 
-        "immunite": {"Shock": [], "Armor Break": [], "Armor Shatter": [], "Stun": ["Aura & Last Hit of SP1, SP2 or Heavy"]}, 
-        "photo": "faces/portrait_doctordoom1d74.png"
+        "classe2": "faces/class_mystic0b9f.png", 
+        "immunite": {"Décharges": [], "Brise-Armure": [], "Armure Pulverisée": [], "Etourdissement": ["Aura & Last Hit of SP1, SP2 or Heavy"]}, 
+        "photo": "faces/portrait_doctordoom1d74.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Doctor Octopus", 
         "Short Name": "Doctor Octopus", 
         "classe": "Tech", 
+        "classe2": "faces/class_techbdb1.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_doc_ock9f89.png"
+        "photo": "faces/portrait_doc_ock9f89.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Doctor Strange", 
         "Short Name": "Dr. Strange", 
         "classe": "Mystique", 
+        "classe2": "faces/class_mystic0b9f.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_doctor_strange5d43.png"
+        "photo": "faces/portrait_doctor_strange5d43.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Doctor Voodoo", 
         "Short Name": "Doctor Voodoo", 
         "classe": "Mystique", 
+        "classe2": "faces/class_mystic0b9f.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_brother_voodoo5fdd.png"
+        "photo": "faces/portrait_brother_voodoo5fdd.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Domino", 
         "Short Name": "Domino", 
         "classe": "Mutant", 
-        "immunite": {"Bleed": ["50% chance to expire after 1s"]}, 
-        "photo": "faces/portrait_dominoc948.png"
+        "classe2": "faces/class_mutant7e84.png", 
+        "immunite": {"Saignement": ["50% chance to expire after 1s"]}, 
+        "photo": "faces/portrait_dominoc948.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Dormammu", 
         "Short Name": "Dormammu", 
         "classe": "Mystique", 
-        "immunite": {"Bleed": [], "Poison": []}, 
-        "photo": "faces/portrait_dormammucced.png"
+        "classe2": "faces/class_mystic0b9f.png", 
+        "immunite": {"Saignement": [], "Poison": []}, 
+        "photo": "faces/portrait_dormammucced.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Dragon Man", 
         "Short Name": "Dragon Man", 
         "classe": "Mystique", 
-        "immunite": {"Bleed": [], "Poison": [], "Armor Shatter": []}, 
-        "photo": "faces/portrait_dragonman1325.png"
+        "classe2": "faces/class_mystic0b9f.png", 
+        "immunite": {"Saignement": [], "Poison": [], "Armure Pulverisée": []}, 
+        "photo": "faces/portrait_dragonman1325.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Drax", 
         "Short Name": "Drax", 
         "classe": "Cosmique", 
+        "classe2": "faces/class_cosmic2e67.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_drax79d9.png"
+        "photo": "faces/portrait_drax79d9.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Dust", 
         "Short Name": "Dust", 
         "classe": "Mutant", 
-        "immunite": {"Bleed": [], "Poison": [], "Shock": [], "Reversed Controls": ["#Psychic Shielding"]}, 
-        "photo": "faces/portrait_dust6381.png"
+        "classe2": "faces/class_mutant7e84.png", 
+        "immunite": {"Saignement": [], "Poison": [], "Décharges": [], "Contrôles Inversés": ["#Psychic Shielding"]}, 
+        "photo": "faces/portrait_dust6381.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Ebony Maw", 
         "Short Name": "Ebony Maw", 
         "classe": "Mystique", 
+        "classe2": "faces/class_mystic0b9f.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_ebonymaw2e9d.png"
+        "photo": "faces/portrait_ebonymaw2e9d.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Electro", 
         "Short Name": "Electro", 
         "classe": "Science", 
-        "immunite": {"Shock": ["100% Resistance"]}, 
-        "photo": "faces/portrait_electro73db.png"
+        "classe2": "faces/class_chemicalf5fb.png", 
+        "immunite": {"Décharges": ["100% Resistance"]}, 
+        "photo": "faces/portrait_electro73db.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Elektra", 
         "Short Name": "Elektra", 
         "classe": "Virtuose", 
+        "classe2": "faces/class_trainede488.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_elektraddb2.png"
+        "photo": "faces/portrait_elektraddb2.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Elsa Bloodstone", 
         "Short Name": "Elsa Bloodstone", 
         "classe": "Virtuose", 
+        "classe2": "faces/class_trainede488.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_elsabloodstonee4fd.png"
+        "photo": "faces/portrait_elsabloodstonee4fd.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Emma Frost", 
         "Short Name": "Emma Frost", 
         "classe": "Mutant", 
-        "immunite": {"Bleed": ["Diamond Form"], "Poison": ["Diamond Form"], "Incinerate": ["Diamond Form"], "Coldsnap": ["Diamond Form"], "Shock": ["Diamond Form"], "Frostbite": ["Diamond Form"], "Stun": ["Diamond Form"], "Fatigue": ["Diamond Form"], "Exhaustion": ["Diamond Form"], "Concussion": ["Diamond Form"], "Reversed Controls": ["Synergie [Mysterio]"]}, 
-        "photo": "faces/portrait_emmafrost3d6f.png"
+        "classe2": "faces/class_mutant7e84.png", 
+        "immunite": {"Saignement": ["Diamond Form"], "Poison": ["Diamond Form"], "Incinération": ["Diamond Form"], "Vague de Froid": ["Diamond Form"], "Décharges": ["Diamond Form"], "Engelure": ["Diamond Form"], "Etourdissement": ["Diamond Form"], "Fatigue": ["Diamond Form"], "Epuisement": ["Diamond Form"], "Traumatisme": ["Diamond Form"], "Contrôles Inversés": ["Synergie [Mysterio]"]}, 
+        "photo": "faces/portrait_emmafrost3d6f.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Enchantress", 
         "Short Name": "Enchantress", 
         "classe": "Mystique", 
-        "immunite": {"Power Lock": [], "Ability Power Rate Reduction": ["Can't be reduced below 50%"], "Combat Power Rate Reduction": ["Can't be reduced below 50%"], "Reversed Controls": ["SP1 & Haste Spell, ??????"]}, 
-        "photo": "faces/portrait_enchantress0846.png"
+        "classe2": "faces/class_mystic0b9f.png", 
+        "immunite": {"Bloque Pouvoir": [], "Réduction Taux de Pouvoir de Compétence": ["Can't be reduced below 50%"], "Réduction Taux de Pouvoir": ["Can't be reduced below 50%"], "Contrôles Inversés": ["SP1 & Haste Spell, ➡️➡️➡️"]}, 
+        "photo": "faces/portrait_enchantress0846.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Falcon", 
         "Short Name": "Falcon", 
         "classe": "Virtuose", 
+        "classe2": "faces/class_trainede488.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_falcona60c.png"
+        "photo": "faces/portrait_falcona60c.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Falcon (Joaquin Torres)", 
         "Short Name": "Falcon (Joaquin Torres)", 
         "classe": "Science", 
+        "classe2": "faces/class_chemicalf5fb.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_falcon_joaquintorres1a5a.png"
+        "photo": "faces/portrait_falcon_joaquintorres1a5a.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Galan", 
         "Short Name": "Galan", 
         "classe": "Cosmique", 
-        "immunite": {"Fate Seal": [], "Nullify": [], "Power Drain": [], "Power Burn": [], "Power Lock": [], "Special Lock": [], "Stun": ["Dupe & Harvest"], "Bleed": ["Synergie [Purgatory] & Synergie [Mephisto, The Hood, Magik, Dormammu]"]}, 
-        "photo": "faces/portrait_galan801b.png"
+        "classe2": "faces/class_cosmic2e67.png", 
+        "immunite": {"Destin Scellé": [], "Purge": [], "Drain Pouvoir": [], "Brûle Pouvoir": [], "Bloque Pouvoir": [], "Bloque Super-Pouvoir": [], "Etourdissement": ["Dupe & Harvest"], "Saignement": ["Synergie [Purgatory] & Synergie [Mephisto, The Hood, Magik, Dormammu]"]}, 
+        "photo": "faces/portrait_galan801b.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Gambit", 
         "Short Name": "Gambit", 
         "classe": "Mutant", 
-        "immunite": {"Bleed": ["Flak Jacket ? 150% Resistance"]}, 
-        "photo": "faces/portrait_gambit68ef.png"
+        "classe2": "faces/class_mutant7e84.png", 
+        "immunite": {"Saignement": ["Flak Jacket → 150% Resistance"]}, 
+        "photo": "faces/portrait_gambit68ef.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Gamora", 
         "Short Name": "Gamora", 
         "classe": "Cosmique", 
+        "classe2": "faces/class_cosmic2e67.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_gamora35f4.png"
+        "photo": "faces/portrait_gamora35f4.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Gentle", 
         "Short Name": "Gentle", 
         "classe": "Mutant", 
-        "immunite": {"Bleed": [], "Stun": ["While performing Well-Timed Block"]}, 
-        "photo": "faces/portrait_gentle1ae4.png"
+        "classe2": "faces/class_mutant7e84.png", 
+        "immunite": {"Saignement": [], "Etourdissement": ["While performing Well-Timed Block"]}, 
+        "photo": "faces/portrait_gentle1ae4.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Ghost", 
         "Short Name": "Ghost", 
         "classe": "Tech", 
+        "classe2": "faces/class_techbdb1.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_ghost8571.png"
+        "photo": "faces/portrait_ghost8571.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Ghost Rider", 
         "Short Name": "Ghost Rider", 
         "classe": "Mystique", 
-        "immunite": {"Bleed": [], "Incinerate": [], "Degeneration": ["Synergie [America Chavez] ? 25% Resistance"]}, 
-        "photo": "faces/portrait_ghost_rider4ac5.png"
+        "classe2": "faces/class_mystic0b9f.png", 
+        "immunite": {"Saignement": [], "Incinération": [], "Dégénerescence": ["Synergie [America Chavez] → 25% Resistance"]}, 
+        "photo": "faces/portrait_ghost_rider4ac5.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Gladiator", 
         "Short Name": "Gladiator", 
         "classe": "Cosmique", 
-        "immunite": {"Power Drain": [], "Power Burn": [], "Stun": ["20+ Confidence & During Specials"]}, 
-        "photo": "faces/portrait_gladiator76fa.png"
+        "classe2": "faces/class_cosmic2e67.png", 
+        "immunite": {"Drain Pouvoir": [], "Brûle Pouvoir": [], "Etourdissement": ["20+ Confidence & During Specials"]}, 
+        "photo": "faces/portrait_gladiator76fa.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Goldpool", 
         "Short Name": "Goldpool", 
         "classe": "Mutant", 
-        "immunite": {"Bleed": ["20% Resistance", "Synergie [Deadpool, Venompool, Deadpool X-Force, Gwenpool] ? 20% Resistance"]}, 
-        "photo": "faces/portrait_deadpool_gold4f09.png"
+        "classe2": "faces/class_mutant7e84.png", 
+        "immunite": {"Saignement": ["20% Resistance", "Synergie [Deadpool, Venompool, Deadpool X-Force, Gwenpool] → 20% Resistance"]}, 
+        "photo": "faces/portrait_deadpool_gold4f09.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Gorr", 
         "Short Name": "Gorr", 
         "classe": "Cosmique", 
-        "immunite": {"Heal Block": []}, 
-        "photo": "faces/portrait_gorr8e07.png"
+        "classe2": "faces/class_cosmic2e67.png", 
+        "immunite": {"Bloque Soin": []}, 
+        "photo": "faces/portrait_gorr8e07.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Green Goblin", 
         "Short Name": "Green Goblin", 
         "classe": "Tech", 
+        "classe2": "faces/class_techbdb1.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_green_goblin805b.png"
+        "photo": "faces/portrait_green_goblin805b.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Groot", 
         "Short Name": "Groot", 
         "classe": "Cosmique", 
-        "immunite": {"Bleed": []}, 
-        "photo": "faces/portrait_groot9c3c.png"
+        "classe2": "faces/class_cosmic2e67.png", 
+        "immunite": {"Saignement": []}, 
+        "photo": "faces/portrait_groot9c3c.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Guardian", 
         "Short Name": "Guardian", 
         "classe": "Tech", 
-        "immunite": {"Bleed": ["Dupe ? 25-80% Resistance"]}, 
-        "photo": "faces/portrait_guardian999d.png"
+        "classe2": "faces/class_techbdb1.png", 
+        "immunite": {"Saignement": ["Dupe → 25-80% Resistance"]}, 
+        "photo": "faces/portrait_guardian999d.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Guillotine", 
         "Short Name": "Guillotine", 
         "classe": "Mystique", 
+        "classe2": "faces/class_mystic0b9f.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_guillotineafcb.png"
+        "photo": "faces/portrait_guillotineafcb.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Guillotine (Deathless)", 
         "Short Name": "Guillotine", 
         "classe": "Mystique", 
+        "classe2": "faces/class_mystic0b9f.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_guillotine_blackorder1462.png"
+        "photo": "faces/portrait_guillotine_blackorder1462.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Guillotine 2099", 
         "Short Name": "Guillotine 2099", 
         "classe": "Tech", 
-        "immunite": {"Bleed": [], "Poison": []}, 
-        "photo": "faces/portrait_guillotine_20999f49.png"
+        "classe2": "faces/class_techbdb1.png", 
+        "immunite": {"Saignement": [], "Poison": []}, 
+        "photo": "faces/portrait_guillotine_20999f49.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Gwenpool", 
         "Short Name": "Gwenpool", 
         "classe": "Virtuose", 
+        "classe2": "faces/class_trainede488.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_gwenpoolde76.png"
+        "photo": "faces/portrait_gwenpoolde76.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Havok", 
         "Short Name": "Havok", 
         "classe": "Mutant", 
-        "immunite": {"Incinerate": []}, 
-        "photo": "faces/portrait_havok53cc.png"
+        "classe2": "faces/class_mutant7e84.png", 
+        "immunite": {"Incinération": []}, 
+        "photo": "faces/portrait_havok53cc.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Hawkeye", 
         "Short Name": "Hawkeye", 
         "classe": "Virtuose", 
+        "classe2": "faces/class_trainede488.png", 
         "immunite": {"Poison": ["Synergie [Nick Fury, Black Widow, Black Widow Deadly Origin, Quake] & Against Non-Mutants"]}, 
-        "photo": "faces/portrait_hawkeye1b72.png"
+        "photo": "faces/portrait_hawkeye1b72.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Heimdall", 
         "Short Name": "Heimdall", 
         "classe": "Cosmique", 
+        "classe2": "faces/class_cosmic2e67.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_heimdall89cb.png"
+        "photo": "faces/portrait_heimdall89cb.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Hela", 
         "Short Name": "Hela", 
         "classe": "Cosmique", 
+        "classe2": "faces/class_cosmic2e67.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_hela48f8.png"
+        "photo": "faces/portrait_hela48f8.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Hercules", 
         "Short Name": "Hercules", 
         "classe": "Cosmique", 
-        "immunite": {"Stun": ["1+ Strength"], "Poison": ["15% Resistance"], "Bleed": ["50% Resistance"]}, 
-        "photo": "faces/portrait_hercules1005.png"
+        "classe2": "faces/class_cosmic2e67.png", 
+        "immunite": {"Etourdissement": ["1+ Strength"], "Poison": ["15% Resistance"], "Saignement": ["50% Resistance"]}, 
+        "photo": "faces/portrait_hercules1005.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Hit-Monkey", 
         "Short Name": "Hit-Monkey", 
         "classe": "Virtuose", 
+        "classe2": "faces/class_trainede488.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_hitmonkey2a41.png"
+        "photo": "faces/portrait_hitmonkey2a41.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Howard The Duck", 
         "Short Name": "Howard The Duck", 
         "classe": "Tech", 
-        "immunite": {"Bleed": []}, 
-        "photo": "faces/portrait_howardmech1bb6.png"
+        "classe2": "faces/class_techbdb1.png", 
+        "immunite": {"Saignement": []}, 
+        "photo": "faces/portrait_howardmech1bb6.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Hulk", 
         "Short Name": "Hulk", 
         "classe": "Science", 
-        "immunite": {"Poison": [], "Degeneration": ["0-90% Resistance based on missing Health"], "Nullify": ["Synergie [Hulkbuster]"], "Fate Seal": ["Synergie [Hulkbuster]"], "Stagger": ["Synergie [Hulkbuster]"], "Buffs": ["Synergie [Silver Surfer]"], "Reversed Controls": ["Synergie [The Overseer]"]}, 
-        "photo": "faces/portrait_hulk818f.png"
+        "classe2": "faces/class_chemicalf5fb.png", 
+        "immunite": {"Poison": [], "Dégénerescence": ["0-90% Resistance based on missing Health"], "Purge": ["Synergie [Hulkbuster]"], "Destin Scellé": ["Synergie [Hulkbuster]"], "Chancellement": ["Synergie [Hulkbuster]"], "Buffs": ["Synergie [Silver Surfer]"], "Contrôles Inversés": ["Synergie [The Overseer]"]}, 
+        "photo": "faces/portrait_hulk818f.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Hulk (Immortal)", 
         "Short Name": "Hulk", 
         "classe": "Science", 
-        "immunite": {"Poison": [], "Regeneration Rate Modification": [], "Reversed Controls": ["Synergie [The Overseer]"]}, 
-        "photo": "faces/portrait_hulk_immortal96ae.png"
+        "classe2": "faces/class_chemicalf5fb.png", 
+        "immunite": {"Poison": [], "Modification du Taux de Soin": [], "Contrôles Inversés": ["Synergie [The Overseer]"]}, 
+        "photo": "faces/portrait_hulk_immortal96ae.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Hulk (Ragnarok)", 
         "Short Name": "Hulk", 
         "classe": "Science", 
-        "immunite": {"Poison": [], "Reversed Controls": ["Synergie [The Overseer]"]}, 
-        "photo": "faces/portrait_hulk_ragnarok2273.png"
+        "classe2": "faces/class_chemicalf5fb.png", 
+        "immunite": {"Poison": [], "Contrôles Inversés": ["Synergie [The Overseer]"]}, 
+        "photo": "faces/portrait_hulk_ragnarok2273.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Hulkbuster", 
         "Short Name": "Hulkbuster", 
         "classe": "Tech", 
-        "immunite": {"Bleed": ["25% Resistance per Armor Up"], "Poison": ["25% Resistance per Armor Up"]}, 
-        "photo": "faces/portrait_hulkbuster_movied9db.png"
+        "classe2": "faces/class_techbdb1.png", 
+        "immunite": {"Saignement": ["25% Resistance per Armor Up"], "Poison": ["25% Resistance per Armor Up"]}, 
+        "photo": "faces/portrait_hulkbuster_movied9db.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Hulkling", 
         "Short Name": "Hulkling", 
         "classe": "Cosmique", 
-        "immunite": {"Poison": [], "Shock": [], "Power Drain": [], "Power Steal": [], "Power Burn": [], "Heal Block": ["-2s Duration"], "Stun": ["Synergie [Wiccan] & 3+ Pierce Buffs"]}, 
-        "photo": "faces/portrait_hulkling3e7b.png"
+        "classe2": "faces/class_cosmic2e67.png", 
+        "immunite": {"Poison": [], "Décharges": [], "Drain Pouvoir": [], "Vol Pouvoir": [], "Brûle Pouvoir": [], "Bloque Soin": ["-2s Duration"], "Etourdissement": ["Synergie [Wiccan] & 3+ Pierce Buffs"]}, 
+        "photo": "faces/portrait_hulkling3e7b.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Human Torch", 
         "Short Name": "Human Torch", 
         "classe": "Science", 
-        "immunite": {"Incinerate": [], "Coldsnap": [], "Frostbite": []}, 
-        "photo": "faces/portrait_johnnystormb18a.png"
+        "classe2": "faces/class_chemicalf5fb.png", 
+        "immunite": {"Incinération": [], "Vague de Froid": [], "Engelure": []}, 
+        "photo": "faces/portrait_johnnystormb18a.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Hyperion", 
         "Short Name": "Hyperion", 
         "classe": "Cosmique", 
+        "classe2": "faces/class_cosmic2e67.png", 
         "immunite": {"Poison": []}, 
-        "photo": "faces/portrait_hyperion6984.png"
+        "photo": "faces/portrait_hyperion6984.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Iceman", 
         "Short Name": "Iceman", 
         "classe": "Mutant", 
-        "immunite": {"Bleed": [], "Poison": [], "Incinerate": [], "Nova Flame": [], "Coldsnap": [], "Frostbite": []}, 
-        "photo": "faces/portrait_iceman8799.png"
+        "classe2": "faces/class_mutant7e84.png", 
+        "immunite": {"Saignement": [], "Poison": [], "Incinération": [], "Flammes Nova": [], "Vague de Froid": [], "Engelure": []}, 
+        "photo": "faces/portrait_iceman8799.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Ikaris", 
         "Short Name": "Ikaris", 
         "classe": "Cosmique", 
-        "immunite": {"Incinerate": [], "Shock": [], "Poison": ["20% Resistance"]}, 
-        "photo": "faces/portrait_ikaris400e.png"
+        "classe2": "faces/class_cosmic2e67.png", 
+        "immunite": {"Incinération": [], "Décharges": [], "Poison": ["20% Resistance"]}, 
+        "photo": "faces/portrait_ikaris400e.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Invisible Woman", 
         "Short Name": "Invisible Woman", 
         "classe": "Science", 
+        "classe2": "faces/class_chemicalf5fb.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_invisiblewoman04d3.png"
+        "photo": "faces/portrait_invisiblewoman04d3.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Iron Fist", 
         "Short Name": "Iron Fist", 
         "classe": "Mystique", 
+        "classe2": "faces/class_mystic0b9f.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_iron_fistc14f.png"
+        "photo": "faces/portrait_iron_fistc14f.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Iron Fist (Immortal)", 
         "Short Name": "Iron Fist", 
         "classe": "Mystique", 
+        "classe2": "faces/class_mystic0b9f.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_iron_fist_whiteae12.png"
+        "photo": "faces/portrait_iron_fist_whiteae12.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Iron Man", 
         "Short Name": "Iron Man", 
         "classe": "Tech", 
-        "immunite": {"Coldsnap": ["Armor Up"], "Frostbite": ["Armor Up"], "Incinerate": ["Armor Up"], "Nullify": ["Only Personal Armor Ups"], "Stagger": ["Only Personal Armor Ups"]}, 
-        "photo": "faces/portrait_iron_man8e01.png"
+        "classe2": "faces/class_techbdb1.png", 
+        "immunite": {"Vague de Froid": ["Armor Up"], "Engelure": ["Armor Up"], "Incinération": ["Armor Up"], "Purge": ["Only Personal Armor Ups"], "Chancellement": ["Only Personal Armor Ups"]}, 
+        "photo": "faces/portrait_iron_man8e01.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Iron Man (Infamous)", 
         "Short Name": "Infamous Iron Man", 
         "classe": "Tech", 
-        "immunite": {"Shock": ["Armor Up"], "Incinerate": ["Armor Up"], "Stun": ["Aura & Last Hit of SP1, SP2 or Heavy"]}, 
-        "photo": "faces/portrait_ironman_infamous0cd3.png"
+        "classe2": "faces/class_techbdb1.png", 
+        "immunite": {"Décharges": ["Armor Up"], "Incinération": ["Armor Up"], "Etourdissement": ["Aura & Last Hit of SP1, SP2 or Heavy"]}, 
+        "photo": "faces/portrait_ironman_infamous0cd3.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Iron Man (Infinity War)", 
         "Short Name": "Iron Man", 
         "classe": "Tech", 
-        "immunite": {"Bleed": ["Molecular Armor"], "Coldsnap": ["Molecular Armor"], "Power Drain": ["18% Resistance per Armor"], "Power Burn": ["18% Resistance per Armor"], "Power Steal": ["18% Resistance per Armor"]}, 
-        "photo": "faces/portrait_ironman_movie0fb3.png"
+        "classe2": "faces/class_techbdb1.png", 
+        "immunite": {"Saignement": ["Molecular Armor"], "Vague de Froid": ["Molecular Armor"], "Drain Pouvoir": ["18% Resistance per Armor"], "Brûle Pouvoir": ["18% Resistance per Armor"], "Vol Pouvoir": ["18% Resistance per Armor"]}, 
+        "photo": "faces/portrait_ironman_movie0fb3.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Iron Patriot", 
         "Short Name": "Iron Patriot", 
         "classe": "Tech", 
+        "classe2": "faces/class_techbdb1.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_ironpatriot9e90.png"
+        "photo": "faces/portrait_ironpatriot9e90.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Ironheart", 
         "Short Name": "Ironheart", 
         "classe": "Tech", 
-        "immunite": {"Reversed Controls": ["Armor Up"], "Incinerate": ["Armor Up"], "Coldsnap": ["Armor Up"], "Frostbite": ["Armor Up"], "Ability Accuracy Reduction": ["Armor Up & Against Mutants ? Abilities are unaffected"]}, 
-        "photo": "faces/portrait_ironheart9851.png"
+        "classe2": "faces/class_techbdb1.png", 
+        "immunite": {"Contrôles Inversés": ["Armor Up"], "Incinération": ["Armor Up"], "Vague de Froid": ["Armor Up"], "Engelure": ["Armor Up"], "Réduction Précision Compétence": ["Armor Up & Against Mutants → Abilities are unaffected"]}, 
+        "photo": "faces/portrait_ironheart9851.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Isophyne", 
         "Short Name": "Isophyne", 
         "classe": "Mystique", 
-        "immunite": {"Bleed": [], "Coldsnap": [], "Frostbite": []}, 
-        "photo": "faces/portrait_isophyne8b9e.png"
+        "classe2": "faces/class_mystic0b9f.png", 
+        "immunite": {"Saignement": [], "Vague de Froid": [], "Engelure": []}, 
+        "photo": "faces/portrait_isophyne8b9e.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Jabari Panther", 
         "Short Name": "Jabari Panther", 
         "classe": "Virtuose", 
-        "immunite": {"Stun": ["Hunt Active"]}, 
-        "photo": "faces/portrait_black_panther_realm3815.png"
+        "classe2": "faces/class_trainede488.png", 
+        "immunite": {"Etourdissement": ["Hunt Active"]}, 
+        "photo": "faces/portrait_black_panther_realm3815.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Jack O'Lantern", 
         "Short Name": "Jack O'Lantern", 
         "classe": "Tech", 
-        "immunite": {"Reversed Controls": [], "Incinerate": []}, 
-        "photo": "faces/portrait_jackolanterne483.png"
+        "classe2": "faces/class_techbdb1.png", 
+        "immunite": {"Contrôles Inversés": [], "Incinération": []}, 
+        "photo": "faces/portrait_jackolanterne483.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Jessica Jones", 
         "Short Name": "Jessica Jones", 
         "classe": "Science", 
-        "immunite": {"Reversed Controls": ["#Psychic Shielding"]}, 
-        "photo": "faces/portrait_jessica_jones7bd9.png"
+        "classe2": "faces/class_chemicalf5fb.png", 
+        "immunite": {"Contrôles Inversés": ["#Psychic Shielding"]}, 
+        "photo": "faces/portrait_jessica_jones7bd9.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Joe Fixit", 
         "Short Name": "Joe Fixit", 
         "classe": "Science", 
-        "immunite": {"Poison": [], "Reversed Controls": ["Synergie [The Overseer]"]}, 
-        "photo": "faces/portrait_joefixit0659.png"
+        "classe2": "faces/class_chemicalf5fb.png", 
+        "immunite": {"Poison": [], "Contrôles Inversés": ["Synergie [The Overseer]"]}, 
+        "photo": "faces/portrait_joefixit0659.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Jubilee", 
         "Short Name": "Jubilee", 
         "classe": "Mutant", 
+        "classe2": "faces/class_mutant7e84.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_jubilee94c3.png"
+        "photo": "faces/portrait_jubilee94c3.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Juggernaut", 
         "Short Name": "Juggernaut", 
         "classe": "Mystique", 
-        "immunite": {"Reversed Controls": ["Crimson Gem active", "#Psychic Shielding"], "Stun": ["20% Ability Reduction per Unstoppable"]}, 
-        "photo": "faces/portrait_juggernautd33f.png"
+        "classe2": "faces/class_mystic0b9f.png", 
+        "immunite": {"Contrôles Inversés": ["Crimson Gem active", "#Psychic Shielding"], "Etourdissement": ["20% Ability Reduction per Unstoppable"]}, 
+        "photo": "faces/portrait_juggernautd33f.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Kang", 
         "Short Name": "Kang", 
         "classe": "Tech", 
+        "classe2": "faces/class_techbdb1.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_kangb682.png"
+        "photo": "faces/portrait_kangb682.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Karnak", 
         "Short Name": "Karnak", 
         "classe": "Virtuose", 
+        "classe2": "faces/class_trainede488.png", 
         "immunite": {"Poison": ["65% Resistance"]}, 
-        "photo": "faces/portrait_karnak5c60.png"
+        "photo": "faces/portrait_karnak5c60.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Kate Bishop", 
         "Short Name": "Kate Bishop", 
         "classe": "Virtuose", 
-        "immunite": {"Stun": ["Attacked while Stunned ? Purify Stun"]}, 
-        "photo": "faces/portrait_katebishop3dc4.png"
+        "classe2": "faces/class_trainede488.png", 
+        "immunite": {"Etourdissement": ["Attacked while Etourdissementned → Purify Etourdissement"]}, 
+        "photo": "faces/portrait_katebishop3dc4.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Killmonger", 
         "Short Name": "Killmonger", 
         "classe": "Virtuose", 
+        "classe2": "faces/class_trainede488.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_killmonger029c.png"
+        "photo": "faces/portrait_killmonger029c.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Kindred", 
         "Short Name": "Kindred", 
         "classe": "Mystique", 
-        "immunite": {"Poison": [], "Incinerate": [], "Heal Block": [], "Infuriate": [], "Intimidate": [], "Stun": ["Dread Aura"]}, 
-        "photo": "faces/portrait_kindred44f0.png"
+        "classe2": "faces/class_mystic0b9f.png", 
+        "immunite": {"Poison": [], "Incinération": [], "Bloque Soin": [], "Enrager": [], "Intimidation": [], "Etourdissement": ["Dread Aura"]}, 
+        "photo": "faces/portrait_kindred44f0.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "King Groot", 
         "Short Name": "King Groot", 
         "classe": "Cosmique", 
-        "immunite": {"Bleed": [], "Power Drain": [], "Power Burn": []}, 
-        "photo": "faces/portrait_groot_king954b.png"
+        "classe2": "faces/class_cosmic2e67.png", 
+        "immunite": {"Saignement": [], "Drain Pouvoir": [], "Brûle Pouvoir": []}, 
+        "photo": "faces/portrait_groot_king954b.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "King Groot (Deathless)", 
         "Short Name": "King Groot", 
         "classe": "Cosmique", 
-        "immunite": {"Bleed": [], "Power Drain": [], "Power Burn": []}, 
-        "photo": "faces/portrait_groot_king_blackorderd43a.png"
+        "classe2": "faces/class_cosmic2e67.png", 
+        "immunite": {"Saignement": [], "Drain Pouvoir": [], "Brûle Pouvoir": []}, 
+        "photo": "faces/portrait_groot_king_blackorderd43a.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Kingpin", 
         "Short Name": "Kingpin", 
         "classe": "Virtuose", 
-        "immunite": {"Regeneration Rate Modification": ["Except Poison"]}, 
-        "photo": "faces/portrait_kingpin927d.png"
+        "classe2": "faces/class_trainede488.png", 
+        "immunite": {"Modification du Taux de Soin": ["Except Poison"]}, 
+        "photo": "faces/portrait_kingpin927d.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Kitty Pryde", 
         "Short Name": "Kitty Pryde", 
         "classe": "Mutant", 
-        "immunite": {"Incinerate": [], "Stun": ["Phase"]}, 
-        "photo": "faces/portrait_kittypryde9487.png"
+        "classe2": "faces/class_mutant7e84.png", 
+        "immunite": {"Incinération": [], "Etourdissement": ["Phase"]}, 
+        "photo": "faces/portrait_kittypryde9487.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Knull", 
         "Short Name": "Knull", 
         "classe": "Cosmique", 
-        "immunite": {"Bleed": ["60% Resistance"], "Poison": ["60% Resistance"], "Degeneration": ["40% Resistance"]}, 
-        "photo": "faces/portrait_knull2aac.png"
+        "classe2": "faces/class_cosmic2e67.png", 
+        "immunite": {"Saignement": ["60% Resistance"], "Poison": ["60% Resistance"], "Dégénerescence": ["40% Resistance"]}, 
+        "photo": "faces/portrait_knull2aac.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Korg", 
         "Short Name": "Korg", 
         "classe": "Virtuose", 
-        "immunite": {"Bleed": [], "Shock": []}, 
-        "photo": "faces/portrait_korg_movie5364.png"
+        "classe2": "faces/class_trainede488.png", 
+        "immunite": {"Saignement": [], "Décharges": []}, 
+        "photo": "faces/portrait_korg_movie5364.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Kraven", 
         "Short Name": "Kraven", 
         "classe": "Virtuose", 
-        "immunite": {"Bleed": ["Synergie [Arcade]"]}, 
-        "photo": "faces/portrait_kraven267f.png"
+        "classe2": "faces/class_trainede488.png", 
+        "immunite": {"Saignement": ["Synergie [Arcade]"]}, 
+        "photo": "faces/portrait_kraven267f.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Kushala", 
         "Short Name": "Kushala", 
         "classe": "Mystique", 
-        "immunite": {"Bleed": [], "Incinerate": []}, 
-        "photo": "faces/portrait_kushala5af3.png"
+        "classe2": "faces/class_mystic0b9f.png", 
+        "immunite": {"Saignement": [], "Incinération": []}, 
+        "photo": "faces/portrait_kushala5af3.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Lady Deathstrike", 
         "Short Name": "Lady Deathstrike", 
         "classe": "Tech", 
-        "immunite": {"Bleed": ["90% Resistance"], "Poison": ["90% Resistance"], "Ability Accuracy Reduction": ["Against Mutants"], "Armor Break": ["Nanorobots Regenerator"], "Rupture": ["Nanorobots Regenerator"], "Regeneration Rate Modification": [], "Heal Block": ["Immediately Removed"]}, 
-        "photo": "faces/portrait_ladydeathstrikea3fb.png"
+        "classe2": "faces/class_techbdb1.png", 
+        "immunite": {"Saignement": ["90% Resistance"], "Poison": ["90% Resistance"], "Réduction Précision Compétence": ["Against Mutants"], "Brise-Armure": ["Nanorobots Regenerator"], "Rupture": ["Nanorobots Regenerator"], "Modification du Taux de Soin": [], "Bloque Soin": ["Immediately Removed"]}, 
+        "photo": "faces/portrait_ladydeathstrikea3fb.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Loki", 
         "Short Name": "Loki", 
         "classe": "Mystique", 
+        "classe2": "faces/class_mystic0b9f.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_lokia154.png"
+        "photo": "faces/portrait_lokia154.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Longshot", 
         "Short Name": "Longshot", 
         "classe": "Mystique", 
+        "classe2": "faces/class_mystic0b9f.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_longshot5568.png"
+        "photo": "faces/portrait_longshot5568.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Luke Cage", 
         "Short Name": "Luke Cage", 
         "classe": "Science", 
-        "immunite": {"Bleed": []}, 
-        "photo": "faces/portrait_luke_cage5d45.png"
+        "classe2": "faces/class_chemicalf5fb.png", 
+        "immunite": {"Saignement": []}, 
+        "photo": "faces/portrait_luke_cage5d45.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "M.O.D.O.K.", 
         "Short Name": "M.O.D.O.K.", 
         "classe": "Science", 
-        "immunite": {"Poison": ["Synergie [Abomination] ? 50% Resistance"]}, 
-        "photo": "faces/portrait_modok01d4.png"
+        "classe2": "faces/class_chemicalf5fb.png", 
+        "immunite": {"Poison": ["Synergie [Abomination] → 50% Resistance"]}, 
+        "photo": "faces/portrait_modok01d4.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Maestro", 
         "Short Name": "Maestro", 
         "classe": "Cosmique", 
-        "immunite": {"Poison": [], "Shock": [], "Incinerate": []}, 
-        "photo": "faces/portrait_maestrob2a7.png"
+        "classe2": "faces/class_cosmic2e67.png", 
+        "immunite": {"Poison": [], "Décharges": [], "Incinération": []}, 
+        "photo": "faces/portrait_maestrob2a7.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Magik", 
         "Short Name": "Magik", 
         "classe": "Mystique", 
-        "immunite": {"Bleed": ["Synergie [Purgatory]"]}, 
-        "photo": "faces/portrait_magik9f6e.png"
+        "classe2": "faces/class_mystic0b9f.png", 
+        "immunite": {"Saignement": ["Synergie [Purgatory]"]}, 
+        "photo": "faces/portrait_magik9f6e.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Magneto", 
         "Short Name": "Magneto", 
         "classe": "Mutant", 
-        "immunite": {"Bleed": ["90% Resistance"], "Shock": ["90% Resistance"], "Reversed Controls": ["#Psychic Shielding"]}, 
-        "photo": "faces/portrait_magneto8425.png"
+        "classe2": "faces/class_mutant7e84.png", 
+        "immunite": {"Saignement": ["90% Resistance"], "Décharges": ["90% Resistance"], "Contrôles Inversés": ["#Psychic Shielding"]}, 
+        "photo": "faces/portrait_magneto8425.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Magneto (House Of X)", 
         "Short Name": "Magneto", 
         "classe": "Mutant", 
-        "immunite": {"Bleed": [], "Reversed Controls": ["#Psychic Shielding"]}, 
-        "photo": "faces/portrait_magneto_whiteb54e.png"
+        "classe2": "faces/class_mutant7e84.png", 
+        "immunite": {"Saignement": [], "Contrôles Inversés": ["#Psychic Shielding"]}, 
+        "photo": "faces/portrait_magneto_whiteb54e.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Man-Thing", 
         "Short Name": "Man-Thing", 
         "classe": "Mystique", 
-        "immunite": {"Bleed": [], "Armor Break": [], "Armor Shatter": []}, 
-        "photo": "faces/portrait_manthinge328.png"
+        "classe2": "faces/class_mystic0b9f.png", 
+        "immunite": {"Saignement": [], "Brise-Armure": [], "Armure Pulverisée": []}, 
+        "photo": "faces/portrait_manthinge328.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Mangog", 
         "Short Name": "Mangog", 
         "classe": "Mystique", 
-        "immunite": {"Bleed": [], "Armor Break": [], "Shock": ["SP1 & Enraged"], "Incinerate": ["SP1 & Enraged"], "Coldsnap": ["SP1 & Enraged"], "Frostbite": ["SP1 & Enraged"], "Nullify": ["Synergie [Odin]"]}, 
-        "photo": "faces/portrait_mangog61a6.png"
+        "classe2": "faces/class_mystic0b9f.png", 
+        "immunite": {"Saignement": [], "Brise-Armure": [], "Décharges": ["SP1 & Enraged"], "Incinération": ["SP1 & Enraged"], "Vague de Froid": ["SP1 & Enraged"], "Engelure": ["SP1 & Enraged"], "Purge": ["Synergie [Odin]"]}, 
+        "photo": "faces/portrait_mangog61a6.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Mantis", 
         "Short Name": "Mantis", 
         "classe": "Virtuose", 
+        "classe2": "faces/class_trainede488.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_mantise8f7.png"
+        "photo": "faces/portrait_mantise8f7.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Masacre", 
         "Short Name": "Masacre", 
         "classe": "Virtuose", 
+        "classe2": "faces/class_trainede488.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_masacrec870.png"
+        "photo": "faces/portrait_masacrec870.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Medusa", 
         "Short Name": "Medusa", 
         "classe": "Cosmique", 
+        "classe2": "faces/class_cosmic2e67.png", 
         "immunite": {"Poison": []}, 
-        "photo": "faces/portrait_medusa585e.png"
+        "photo": "faces/portrait_medusa585e.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Mephisto", 
         "Short Name": "Mephisto", 
         "classe": "Mystique", 
-        "immunite": {"Poison": [], "Incinerate": [], "Coldsnap": [], "Frostbite": [], "Ability Accuracy Reduction": ["Passive"], "Bleed": ["Synergie [Purgatory]"]}, 
-        "photo": "faces/portrait_mephisto4bc2.png"
+        "classe2": "faces/class_mystic0b9f.png", 
+        "immunite": {"Poison": [], "Incinération": [], "Vague de Froid": [], "Engelure": [], "Réduction Précision Compétence": ["Passive"], "Saignement": ["Synergie [Purgatory]"]}, 
+        "photo": "faces/portrait_mephisto4bc2.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Mister Fantastic", 
         "Short Name": "Mister Fantastic", 
         "classe": "Science", 
+        "classe2": "faces/class_chemicalf5fb.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_mrfantastic38db.png"
+        "photo": "faces/portrait_mrfantastic38db.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Mister Negative", 
         "Short Name": "Mister Negative", 
         "classe": "Science", 
-        "immunite": {"Nullify": [], "Fate Seal": [], "Stagger": [], "Degeneration": ["40-100% Resistance"]}, 
-        "photo": "faces/portrait_misternegative7bdb.png"
+        "classe2": "faces/class_chemicalf5fb.png", 
+        "immunite": {"Purge": [], "Destin Scellé": [], "Chancellement": [], "Dégénerescence": ["40-100% Resistance"]}, 
+        "photo": "faces/portrait_misternegative7bdb.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Mister Sinister", 
         "Short Name": "Mister Sinister", 
         "classe": "Mutant", 
-        "immunite": {"Bleed": ["100% Resistance"], "Taunt": [], "Reversed Controls": ["#Psychic Shielding"]}, 
-        "photo": "faces/portrait_mistersinister537f.png"
+        "classe2": "faces/class_mutant7e84.png", 
+        "immunite": {"Saignement": ["100% Resistance"], "Provocation": [], "Contrôles Inversés": ["#Psychic Shielding"]}, 
+        "photo": "faces/portrait_mistersinister537f.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Misty Knight", 
         "Short Name": "Misty Knight", 
         "classe": "Virtuose", 
+        "classe2": "faces/class_trainede488.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_mistyknight9f2a.png"
+        "photo": "faces/portrait_mistyknight9f2a.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Mojo", 
         "Short Name": "Mojo", 
         "classe": "Mystique", 
+        "classe2": "faces/class_mystic0b9f.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_mojo5991.png"
+        "photo": "faces/portrait_mojo5991.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Mole Man", 
         "Short Name": "Mole Man", 
         "classe": "Virtuose", 
-        "immunite": {"Shock": []}, 
-        "photo": "faces/portrait_moleman31d4.png"
+        "classe2": "faces/class_trainede488.png", 
+        "immunite": {"Décharges": []}, 
+        "photo": "faces/portrait_moleman31d4.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Moon Knight", 
         "Short Name": "Moon Knight", 
         "classe": "Virtuose", 
+        "classe2": "faces/class_trainede488.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_moonknightb194.png"
+        "photo": "faces/portrait_moonknightb194.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Moondragon", 
         "Short Name": "Moondragon", 
         "classe": "Virtuose", 
-        "immunite": {"Reversed Controls": [], "Bleed": ["30-80% Resistance"], "Power Sting": ["30-80% Resistance"], "Degeneration": ["30-80% Resistance"], "Poison": ["30-80% Resistance"]}, 
-        "photo": "faces/portrait_moondragon87ea.png"
+        "classe2": "faces/class_trainede488.png", 
+        "immunite": {"Contrôles Inversés": [], "Saignement": ["30-80% Resistance"], "Dards Puissants": ["30-80% Resistance"], "Dégénerescence": ["30-80% Resistance"], "Poison": ["30-80% Resistance"]}, 
+        "photo": "faces/portrait_moondragon87ea.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Morbius", 
         "Short Name": "Morbius", 
         "classe": "Science", 
+        "classe2": "faces/class_chemicalf5fb.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_morbius92c5.png"
+        "photo": "faces/portrait_morbius92c5.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Mordo", 
         "Short Name": "Mordo", 
         "classe": "Mystique", 
-        "immunite": {"Ability Accuracy Reduction": ["Passive"], "Nullify": ["Synergie [Sorcerer Supreme] & Against Mystique"], "Fate Seal": ["Synergie [Sorcerer Supreme] & Against Mystique"]}, 
-        "photo": "faces/portrait_karl_mordoec34.png"
+        "classe2": "faces/class_mystic0b9f.png", 
+        "immunite": {"Réduction Précision Compétence": ["Passive"], "Purge": ["Synergie [Sorcerer Supreme] & Against Mystique"], "Destin Scellé": ["Synergie [Sorcerer Supreme] & Against Mystique"]}, 
+        "photo": "faces/portrait_karl_mordoec34.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Morningstar", 
         "Short Name": "Morningstar", 
         "classe": "Mystique", 
-        "immunite": {"Bleed": []}, 
-        "photo": "faces/portrait_morningstarcef7.png"
+        "classe2": "faces/class_mystic0b9f.png", 
+        "immunite": {"Saignement": []}, 
+        "photo": "faces/portrait_morningstarcef7.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Ms. Marvel", 
         "Short Name": "Ms. Marvel", 
         "classe": "Cosmique", 
+        "classe2": "faces/class_cosmic2e67.png", 
         "immunite": {"Poison": []}, 
-        "photo": "faces/portrait_msmarveldd5b.png"
+        "photo": "faces/portrait_msmarveldd5b.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Ms. Marvel (Kamala Khan)", 
         "Short Name": "Ms. Marvel", 
         "classe": "Cosmique", 
+        "classe2": "faces/class_cosmic2e67.png", 
         "immunite": {"Poison": []}, 
-        "photo": "faces/portrait_msmarvel_kamala1035.png"
+        "photo": "faces/portrait_msmarvel_kamala1035.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Mysterio", 
         "Short Name": "Mysterio", 
         "classe": "Tech", 
-        "immunite": {"Poison": ["Helmet"], "Ability Accuracy Reduction": ["Helmet"], "Reversed Controls": ["Synergie [Emma Frost]"]}, 
-        "photo": "faces/portrait_mysterio584b.png"
+        "classe2": "faces/class_techbdb1.png", 
+        "immunite": {"Poison": ["Helmet"], "Réduction Précision Compétence": ["Helmet"], "Contrôles Inversés": ["Synergie [Emma Frost]"]}, 
+        "photo": "faces/portrait_mysterio584b.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Namor", 
         "Short Name": "Namor", 
         "classe": "Mutant", 
+        "classe2": "faces/class_mutant7e84.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_namor3930.png"
+        "photo": "faces/portrait_namor3930.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Nebula", 
         "Short Name": "Nebula", 
         "classe": "Tech", 
-        "immunite": {"Bleed": [], "Poison": [], "Shock": []}, 
-        "photo": "faces/portrait_nebulaa68d.png"
+        "classe2": "faces/class_techbdb1.png", 
+        "immunite": {"Saignement": [], "Poison": [], "Décharges": []}, 
+        "photo": "faces/portrait_nebulaa68d.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Negasonic Teenage Warhead", 
         "Short Name": "Negasonic Teenage", 
         "classe": "Mutant", 
-        "immunite": {"Bleed Ability Accuracy Reduction": ["Against Virtuose"], "Evade Ability Accuracy Reduction": ["Against Virtuose"], "True Effect Ability Accuracy Reduction": ["Against Virtuose"]}, 
-        "photo": "faces/portrait_negasonicteenagewarhead343b.png"
+        "classe2": "faces/class_mutant7e84.png", 
+        "immunite": {"Saignement ": ["Réduction Précision Compétence Against Virtuose"], "Evade Réduction Précision Compétence": ["Against Virtuose"], "True Effect Réduction Précision Compétence": ["Against Virtuose"]}, 
+        "photo": "faces/portrait_negasonicteenagewarhead343b.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Nick Fury", 
         "Short Name": "Nick Fury", 
         "classe": "Virtuose", 
-        "immunite": {"Stun": ["Dupe ? Second Life", "Hitting into Auto-Block"]}, 
-        "photo": "faces/portrait_nickfury6da7.png"
+        "classe2": "faces/class_trainede488.png", 
+        "immunite": {"Etourdissement": ["Dupe → Second Life", "Hitting into Auto-Block"]}, 
+        "photo": "faces/portrait_nickfury6da7.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Night Thrasher", 
         "Short Name": "Night Thrasher", 
         "classe": "Virtuose", 
-        "immunite": {"Incinerate": []}, 
-        "photo": "faces/portrait_nightthrasherdc99.png"
+        "classe2": "faces/class_trainede488.png", 
+        "immunite": {"Incinération": []}, 
+        "photo": "faces/portrait_nightthrasherdc99.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Nightcrawler", 
         "Short Name": "Nightcrawler", 
         "classe": "Mutant", 
+        "classe2": "faces/class_mutant7e84.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_nightcrawler1e72.png"
+        "photo": "faces/portrait_nightcrawler1e72.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Nimrod", 
         "Short Name": "Nimrod", 
         "classe": "Tech", 
-        "immunite": {"Bleed": [], "Poison": [], "Armor Break": ["100% Potency"], "Ability Accuracy Modification": ["Against Mutants"]}, 
-        "photo": "faces/portrait_nimrod91b3.png"
+        "classe2": "faces/class_techbdb1.png", 
+        "immunite": {"Saignement": [], "Poison": [], "Brise-Armure": ["100% Potency"], "Modification Précision Compétence": ["Against Mutants"]}, 
+        "photo": "faces/portrait_nimrod91b3.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Northstar", 
         "Short Name": "Northstar", 
         "classe": "Mutant", 
+        "classe2": "faces/class_mutant7e84.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_northstard359.png"
+        "photo": "faces/portrait_northstard359.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Nova", 
         "Short Name": "Nova", 
         "classe": "Cosmique", 
+        "classe2": "faces/class_cosmic2e67.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_nova6717.png"
+        "photo": "faces/portrait_nova6717.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Odin", 
         "Short Name": "Odin", 
         "classe": "Cosmique", 
-        "immunite": {"Shock": ["Synergie [Ant-Man Future] ? 50% Resistance"]}, 
-        "photo": "faces/portrait_odin6788.png"
+        "classe2": "faces/class_cosmic2e67.png", 
+        "immunite": {"Décharges": ["Synergie [Ant-Man Future] → 50% Resistance"]}, 
+        "photo": "faces/portrait_odin6788.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Okoye", 
         "Short Name": "Okoye", 
         "classe": "Virtuose", 
+        "classe2": "faces/class_trainede488.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_okoye4b66.png"
+        "photo": "faces/portrait_okoye4b66.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Old Man Logan", 
         "Short Name": "Old Man Logan", 
         "classe": "Mutant", 
-        "immunite": {"Bleed": ["Active Regeneration ? 95% Resistance"], "Ability Accuracy Modification": []}, 
-        "photo": "faces/portrait_wolverine_oldman2b35.png"
+        "classe2": "faces/class_mutant7e84.png", 
+        "immunite": {"Saignement": ["Active Regeneration → 95% Resistance"], "Modification Précision Compétence": []}, 
+        "photo": "faces/portrait_wolverine_oldman2b35.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Omega Red", 
         "Short Name": "Omega Red", 
         "classe": "Mutant", 
-        "immunite": {"Bleed": ["90% Resistance"], "Poison": []}, 
-        "photo": "faces/portrait_omegared791f.png"
+        "classe2": "faces/class_mutant7e84.png", 
+        "immunite": {"Saignement": ["90% Resistance"], "Poison": []}, 
+        "photo": "faces/portrait_omegared791f.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Omega Sentinel", 
         "Short Name": "Omega Sentinel", 
         "classe": "Tech", 
-        "immunite": {"Bleed": ["100% Resistance"], "Poison": ["100% Resistance"], "Nullify": [], "Stagger": [], "Fate Seal": [], "Ability Accuracy Reduction": ["Against Mutant"]}, 
-        "photo": "faces/portrait_omegasentinel5617.png"
+        "classe2": "faces/class_techbdb1.png", 
+        "immunite": {"Saignement": ["100% Resistance"], "Poison": ["100% Resistance"], "Purge": [], "Chancellement": [], "Destin Scellé": [], "Réduction Précision Compétence": ["Against Mutant"]}, 
+        "photo": "faces/portrait_omegasentinel5617.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Onslaught", 
         "Short Name": "Onslaught", 
         "classe": "Mutant", 
-        "immunite": {"Bleed": ["150% Resistance"], "Incinerate": ["150% Resistance"], "Shock": ["150% Resistance"], "Reversed Controls": ["#Psychic Shielding"]}, 
-        "photo": "faces/portrait_onslaughtb0fe.png"
+        "classe2": "faces/class_mutant7e84.png", 
+        "immunite": {"Saignement": ["150% Resistance"], "Incinération": ["150% Resistance"], "Décharges": ["150% Resistance"], "Contrôles Inversés": ["#Psychic Shielding"]}, 
+        "photo": "faces/portrait_onslaughtb0fe.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Patriot", 
         "Short Name": "Patriot", 
         "classe": "Virtuose", 
-        "immunite": {"Regeneration Rate Reduction": []}, 
-        "photo": "faces/portrait_patriot212b.png"
+        "classe2": "faces/class_trainede488.png", 
+        "immunite": {"Reduction du Taux de Soin": []}, 
+        "photo": "faces/portrait_patriot212b.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Peni Parker", 
         "Short Name": "Peni Parker", 
         "classe": "Tech", 
-        "immunite": {"Poison": [], "Incinerate": [], "Stun": ["Synergie [Air-Walker, Falcon] & Sync-Shield Active"]}, 
-        "photo": "faces/portrait_peniparker3877.png"
+        "classe2": "faces/class_techbdb1.png", 
+        "immunite": {"Poison": [], "Incinération": [], "Etourdissement": ["Synergie [Air-Walker, Falcon] & Sync-Shield Active"]}, 
+        "photo": "faces/portrait_peniparker3877.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Phoenix", 
         "Short Name": "Phoenix", 
         "classe": "Cosmique", 
+        "classe2": "faces/class_cosmic2e67.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_phoenix7c58.png"
+        "photo": "faces/portrait_phoenix7c58.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Photon", 
         "Short Name": "Photon", 
         "classe": "Science", 
-        "immunite": {"Bleed": [], "Power Steal": [], "Neutralize": ["Dupe"], "Degeneration": ["Synergie [Mister Negative] ? Potency reduced by 20% per unique Debuff"]}, 
-        "photo": "faces/portrait_photon8ec9.png"
+        "classe2": "faces/class_chemicalf5fb.png", 
+        "immunite": {"Saignement": [], "Vol Pouvoir": [], "Neutralisation": ["Dupe"], "Dégénerescence": ["Synergie [Mister Negative] → Potency reduced by 20% per unique Debuff"]}, 
+        "photo": "faces/portrait_photon8ec9.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Platinumpool", 
         "Short Name": "Platinumpool", 
         "classe": "Mutant", 
-        "immunite": {"Stun": ["Stun Boost ? 30% Duration Reduction"]}, 
-        "photo": "faces/portrait_deadpool_platinum54bb.png"
+        "classe2": "faces/class_mutant7e84.png", 
+        "immunite": {"Etourdissement": ["Etourdissement Boost → 30% Duration Reduction"]}, 
+        "photo": "faces/portrait_deadpool_platinum54bb.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Professor X", 
         "Short Name": "Professor X", 
         "classe": "Mutant", 
-        "immunite": {"Reversed Controls": ["#Psychic Shielding"]}, 
-        "photo": "faces/portrait_professorxc920.png"
+        "classe2": "faces/class_mutant7e84.png", 
+        "immunite": {"Contrôles Inversés": ["#Psychic Shielding"]}, 
+        "photo": "faces/portrait_professorxc920.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Prowler", 
         "Short Name": "Prowler", 
         "classe": "Tech", 
-        "immunite": {"Bleed": [], "Incinerate": [], "Falter": [], "Reversed Controls": ["Synergie [Spider-Punk] & Pre-Fight ? Controls are Inverted"]}, 
-        "photo": "faces/portrait_prowler7930.png"
+        "classe2": "faces/class_techbdb1.png", 
+        "immunite": {"Saignement": [], "Incinération": [], "Défaillance": [], "Contrôles Inversés": ["Synergie [Spider-Punk] & Pre-Fight → Controls are Inverted"]}, 
+        "photo": "faces/portrait_prowler7930.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Proxima Midnight", 
         "Short Name": "Proxima Midnight", 
         "classe": "Cosmique", 
+        "classe2": "faces/class_cosmic2e67.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_proximamidnight2f11.png"
+        "photo": "faces/portrait_proximamidnight2f11.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Psycho-Man", 
         "Short Name": "Psycho-Man", 
         "classe": "Tech", 
+        "classe2": "faces/class_techbdb1.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_psychomanba97.png"
+        "photo": "faces/portrait_psychomanba97.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Psylocke", 
         "Short Name": "Psylocke", 
         "classe": "Mutant", 
+        "classe2": "faces/class_mutant7e84.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_psylocke9e5b.png"
+        "photo": "faces/portrait_psylocke9e5b.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Punisher", 
         "Short Name": "Punisher", 
         "classe": "Virtuose", 
+        "classe2": "faces/class_trainede488.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_punisher3f04.png"
+        "photo": "faces/portrait_punisher3f04.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Punisher 2099", 
         "Short Name": "Punisher 2099", 
         "classe": "Tech", 
+        "classe2": "faces/class_techbdb1.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_punisher_20990087.png"
+        "photo": "faces/portrait_punisher_20990087.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Purgatory", 
         "Short Name": "Purgatory", 
         "classe": "Mystique", 
-        "immunite": {"Incinerate": [], "Bleed": ["Synergie [Mephisto, The Hood, Magik, Dormammu]"]}, 
-        "photo": "faces/portrait_purgatory7211.png"
+        "classe2": "faces/class_mystic0b9f.png", 
+        "immunite": {"Incinération": [], "Saignement": ["Synergie [Mephisto, The Hood, Magik, Dormammu]"]}, 
+        "photo": "faces/portrait_purgatory7211.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Quake", 
         "Short Name": "Quake", 
         "classe": "Science", 
+        "classe2": "faces/class_chemicalf5fb.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_quake4543.png"
+        "photo": "faces/portrait_quake4543.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Quicksilver", 
         "Short Name": "Quicksilver", 
         "classe": "Science", 
-        "immunite": {"Ability Accuracy Reduction": ["Only Evade at 600+ Momentum Charges"], "Degeneration": ["Synergie [Wiccan] ? 8.3% Resistance per 100 Momentum Charges"]}, 
-        "photo": "faces/portrait_quicksilver3e1f.png"
+        "classe2": "faces/class_chemicalf5fb.png", 
+        "immunite": {"Réduction Précision Compétence": ["Only Evade at 600+ Momentum Charges"], "Dégénerescence": ["Synergie [Wiccan] → 8.3% Resistance per 100 Momentum Charges"]}, 
+        "photo": "faces/portrait_quicksilver3e1f.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Red Goblin", 
         "Short Name": "Red Goblin", 
         "classe": "Cosmique", 
-        "immunite": {"Incinerate": [], "Power Burn": []}, 
-        "photo": "faces/portrait_red_goblin6022.png"
+        "classe2": "faces/class_cosmic2e67.png", 
+        "immunite": {"Incinération": [], "Brûle Pouvoir": []}, 
+        "photo": "faces/portrait_red_goblin6022.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Red Guardian", 
         "Short Name": "Red Guardian", 
         "classe": "Science", 
+        "classe2": "faces/class_chemicalf5fb.png", 
         "immunite": {"Buffs": []}, 
-        "photo": "faces/portrait_redguardian7345.png"
+        "photo": "faces/portrait_redguardian7345.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Red Hulk", 
         "Short Name": "Red Hulk", 
         "classe": "Science", 
-        "immunite": {"Poison": [], "Incinerate": []}, 
-        "photo": "faces/portrait_hulk_red125e.png"
+        "classe2": "faces/class_chemicalf5fb.png", 
+        "immunite": {"Poison": [], "Incinération": []}, 
+        "photo": "faces/portrait_hulk_red125e.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Red Skull", 
         "Short Name": "Red Skull", 
         "classe": "Tech", 
-        "immunite": {"Nullify": ["Only effects from Champions"], "Fate Seal": ["Only effects from Champions"], "Stagger": ["Only effects from Champions"], "Ability Accuracy Reduction": ["Against Mutants"]}, 
-        "photo": "faces/portrait_redskull28ab.png"
+        "classe2": "faces/class_techbdb1.png", 
+        "immunite": {"Purge": ["Only effects from Champions"], "Destin Scellé": ["Only effects from Champions"], "Chancellement": ["Only effects from Champions"], "Réduction Précision Compétence": ["Against Mutants"]}, 
+        "photo": "faces/portrait_redskull28ab.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Rhino", 
         "Short Name": "Rhino", 
         "classe": "Science", 
+        "classe2": "faces/class_chemicalf5fb.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_rhino9be4.png"
+        "photo": "faces/portrait_rhino9be4.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Rintrah", 
         "Short Name": "Rintrah", 
         "classe": "Mystique", 
-        "immunite": {"Armor Break": ["50-100% Potency"], "Stun": ["15+ Charges"], "Bleed": ["Synergie [Purgatory] & Synergie [Mephisto, The Hood, Magik, Dormammu]"]}, 
-        "photo": "faces/portrait_rintrah3f74.png"
+        "classe2": "faces/class_mystic0b9f.png", 
+        "immunite": {"Brise-Armure": ["50-100% Potency"], "Etourdissement": ["15+ Charges"], "Saignement": ["Synergie [Purgatory] & Synergie [Mephisto, The Hood, Magik, Dormammu]"]}, 
+        "photo": "faces/portrait_rintrah3f74.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Rocket Raccoon", 
         "Short Name": "Rocket Raccoon", 
         "classe": "Tech", 
+        "classe2": "faces/class_techbdb1.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_rocketf7da.png"
+        "photo": "faces/portrait_rocketf7da.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Rogue", 
         "Short Name": "Rogue", 
         "classe": "Mutant", 
+        "classe2": "faces/class_mutant7e84.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_rogue2173.png"
+        "photo": "faces/portrait_rogue2173.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Ronan", 
         "Short Name": "Ronan", 
         "classe": "Cosmique", 
+        "classe2": "faces/class_cosmic2e67.png", 
         "immunite": {"Poison": []}, 
-        "photo": "faces/portrait_ronan7599.png"
+        "photo": "faces/portrait_ronan7599.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Ronin", 
         "Short Name": "Ronin", 
         "classe": "Virtuose", 
+        "classe2": "faces/class_trainede488.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_roninc9d5.png"
+        "photo": "faces/portrait_roninc9d5.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Sabretooth", 
         "Short Name": "Sabretooth", 
         "classe": "Mutant", 
-        "immunite": {"Coldsnap": [], "Frostbite": []}, 
-        "photo": "faces/portrait_sabretooth20bd.png"
+        "classe2": "faces/class_mutant7e84.png", 
+        "immunite": {"Vague de Froid": [], "Engelure": []}, 
+        "photo": "faces/portrait_sabretooth20bd.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Sandman", 
         "Short Name": "Sandman", 
         "classe": "Science", 
-        "immunite": {"Bleed": [], "Poison": [], "Shock": []}, 
-        "photo": "faces/portrait_sandman5520.png"
+        "classe2": "faces/class_chemicalf5fb.png", 
+        "immunite": {"Saignement": [], "Poison": [], "Décharges": []}, 
+        "photo": "faces/portrait_sandman5520.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Sasquatch", 
         "Short Name": "Sasquatch", 
         "classe": "Mystique", 
-        "immunite": {"Coldsnap": ["90% Resistance"], "Frostbite": [], "Armor Break": [], "Stun": ["Wrath of Tanaraq"]}, 
-        "photo": "faces/portrait_sasquatch9e64.png"
+        "classe2": "faces/class_mystic0b9f.png", 
+        "immunite": {"Vague de Froid": ["90% Resistance"], "Engelure": [], "Brise-Armure": [], "Etourdissement": ["Wrath of Tanaraq"]}, 
+        "photo": "faces/portrait_sasquatch9e64.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Sauron", 
         "Short Name": "Sauron", 
         "classe": "Mutant", 
-        "immunite": {"Poison": [], "Bleed": ["95% Resistance"], "Power Steal": [], "Regeneration Rate Modification": []}, 
-        "photo": "faces/portrait_sauron331b.png"
+        "classe2": "faces/class_mutant7e84.png", 
+        "immunite": {"Poison": [], "Saignement": ["95% Resistance"], "Vol Pouvoir": [], "Modification du Taux de Soin": []}, 
+        "photo": "faces/portrait_sauron331b.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Scarlet Witch", 
         "Short Name": "Scarlet Witch", 
         "classe": "Mystique", 
+        "classe2": "faces/class_mystic0b9f.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_scarlet_witch_current6289.png"
+        "photo": "faces/portrait_scarlet_witch_current6289.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Scarlet Witch (Classic)", 
         "Short Name": "Scarlet Witch", 
         "classe": "Mystique", 
+        "classe2": "faces/class_mystic0b9f.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_scarlet_witch04f7.png"
+        "photo": "faces/portrait_scarlet_witch04f7.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Scorpion", 
         "Short Name": "Scorpion", 
         "classe": "Science", 
-        "immunite": {"Shock": ["Based on Pre-Fight"], "Rupture": ["Based on Pre-Fight"], "Poison": ["Based on Pre-Fight"]}, 
-        "photo": "faces/portrait_scorpion6382.png"
+        "classe2": "faces/class_chemicalf5fb.png", 
+        "immunite": {"Décharges": ["Based on Pre-Fight"], "Rupture": ["Based on Pre-Fight"], "Poison": ["Based on Pre-Fight"]}, 
+        "photo": "faces/portrait_scorpion6382.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Scream", 
         "Short Name": "Scream", 
         "classe": "Cosmique", 
+        "classe2": "faces/class_cosmic2e67.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_scream8c2f.png"
+        "photo": "faces/portrait_scream8c2f.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Sentinel", 
         "Short Name": "Sentinel", 
         "classe": "Tech", 
-        "immunite": {"Bleed": [], "Poison": []}, 
-        "photo": "faces/portrait_sentinel119f.png"
+        "classe2": "faces/class_techbdb1.png", 
+        "immunite": {"Saignement": [], "Poison": []}, 
+        "photo": "faces/portrait_sentinel119f.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Sentry", 
         "Short Name": "Sentry", 
         "classe": "Science", 
+        "classe2": "faces/class_chemicalf5fb.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_sentry_current31c3.png"
+        "photo": "faces/portrait_sentry_current31c3.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Sersi", 
         "Short Name": "Sersi", 
         "classe": "Cosmique", 
-        "immunite": {"Bleed": ["30-90% Duration Reduction"], "Shock": ["30-90% Duration Reduction"], "Incinerate": ["30-90% Duration Reduction"], "Heal Block": ["30-90% Duration Reduction"]}, 
-        "photo": "faces/portrait_sersi725a.png"
+        "classe2": "faces/class_cosmic2e67.png", 
+        "immunite": {"Saignement": ["30-90% Duration Reduction"], "Décharges": ["30-90% Duration Reduction"], "Incinération": ["30-90% Duration Reduction"], "Bloque Soin": ["30-90% Duration Reduction"]}, 
+        "photo": "faces/portrait_sersi725a.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Shang-Chi", 
         "Short Name": "Shang-Chi", 
         "classe": "Virtuose", 
+        "classe2": "faces/class_trainede488.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_shangchi9b8a.png"
+        "photo": "faces/portrait_shangchi9b8a.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Shathra", 
         "Short Name": "Shathra", 
         "classe": "Mystique", 
+        "classe2": "faces/class_mystic0b9f.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_shathra73f6.png"
+        "photo": "faces/portrait_shathra73f6.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "She-Hulk", 
         "Short Name": "She-Hulk", 
         "classe": "Science", 
+        "classe2": "faces/class_chemicalf5fb.png", 
         "immunite": {"Poison": []}, 
-        "photo": "faces/portrait_shehulk9245.png"
+        "photo": "faces/portrait_shehulk9245.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "She-Hulk (Deathless)", 
         "Short Name": "She-Hulk", 
         "classe": "Science", 
+        "classe2": "faces/class_chemicalf5fb.png", 
         "immunite": {"Poison": [], "Rupture": ["Synergie [Thanos (Deathless)]"]}, 
-        "photo": "faces/portrait_shehulk_deathless0b88.png"
+        "photo": "faces/portrait_shehulk_deathless0b88.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Shocker", 
         "Short Name": "Shocker", 
         "classe": "Tech", 
-        "immunite": {"Shock": [], "Concussion": [], "Stun": ["50% Duration Reduction"]}, 
-        "photo": "faces/portrait_shocker4a74.png"
+        "classe2": "faces/class_techbdb1.png", 
+        "immunite": {"Décharges": [], "Traumatisme": [], "Etourdissement": ["50% Duration Reduction"]}, 
+        "photo": "faces/portrait_shocker4a74.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Shuri", 
         "Short Name": "Shuri", 
         "classe": "Tech", 
-        "immunite": {"Ability Accuracy Reduction": [], "Shock": [], "Precision": []}, 
-        "photo": "faces/portrait_shuri69e2.png"
+        "classe2": "faces/class_techbdb1.png", 
+        "immunite": {"Réduction Précision Compétence": [], "Décharges": [], "Précision": []}, 
+        "photo": "faces/portrait_shuri69e2.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Silk", 
         "Short Name": "Silk", 
         "classe": "Science", 
-        "immunite": {"Rupture": ["90% Duration Reduction"], "Slow": ["90% Duration Reduction"], "Degeneration": ["Synergie [Spider-Gwen, Spider-Man Miles Morales] ? 30-60% Resistance"]}, 
-        "photo": "faces/portrait_silk3427.png"
+        "classe2": "faces/class_chemicalf5fb.png", 
+        "immunite": {"Rupture": ["90% Duration Reduction"], "Ralentissement": ["90% Duration Reduction"], "Dégénerescence": ["Synergie [Spider-Gwen, Spider-Man Miles Morales] → 30-60% Resistance"]}, 
+        "photo": "faces/portrait_silk3427.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Silver Centurion", 
         "Short Name": "Silver Centurion", 
         "classe": "Tech", 
-        "immunite": {"Bleed": ["Armor Up"], "Shock": ["Armor Up"]}, 
-        "photo": "faces/portrait_ironman_silvercenturion81ae.png"
+        "classe2": "faces/class_techbdb1.png", 
+        "immunite": {"Saignement": ["Armor Up"], "Décharges": ["Armor Up"]}, 
+        "photo": "faces/portrait_ironman_silvercenturion81ae.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Silver Sable", 
         "Short Name": "Silver Sable", 
         "classe": "Virtuose", 
-        "immunite": {"Reversed Controls": ["#Psychic Shielding"]}, 
-        "photo": "faces/portrait_silversable2bb8.png"
+        "classe2": "faces/class_trainede488.png", 
+        "immunite": {"Contrôles Inversés": ["#Psychic Shielding"]}, 
+        "photo": "faces/portrait_silversable2bb8.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Silver Surfer", 
         "Short Name": "Silver Surfer", 
         "classe": "Cosmique", 
-        "immunite": {"Incinerate": ["100% Resistance"], "Coldsnap": ["100% Resistance"], "Shock": ["100% Resistance"]}, 
-        "photo": "faces/portrait_silkfb8b.png"
+        "classe2": "faces/class_cosmic2e67.png", 
+        "immunite": {"Incinération": ["100% Resistance"], "Vague de Froid": ["100% Resistance"], "Décharges": ["100% Resistance"]}, 
+        "photo": "faces/portrait_silversurfer72df.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Sorcerer Supreme", 
         "Short Name": "Sorcerer Supreme", 
         "classe": "Mystique", 
+        "classe2": "faces/class_mystic0b9f.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_silversurfer6b1f.png"
+        "photo": "faces/portrait_silversurfer6b1f.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Spider-Gwen", 
         "Short Name": "Spider-Gwen", 
         "classe": "Science", 
-        "immunite": {"Degeneration": ["Synergie [Silk] ? 30-60% Resistance"]}, 
-        "photo": "faces/portrait_spidergwen517a.png"
+        "classe2": "faces/class_chemicalf5fb.png", 
+        "immunite": {"Dégénerescence": ["Synergie [Silk] → 30-60% Resistance"]}, 
+        "photo": "faces/portrait_spidergwen517a.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Spider-Ham", 
         "Short Name": "Spider-Ham", 
         "classe": "Science", 
-        "immunite": {"Degeneration": ["15-100%"]}, 
-        "photo": "faces/portrait_spiderham0310.png"
+        "classe2": "faces/class_chemicalf5fb.png", 
+        "immunite": {"Dégénerescence": ["15-100%"]}, 
+        "photo": "faces/portrait_spiderham0310.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Spider-Man (Classic)", 
         "Short Name": "Spider-Man", 
         "classe": "Science", 
+        "classe2": "faces/class_chemicalf5fb.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_spider_man56a0.png"
+        "photo": "faces/portrait_spider_man56a0.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Spider-Man (Miles Morales)", 
         "Short Name": "Spider-Man", 
         "classe": "Science", 
-        "immunite": {"Degeneration": ["Synergie [Silk] ? 30-60% Resistance"]}, 
-        "photo": "faces/portrait_spiderman_moralesa3ce.png"
+        "classe2": "faces/class_chemicalf5fb.png", 
+        "immunite": {"Dégénerescence": ["Synergie [Silk] → 30-60% Resistance"]}, 
+        "photo": "faces/portrait_spiderman_moralesa3ce.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Spider-Man (Stark Enhanced)", 
         "Short Name": "Spider-Man", 
         "classe": "Tech", 
+        "classe2": "faces/class_techbdb1.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_spiderman_movie3916.png"
+        "photo": "faces/portrait_spiderman_movie3916.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Spider-Man (Stealth Suit)", 
         "Short Name": "Spider-Man", 
         "classe": "Virtuose", 
+        "classe2": "faces/class_trainede488.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_spiderman_stealth8862.png"
+        "photo": "faces/portrait_spiderman_stealth8862.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Spider-Man (Supreme)", 
         "Short Name": "Spider-Man", 
         "classe": "Mystique", 
+        "classe2": "faces/class_mystic0b9f.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_spiderman_supreme18ab.png"
+        "photo": "faces/portrait_spiderman_supreme18ab.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Spider-Man (Symbiote)", 
         "Short Name": "Spider-Man", 
         "classe": "Cosmique", 
+        "classe2": "faces/class_cosmic2e67.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_spiderman_black95ef.png"
+        "photo": "faces/portrait_spiderman_black95ef.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Spider-Man 2099", 
         "Short Name": "Spider-Man", 
         "classe": "Science", 
+        "classe2": "faces/class_chemicalf5fb.png", 
         "immunite": {"Buffs": []}, 
-        "photo": "faces/portrait_spiderman_2099e000.png"
+        "photo": "faces/portrait_spiderman_2099e000.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Spider-Punk", 
         "Short Name": "Spider-Punk", 
         "classe": "Science", 
-        "immunite": {"Concussion": [], "Rupture": [], "Reversed Controls": ["Synergie [Prowler] & Pre-Fight ? Controls are Inverted"], "Stun": ["Synergie [Shathra] & Wasp-Totem ? While Counter-Evade Cooldown active"]}, 
-        "photo": "faces/portrait_spiderpunk363b.png"
+        "classe2": "faces/class_chemicalf5fb.png", 
+        "immunite": {"Traumatisme": [], "Rupture": [], "Contrôles Inversés": ["Synergie [Prowler] & Pre-Fight → Controls are Inverted"], "Etourdissement": ["Synergie [Shathra] & Wasp-Totem → While Counter-Evade Cooldown active"]}, 
+        "photo": "faces/portrait_spiderpunk363b.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Spiral", 
         "Short Name": "Spiral", 
         "classe": "Mystique", 
-        "immunite": {"Falter": [], "Reversed Controls": ["Synergie [Rogue, Gambit]"], "Shock": ["Dupe, 0-150% Duration Reduction, based on Fervor"], "Incinerate": ["Dupe, 0-150% Duration Reduction, based on Fervor"], "Poison": ["Dupe, 0-150% Duration Reduction, based on Fervor"]}, 
-        "photo": "faces/portrait_spiral73df.png"
+        "classe2": "faces/class_mystic0b9f.png", 
+        "immunite": {"Défaillance": [], "Contrôles Inversés": ["Synergie [Rogue, Gambit]"], "Décharges": ["Dupe, 0-150% Duration Reduction, based on Fervor"], "Incinération": ["Dupe, 0-150% Duration Reduction, based on Fervor"], "Poison": ["Dupe, 0-150% Duration Reduction, based on Fervor"]}, 
+        "photo": "faces/portrait_spiral73df.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Spot", 
         "Short Name": "Spot", 
         "classe": "Science", 
-        "immunite": {"Stun": ["While Untouchable"], "Buffs": ["SP1 ? 10s"], "Bleed": ["Synergie [Purgatory] & Synergie [Mephisto, The Hood, Magik, Dormammu]"]}, 
-        "photo": "faces/portrait_spot8085.png"
+        "classe2": "faces/class_chemicalf5fb.png", 
+        "immunite": {"Etourdissement": ["While Untouchable"], "Buffs": ["SP1 → 10s"], "Saignement": ["Synergie [Purgatory] & Synergie [Mephisto, The Hood, Magik, Dormammu]"]}, 
+        "photo": "faces/portrait_spot8085.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Squirrel Girl", 
         "Short Name": "Squirrel Girl", 
         "classe": "Virtuose", 
+        "classe2": "faces/class_trainede488.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_squirrelgirlcf90.png"
+        "photo": "faces/portrait_squirrelgirlcf90.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Star-Lord", 
         "Short Name": "Star-Lord", 
         "classe": "Tech", 
+        "classe2": "faces/class_techbdb1.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_star_lord405d.png"
+        "photo": "faces/portrait_star_lord405d.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Storm", 
         "Short Name": "Storm", 
         "classe": "Mutant", 
-        "immunite": {"Shock": [], "Incinerate": ["Synergie [Storm Pyramid X]"], "Coldsnap": ["Synergie [Storm Pyramid X]"]}, 
-        "photo": "faces/portrait_storm7cc7.png"
+        "classe2": "faces/class_mutant7e84.png", 
+        "immunite": {"Décharges": [], "Incinération": ["Synergie [Storm Pyramid X]"], "Vague de Froid": ["Synergie [Storm Pyramid X]"]}, 
+        "photo": "faces/portrait_storm7cc7.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Storm (Pyramid X)", 
         "Short Name": "Storm", 
         "classe": "Mutant", 
-        "immunite": {"Shock": ["Lightning Tempest ? 100% Resistance"], "Coldsnap": ["Ice Tempest"], "Frostbite": ["Ice Tempest"]}, 
-        "photo": "faces/portrait_storm_realm0645.png"
+        "classe2": "faces/class_mutant7e84.png", 
+        "immunite": {"Décharges": ["Lightning Tempest → 100% Resistance"], "Vague de Froid": ["Ice Tempest"], "Engelure": ["Ice Tempest"]}, 
+        "photo": "faces/portrait_storm_realm0645.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Stryfe", 
         "Short Name": "Stryfe", 
         "classe": "Mutant", 
-        "immunite": {"Reversed Controls": ["#Psychic Shielding"]}, 
-        "photo": "faces/portrait_stryfed392.png"
+        "classe2": "faces/class_mutant7e84.png", 
+        "immunite": {"Contrôles Inversés": ["#Psychic Shielding"]}, 
+        "photo": "faces/portrait_stryfed392.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Summoned Symbiote", 
         "Short Name": "Summoned Symbiote", 
         "classe": "Superior", 
+        "classe2": "faces/class_superiordac5.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_symbioid_mlsa27c.png"
+        "photo": "faces/portrait_symbioid_mlsa27c.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Sunspot", 
         "Short Name": "Sunspot", 
         "classe": "Mutant", 
-        "immunite": {"Incinerate": []}, 
-        "photo": "faces/portrait_sunspot9577.png"
+        "classe2": "faces/class_mutant7e84.png", 
+        "immunite": {"Incinération": []}, 
+        "photo": "faces/portrait_sunspot9577.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Super-Skrull", 
         "Short Name": "Super-Skrull", 
         "classe": "Cosmique", 
-        "immunite": {"Incinerate": [], "Shock": []}, 
-        "photo": "faces/portrait_skrull_superf1f6.png"
+        "classe2": "faces/class_cosmic2e67.png", 
+        "immunite": {"Incinération": [], "Décharges": []}, 
+        "photo": "faces/portrait_skrull_superf1f6.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Superior Iron Man", 
         "Short Name": "Super. Iron Man", 
         "classe": "Cosmique", 
-        "immunite": {"Bleed": ["50% Reistance, +15% per unique Superior Buff"], "Incinerate": ["50% Reistance, +15% per unique Superior Buff"], "Shock": ["50% Reistance, +15% per unique Superior Buff"]}, 
-        "photo": "faces/portrait_ironman_superiordcb5.png"
+        "classe2": "faces/class_cosmic2e67.png", 
+        "immunite": {"Saignement": ["50% Reistance, +15% per unique Superior Buff"], "Incinération": ["50% Reistance, +15% per unique Superior Buff"], "Décharges": ["50% Reistance, +15% per unique Superior Buff"]}, 
+        "photo": "faces/portrait_ironman_superiordcb5.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Symbiote Supreme", 
         "Short Name": "Symbiote Supreme", 
         "classe": "Mystique", 
+        "classe2": "faces/class_mystic0b9f.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_symbiote_supreme160e.png"
+        "photo": "faces/portrait_symbiote_supreme160e.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Taskmaster", 
         "Short Name": "Taskmaster", 
         "classe": "Virtuose", 
-        "immunite": {"Debuffs": ["After 10 Debuffs"]}, 
-        "photo": "faces/portrait_taskmaster5ef9.png"
+        "classe2": "faces/class_trainede488.png", 
+        "immunite": {"Débuffs": ["After 10 Débuffs"]}, 
+        "photo": "faces/portrait_taskmaster5ef9.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Terrax", 
         "Short Name": "Terrax", 
         "classe": "Cosmique", 
-        "immunite": {"Shock": [], "Bleed": [], "Power Burn": ["Against #Metal"], "Power Drain": ["Against #Metal"], "Power Steal": ["Against #Metal"], "Power Lock": ["Against #Metal"], "Enervate": ["Against #Metal"]}, 
-        "photo": "faces/portrait_terraxa9d8.png"
+        "classe2": "faces/class_cosmic2e67.png", 
+        "immunite": {"Décharges": [], "Saignement": [], "Brûle Pouvoir": ["Against #Metal"], "Drain Pouvoir": ["Against #Metal"], "Vol Pouvoir": ["Against #Metal"], "Bloque Pouvoir": ["Against #Metal"], "Amollir ": ["Against #Metal"]}, 
+        "photo": "faces/portrait_terraxa9d8.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Thanos", 
         "Short Name": "Thanos", 
         "classe": "Cosmique", 
+        "classe2": "faces/class_cosmic2e67.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_thanos485b.png"
+        "photo": "faces/portrait_thanos485b.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Thanos (Deathless)", 
         "Short Name": "Thanos (Deathless)", 
         "classe": "Cosmique", 
-        "immunite": {"Coldsnap": [], "Frostbite": [], "Poison": [], "Power Burn": ["Synergie [Vision (Deathless)]"], "Power Drain": ["Synergie [Vision (Deathless)]"]}, 
-        "photo": "faces/portrait_thanos_namelessba8d.png"
+        "classe2": "faces/class_cosmic2e67.png", 
+        "immunite": {"Vague de Froid": [], "Engelure": [], "Poison": [], "Brûle Pouvoir": ["Synergie [Vision (Deathless)]"], "Drain Pouvoir": ["Synergie [Vision (Deathless)]"]}, 
+        "photo": "faces/portrait_thanos_namelessba8d.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "The Champion", 
         "Short Name": "The Champion", 
         "classe": "Cosmique", 
-        "immunite": {"Fate Seal": ["Dupe"], "Heal Block": ["Dupe"], "Petrify": ["Dupe"], "Regeneration Rate Modification": ["Dupe & Except Poison"]}, 
-        "photo": "faces/portrait_champion6dc6.png"
+        "classe2": "faces/class_cosmic2e67.png", 
+        "immunite": {"Destin Scellé": ["Dupe"], "Bloque Soin": ["Dupe"], "Pétrifier": ["Dupe"], "Modification du Taux de Soin": ["Dupe & Except Poison"]}, 
+        "photo": "faces/portrait_champion6dc6.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "The Destroyer", 
         "Short Name": "The Destroyer", 
         "classe": "Mystique", 
-        "immunite": {"Slow": [], "Armor Break": [], "Poison": [], "Bleed": [], "Infuriate": [], "Intimidate": [], "Reversed Controls": ["#Psychic Shielding"]}, 
-        "photo": "faces/portrait_destroyer2fd1.png"
+        "classe2": "faces/class_mystic0b9f.png", 
+        "immunite": {"Ralentissement": [], "Brise-Armure": [], "Poison": [], "Saignement": [], "Enrager": [], "Intimidation": [], "Contrôles Inversés": ["#Psychic Shielding"]}, 
+        "photo": "faces/portrait_destroyer2fd1.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "The Hood", 
         "Short Name": "The Hood", 
         "classe": "Mystique", 
-        "immunite": {"Stun": ["Dupe & While Invisible"], "Bleed": ["Synergie [Purgatory]"]}, 
-        "photo": "faces/portrait_hood4f52.png"
+        "classe2": "faces/class_mystic0b9f.png", 
+        "immunite": {"Etourdissement": ["Dupe & While Invisible"], "Saignement": ["Synergie [Purgatory]"]}, 
+        "photo": "faces/portrait_hood4f52.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "The Leader", 
         "Short Name": "The Leader", 
         "classe": "Science", 
+        "classe2": "faces/class_chemicalf5fb.png", 
         "immunite": {"Poison": []}, 
-        "photo": "faces/portrait_leaderf0a8.png"
+        "photo": "faces/portrait_leaderf0a8.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "The Overseer", 
         "Short Name": "The Overseer", 
         "classe": "Science", 
-        "immunite": {"Poison": [], "Nullify": [], "Fate Seal": [], "Stagger": [], "Stun": ["Auto-Block"], "Neutralize": ["Synergie [Spiderman Supreme]"], "Reversed Controls": ["Synergie [Hulk, Hulk Immortal, Hulk Ragnarok, Joe Fixit]"]}, 
-        "photo": "faces/portrait_maestro_overseer770e.png"
+        "classe2": "faces/class_chemicalf5fb.png", 
+        "immunite": {"Poison": [], "Purge": [], "Destin Scellé": [], "Chancellement": [], "Etourdissement": ["Auto-Block"], "Neutralisation": ["Synergie [Spiderman Supreme]"], "Contrôles Inversés": ["Synergie [Hulk, Hulk Immortal, Hulk Ragnarok, Joe Fixit]"]}, 
+        "photo": "faces/portrait_maestro_overseer770e.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "The Serpent", 
         "Short Name": "The Serpent", 
         "classe": "Cosmique", 
-        "immunite": {"Stun": ["Dupe & During Special Attacks"], "Power Lock": [], "Special Lock": [], "Heal Block": [], "Fate Seal": [], "Ability Power Rate": ["Cant be reduced below 50% by non-Mystique Champions"], "Coldsnap": [], "Bleed": ["90% Duration Reduction"], "Power Burn": ["60% Resistance"], "Power Drain": ["60% Resistance"], "Combat Power Rate Reduction": ["Cant be reduced"], "Instant Damaging Effects": ["20% Resistance per Dread"]}, 
-        "photo": "faces/portrait_serpent290f.png"
+        "classe2": "faces/class_cosmic2e67.png", 
+        "immunite": {"Etourdissement": ["Dupe & During Special Attacks"], "Bloque Pouvoir": [], "Bloque Super-Pouvoir": [], "Bloque Soin": [], "Destin Scellé": [], "Réduction Taux de Pouvoir de Compétence": ["Cant be reduced below 50% by non-Mystique Champions"], "Vague de Froid": [], "Saignement": ["90% Duration Reduction"], "Brûle Pouvoir": ["60% Resistance"], "Drain Pouvoir": ["60% Resistance"], "Réduction Taux de Pouvoir": ["Cant be reduced"], "Dégats Instantanés": ["20% Resistance per Dread"]}, 
+        "photo": "faces/portrait_serpent290f.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Thing", 
         "Short Name": "Thing", 
         "classe": "Science", 
-        "immunite": {"Bleed": [], "Shock": [], "Armor Break": [], "Armor Shatter": [], "Nullify": [], "Stagger": [], "Fate Seal": []}, 
-        "photo": "faces/portrait_thing4a8f.png"
+        "classe2": "faces/class_chemicalf5fb.png", 
+        "immunite": {"Saignement": [], "Décharges": [], "Brise-Armure": [], "Armure Pulverisée": [], "Purge": [], "Chancellement": [], "Destin Scellé": []}, 
+        "photo": "faces/portrait_thing4a8f.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Thor", 
         "Short Name": "Thor", 
         "classe": "Cosmique", 
-        "immunite": {"Shock": ["40% Resistance"]}, 
-        "photo": "faces/portrait_thor581f.png"
+        "classe2": "faces/class_cosmic2e67.png", 
+        "immunite": {"Décharges": ["40% Resistance"]}, 
+        "photo": "faces/portrait_thor581f.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Thor (Jane Foster)", 
         "Short Name": "Thor", 
         "classe": "Mystique", 
-        "immunite": {"Shock": ["100% Resistance & 20% Against Science"]}, 
-        "photo": "faces/portrait_thor_janefoster9632.png"
+        "classe2": "faces/class_mystic0b9f.png", 
+        "immunite": {"Décharges": ["100% Resistance & 20% Against Science"]}, 
+        "photo": "faces/portrait_thor_janefoster9632.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Thor (Ragnarok)", 
         "Short Name": "Thor", 
         "classe": "Virtuose", 
-        "immunite": {"Shock": ["90% Duration Reduction"]}, 
-        "photo": "faces/portrait_thor_ragnarok45e6.png"
+        "classe2": "faces/class_trainede488.png", 
+        "immunite": {"Décharges": ["90% Duration Reduction"]}, 
+        "photo": "faces/portrait_thor_ragnarok45e6.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Tigra", 
         "Short Name": "Tigra", 
         "classe": "Mystique", 
+        "classe2": "faces/class_mystic0b9f.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_tigra2da7.png"
+        "photo": "faces/portrait_tigra2da7.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Titania", 
         "Short Name": "Titania", 
         "classe": "Science", 
-        "immunite": {"Buffs": [], "Bleed": ["Synergie [Absorbing Man]"]}, 
-        "photo": "faces/portrait_titania4658.png"
+        "classe2": "faces/class_chemicalf5fb.png", 
+        "immunite": {"Buffs": [], "Saignement": ["Synergie [Absorbing Man]"]}, 
+        "photo": "faces/portrait_titania4658.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Toad", 
         "Short Name": "Toad", 
         "classe": "Mutant", 
+        "classe2": "faces/class_mutant7e84.png", 
         "immunite": {"Poison": []}, 
-        "photo": "faces/portrait_toadcbb1.png"
+        "photo": "faces/portrait_toadcbb1.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Ultron", 
         "Short Name": "Ultron", 
         "classe": "Tech", 
-        "immunite": {"Bleed": [], "Poison": [], "Slow": [], "Ability Accuracy Reduction": ["Abilities unaffected by AAR"], "Incinerate": ["Dupe ? 25-80% Duration Reduction"], "Shock": ["Dupe ? 25-80% Duration Reduction"]}, 
-        "photo": "faces/portrait_ultron_prime8ccf.png"
+        "classe2": "faces/class_techbdb1.png", 
+        "immunite": {"Saignement": [], "Poison": [], "Ralentissement": [], "Réduction Précision Compétence": ["Abilities unaffected by AAR"], "Incinération": ["Dupe → 25-80% Duration Reduction"], "Décharges": ["Dupe → 25-80% Duration Reduction"]}, 
+        "photo": "faces/portrait_ultron_prime8ccf.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Ultron (Classic)", 
         "Short Name": "Ultron", 
         "classe": "Tech", 
-        "immunite": {"Bleed": [], "Poison": []}, 
-        "photo": "faces/portrait_ultron14b0.png"
+        "classe2": "faces/class_techbdb1.png", 
+        "immunite": {"Saignement": [], "Poison": []}, 
+        "photo": "faces/portrait_ultron14b0.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Unstoppable Colossus", 
         "Short Name": "Unst. Colossus", 
         "classe": "Mystique", 
-        "immunite": {"Bleed": [], "Reversed Controls": ["#Psychic Shielding"]}, 
-        "photo": "faces/portrait_colossus_unstoppable14b3.png"
+        "classe2": "faces/class_mystic0b9f.png", 
+        "immunite": {"Saignement": [], "Contrôles Inversés": ["#Psychic Shielding"]}, 
+        "photo": "faces/portrait_colossus_unstoppable14b3.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Valkyrie", 
         "Short Name": "Valkyrie", 
         "classe": "Virtuose", 
-        "immunite": {"Stun": ["Dupe & 1-4+ Bulwark"]}, 
-        "photo": "faces/portrait_valkyrie5faa.png"
+        "classe2": "faces/class_trainede488.png", 
+        "immunite": {"Etourdissement": ["Dupe & 1-4+ Bulwark"]}, 
+        "photo": "faces/portrait_valkyrie5faa.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Venom", 
         "Short Name": "Venom", 
         "classe": "Cosmique", 
-        "immunite": {"Power Drain": ["Against Tech & Klyntar Buff"], "Power Burn": ["Against Tech & Klyntar Buff"]}, 
-        "photo": "faces/portrait_venom9afe.png"
+        "classe2": "faces/class_cosmic2e67.png", 
+        "immunite": {"Drain Pouvoir": ["Against Tech & Klyntar Buff"], "Brûle Pouvoir": ["Against Tech & Klyntar Buff"]}, 
+        "photo": "faces/portrait_venom9afe.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Venom The Duck", 
         "Short Name": "Venom The Duck", 
         "classe": "Cosmique", 
+        "classe2": "faces/class_cosmic2e67.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_venomtheduck1d11.png"
+        "photo": "faces/portrait_venomtheduck1d11.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Venompool", 
         "Short Name": "Venompool", 
         "classe": "Cosmique", 
-        "immunite": {"Power Drain": ["Against Tech"], "Power Burn": ["Against Tech"], "Shock": ["Against Tech"], "Armor Break": ["Against Tech"], "Special Lock": ["Synergie [Spider-man Supreme]"], "Incinerate": ["Synergie [Red Hulk, Sunspot, Human Torch] & Against Tech"]}, 
-        "photo": "faces/portrait_venompool5d6c.png"
+        "classe2": "faces/class_cosmic2e67.png", 
+        "immunite": {"Drain Pouvoir": ["Against Tech"], "Brûle Pouvoir": ["Against Tech"], "Décharges": ["Against Tech"], "Brise-Armure": ["Against Tech"], "Bloque Super-Pouvoir": ["Synergie [Spider-man Supreme]"], "Incinération": ["Synergie [Red Hulk, Sunspot, Human Torch] & Against Tech"]}, 
+        "photo": "faces/portrait_venompool5d6c.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Vision", 
         "Short Name": "Vision", 
         "classe": "Tech", 
-        "immunite": {"Bleed": [], "Poison": []}, 
-        "photo": "faces/portrait_vision5c51.png"
+        "classe2": "faces/class_techbdb1.png", 
+        "immunite": {"Saignement": [], "Poison": []}, 
+        "photo": "faces/portrait_vision5c51.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Vision (Aarkus)", 
         "Short Name": "Vision", 
         "classe": "Cosmique", 
-        "immunite": {"Power Drain": ["80% Resistance"], "Power Burn": ["80% Resistance"], "Power Steal": ["80% Resistance"], "Power Lock": ["50% Resistance"]}, 
-        "photo": "faces/portrait_vision_timely9d6f.png"
+        "classe2": "faces/class_cosmic2e67.png", 
+        "immunite": {"Drain Pouvoir": ["80% Resistance"], "Brûle Pouvoir": ["80% Resistance"], "Vol Pouvoir": ["80% Resistance"], "Bloque Pouvoir": ["50% Resistance"]}, 
+        "photo": "faces/portrait_vision_timely9d6f.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Vision (Age Of Ultron)", 
         "Short Name": "Vision", 
         "classe": "Tech", 
-        "immunite": {"Bleed": [], "Poison": []}, 
-        "photo": "faces/portrait_vision_moviee2df.png"
+        "classe2": "faces/class_techbdb1.png", 
+        "immunite": {"Saignement": [], "Poison": []}, 
+        "photo": "faces/portrait_vision_moviee2df.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Vision (Deathless)", 
         "Short Name": "Vision (Deathless)", 
         "classe": "Tech", 
-        "immunite": {"Bleed": [], "Poison": [], "Coldsnap": [], "Frostbite": [], "Stun": ["While Phasing"], "Reversed Controls": ["Synergie [Thanos (Deathless)]"]}, 
-        "photo": "faces/portrait_vision_blackorder537d.png"
+        "classe2": "faces/class_techbdb1.png", 
+        "immunite": {"Saignement": [], "Poison": [], "Vague de Froid": [], "Engelure": [], "Etourdissement": ["While Phasing"], "Contrôles Inversés": ["Synergie [Thanos (Deathless)]"]}, 
+        "photo": "faces/portrait_vision_blackorder537d.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Viv Vision", 
         "Short Name": "Viv Vision", 
         "classe": "Tech", 
-        "immunite": {"Poison": [], "Bleed": [], "Nullify": ["Armor Up"], "Fate Seal": ["Armor Up"], "Reversed Controls": ["Fury from SP3 active"]}, 
-        "photo": "faces/portrait_vivvision5af8.png"
+        "classe2": "faces/class_techbdb1.png", 
+        "immunite": {"Poison": [], "Saignement": [], "Purge": ["Armor Up"], "Destin Scellé": ["Armor Up"], "Contrôles Inversés": ["Fury from SP3 active"]}, 
+        "photo": "faces/portrait_vivvision5af8.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Void", 
         "Short Name": "Void", 
         "classe": "Science", 
-        "immunite": {"Incinerate": []}, 
-        "photo": "faces/portrait_void_current0527.png"
+        "classe2": "faces/class_chemicalf5fb.png", 
+        "immunite": {"Incinération": []}, 
+        "photo": "faces/portrait_void_current0527.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Vox", 
         "Short Name": "Vox", 
         "classe": "Cosmique", 
-        "immunite": {"Poison": [], "Power Burn": [], "Power Drain": [], "Power Lock": [], "Special Lock": []}, 
-        "photo": "faces/portrait_vox5e5f.png"
+        "classe2": "faces/class_cosmic2e67.png", 
+        "immunite": {"Poison": [], "Brûle Pouvoir": [], "Drain Pouvoir": [], "Bloque Pouvoir": [], "Bloque Super-Pouvoir": []}, 
+        "photo": "faces/portrait_vox5e5f.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Vulture", 
         "Short Name": "Vulture", 
         "classe": "Tech", 
-        "immunite": {"Incinerate": [], "Shock": ["Synergie [Kingpin, Yellowjacket, Masacre]"], "Poison": ["Synergie [War Machine, Ultron, Sentry]"], "Nullify": ["Synergie [Prowler]"]}, 
-        "photo": "faces/portrait_vulture_movie8610.png"
+        "classe2": "faces/class_techbdb1.png", 
+        "immunite": {"Incinération": [], "Décharges": ["Synergie [Kingpin, Yellowjacket, Masacre]"], "Poison": ["Synergie [War Machine, Ultron, Sentry]"], "Purge": ["Synergie [Prowler]"]}, 
+        "photo": "faces/portrait_vulture_movie8610.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "War Machine", 
         "Short Name": "War Machine", 
         "classe": "Tech", 
+        "classe2": "faces/class_techbdb1.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_warmachine2902.png"
+        "photo": "faces/portrait_warmachine2902.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Warlock", 
         "Short Name": "Warlock", 
         "classe": "Tech", 
-        "immunite": {"Bleed": [], "Poison": [], "Coldsnap": [], "Frostbite": []}, 
-        "photo": "faces/portrait_warlock8a8f.png"
+        "classe2": "faces/class_techbdb1.png", 
+        "immunite": {"Saignement": [], "Poison": [], "Vague de Froid": [], "Engelure": []}, 
+        "photo": "faces/portrait_warlock8a8f.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Wasp", 
         "Short Name": "Wasp", 
         "classe": "Science", 
+        "classe2": "faces/class_chemicalf5fb.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_wasp9ea4.png"
+        "photo": "faces/portrait_wasp9ea4.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Werewolf By Night", 
         "Short Name": "Werewolf By Night", 
         "classe": "Mystique", 
-        "immunite": {"Heal Block": [], "Poison": ["90% Duration Reduction"]}, 
-        "photo": "faces/portrait_werewolfbynightbad3.png"
+        "classe2": "faces/class_mystic0b9f.png", 
+        "immunite": {"Bloque Soin": [], "Poison": ["90% Duration Reduction"]}, 
+        "photo": "faces/portrait_werewolfbynightbad3.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "White Tiger", 
         "Short Name": "White Tiger", 
         "classe": "Mystique", 
-        "immunite": {"Nullify": []}, 
-        "photo": "faces/portrait_whitetigera1d8.png"
+        "classe2": "faces/class_mystic0b9f.png", 
+        "immunite": {"Purge": []}, 
+        "photo": "faces/portrait_whitetigera1d8.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Wiccan", 
         "Short Name": "Wiccan", 
         "classe": "Mystique", 
-        "immunite": {"Armor Break": [], "Reversed Controls": []}, 
-        "photo": "faces/portrait_wiccan8149.png"
+        "classe2": "faces/class_mystic0b9f.png", 
+        "immunite": {"Brise-Armure": [], "Contrôles Inversés": []}, 
+        "photo": "faces/portrait_wiccan8149.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Winter Soldier", 
         "Short Name": "Winter Soldier", 
         "classe": "Virtuose", 
+        "classe2": "faces/class_trainede488.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_winter_soldier507d.png"
+        "photo": "faces/portrait_winter_soldier507d.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Wolverine", 
         "Short Name": "Wolverine", 
         "classe": "Mutant", 
+        "classe2": "faces/class_mutant7e84.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_wolverine6a66.png"
+        "photo": "faces/portrait_wolverine6a66.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Wolverine (Weapon X)", 
         "Short Name": "Wolverine X", 
         "classe": "Mutant", 
-        "immunite": {"Stun": ["Berserk Rage"], "Regeneration Rate Modification": [], "Bleed": ["50% Resistance"]}, 
-        "photo": "faces/portrait_wolverine_weaponx7293.png"
+        "classe2": "faces/class_mutant7e84.png", 
+        "immunite": {"Etourdissement": ["Berserk Rage"], "Modification du Taux de Soin": [], "Saignement": ["50% Resistance"]}, 
+        "photo": "faces/portrait_wolverine_weaponx7293.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Wolverine (X-23)", 
         "Short Name": "Wolverine (X-23)", 
         "classe": "Mutant", 
+        "classe2": "faces/class_mutant7e84.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_x239552.png"
+        "photo": "faces/portrait_x239552.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Wong", 
         "Short Name": "Wong", 
         "classe": "Mystique", 
+        "classe2": "faces/class_mystic0b9f.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_wong3210.png"
+        "photo": "faces/portrait_wong3210.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Yellowjacket", 
         "Short Name": "Yellowjacket", 
         "classe": "Science", 
+        "classe2": "faces/class_chemicalf5fb.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_yellowjacketfa9b.png"
+        "photo": "faces/portrait_yellowjacketfa9b.png", 
+        "description": "JOSIANE JOESTAR"
     }, 
     {
         "nom": "Yondu", 
         "Short Name": "Yondu", 
         "classe": "Tech", 
+        "classe2": "faces/class_techbdb1.png", 
         "immunite": {}, 
-        "photo": "faces/portrait_yondu735f.png"
+        "photo": "faces/portrait_yondu735f.png", 
+        "description": "JOSIANE JOESTAR"
     }
 ]

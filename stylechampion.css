@@ -1,0 +1,385 @@
+/* Style global */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('espace.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.logo a {
+    text-decoration: none; /* Supprime le soulignement */
+    color: inherit; /* Utilise la couleur par défaut du texte */
+    font-weight: bold; /* Pour garder l'effet du logo */
+}
+
+/* Header */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #111;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    animation: slide-down 0.5s ease-out;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    transform: translateY(0);
+}
+
+
+#header.scrolled {
+    background-color: #333; /* Changement de couleur lorsque la page est scrollée */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+}
+
+/* Effet de survol des liens du header */
+#header nav ul li a:hover {
+    color: #ff5722;
+}
+
+/* Effet de survol des liens du header */
+#header nav ul {
+    display: flex; /* Onglets côte à côte */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#header nav ul li {
+    margin-right: 20px;
+}
+
+#header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* Effet de déplacement et surlignage diagonal */
+#header nav ul li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FF5722;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease-in-out;
+    z-index: -1; /* Place le surlignage derrière le texte */
+}
+
+/* Au survol, on applique l'effet diagonal avec une animation */
+#header nav ul li a:hover {
+    color: #000; /* Changer la couleur du texte sur le survol */
+    transform: translateY(-5px) rotate(-5deg); /* Effet de déplacement et de rotation */
+}
+
+#header nav ul li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown .dropbtn {
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #FF5722;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #222;
+    min-width: 160px;
+    z-index: 1;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+}
+
+.dropdown-content a:hover {
+    background-color: #FF5722;
+}
+
+
+/* Effet de déplacement et surlignage diagonal */
+#header nav ul li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FF5722;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease-in-out;
+    z-index: -1; /* Place le surlignage derrière le texte */
+}
+
+/* Au survol, on applique l'effet diagonal avec une animation */
+#header nav ul li a:hover {
+    color: #000; /* Changer la couleur du texte sur le survol */
+    transform: translateY(-5px) rotate(-5deg); /* Effet de déplacement et de rotation */
+}
+
+#header nav ul li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Titre - Liste des Personnages */
+main h2 {
+    margin-top: 120px; /* Assure qu'il ne soit pas caché sous le header */
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ff5722;
+    margin-bottom: 30px;
+}
+
+/* Section des filtres et tri */
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.filters select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    transition: border-color 0.3s ease;
+    width: 200px;
+    cursor: pointer;
+}
+
+.filters select:focus {
+    outline: none;
+    border-color: #ff5722;
+}
+
+.search-container {
+    margin: 20px;
+    text-align: center;
+}
+
+.search-container label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+    font-weight: bold;
+}
+
+.search-container input {
+    padding: 12px;
+    font-size: 16px;
+    width: 80%;
+    max-width: 400px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.search-container input:focus {
+    outline: none;
+    border-color: #ff5722;
+}
+
+/* Personnages */
+#personnage-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 100px 20px 20px; /* Espace pour éviter le chevauchement avec le header */
+    margin-top: 40px; /* Espacement pour que le contenu commence en dessous du header */
+    z-index: 5;
+}
+
+/* Cartes des personnages */
+.personnage-card {
+    background: rgba(34, 34, 34, 0.7);
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.personnage-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.personnage-card img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.personnage-card h3 {
+    color: #ff5722;
+    font-size: 20px;
+    margin: 10px 0;
+}
+.personnage-classe2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px; /* Espacement légèrement augmenté */
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    min-height: 30px; /* Hauteur ajustée */
+}
+
+/* Ajustement de la taille des icônes */
+.personnage-classe2 img {
+    width: 25%; /* Légèrement plus grand */
+    height: 25%;
+    object-fit: contain;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.3)); /* Effet d'ombre */
+}
+
+/* Effet de zoom amélioré */
+.personnage-classe2 img:hover {
+    transform: scale(1.2); /* Agrandissement plus visible */
+    filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.5)); /* Ombre plus marquée */
+}
+
+
+.personnage-classe2 img:hover {
+    animation: pulse 0.5s ease-in-out;
+}
+
+
+/* Footer */
+footer {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    margin-top: auto; /* Assurez-vous que le footer soit en bas */
+}
+
+/* Animation du header */
+@keyframes slide-down {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Fixe le footer en bas de la page */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* Permet au contenu de prendre l'espace restant */
+}
+
+footer {
+    margin-top: auto; /* Force le footer à rester en bas */
+}
+
+
+/* Mobile - Adaptation */
+@media (max-width: 768px) {
+    body {
+        overflow: hidden;
+    }
+
+    .mobile-message {
+        display: block;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+        border-radius: 10px;
+        width: 80%;
+        max-width: 400px;
+    }
+
+    header nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    #personnage-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .personnage-card {
+        padding: 15px;
+    }
+
+    /* Espacement pour éviter le chevauchement avec le header sur mobile */
+    main h2 {
+        margin-top: 150px;
+    }
+
+    .filters {
+        flex-direction: column;
+    }
+
+    .filters select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

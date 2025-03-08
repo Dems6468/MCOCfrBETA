@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Marvel Champions</title>
+    <link rel="stylesheet" href="stylechampion.css">
+</head>
+<body>
+     <body>
+    <!-- Header -->
+    <header id="header">
+        <div class="logo">
+            <a href="index.html">Marvel Champions</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="debuff.html">Debuffs</a></li>
+                <li><a href="champions.html">Champions</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Menu</a>
+                    <div class="dropdown-content">
+                        <a href="#option1">Option 1</a>
+                        <a href="#option2">Option 2</a>
+                        <a href="#option3">Option 3</a>
+                        <a href="#option4">Option 4</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="character-details">
+        <!-- Détails du personnage seront injectés ici -->
+    </main>
+
+    <footer>
+        <p>© 2025 Marvel Champions</p>
+    </footer>
+
+    <script src="scriptchampion.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const nom = urlParams.get('nom');
+
+            // Charger les données JSON
+            fetch('championsData.json')
+                .then(response => response.json())
+                .then(data => {
+                    const personnage = data.find(perso => perso.nom === nom);
+
+                    if (personnage) {
+                        const characterDetails = document.getElementById('character-details');
+                        characterDetails.innerHTML = `
+                            <div class="character-card">
+                                <h2>${personnage.nom}</h2>
+                                <img src="${personnage.photo}" alt="${personnage.nom}" class="character-photo">
+                                <div class="character-info">
+                                    <p><strong>Classe :</strong> ${personnage.classe}</p>
+                                    <p><strong>Description :</strong> ${personnage.description}</p>
+                                    <!-- Ajoute d'autres informations ici -->
+                                </div>
+                            </div>
+                        `;
+                    } else {
+                        document.getElementById('character-details').innerHTML = `<p>Personnage non trouvé.</p>`;
+                    }
+                })
+                .catch(error => console.error('Erreur de chargement des détails du personnage:', error));
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Champions</title>
+    <link rel="stylesheet" href="stylechampion.css">
+</head>
+<body>
+    <body>
+
+        <header id="header">
+            <div class="logo">
+                <a href="index.html">Marvel Champions</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="debuff.html">Debuffs</a></li>
+                    <li><a href="champions.html">Champions</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Menu</a>
+                        <div class="dropdown-content">
+                            <a href="#option1">Option 1</a>
+                            <a href="#option2">Option 2</a>
+                            <a href="#option3">Option 3</a>
+                            <a href="#option4">Option 4</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+    <main>
+        <h2>Liste des Personnages</h2>
+        <!-- Filtre et tri -->
+<div class="filters">
+    <select id="sort-names">
+        <option value="asc">A-Z</option>
+        <option value="desc">Z-A</option>
+    </select>
+
+    <select id="filter-class">
+        <option value="">Filtrer par Classe</option>
+        <option value="Science">Science</option>
+        <option value="Tech">Tech</option>
+        <option value="Cosmique">Cosmique</option>
+        <option value="Virtuose">Virtuose</option>
+        <option value="Mutant">Mutant</option>
+    </select>
+</div>
+<div class="search-container">
+    <label for="search-input">Rechercher un personnage :</label>
+    <input type="text" id="search-input" placeholder="Tapez le nom d'un personnage...">
+</div>
+
+        <div id="personnage-list">
+            <!-- Liste des personnages générée ici -->
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Marvel Champions</p>
+    </footer>
+
+    <script src="scriptchampion.js"></script>
+</body>
+</html>
