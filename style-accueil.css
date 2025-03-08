@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 main {
     flex: 1;
 }
@@ -9,6 +10,9 @@ html, body {
     flex-direction: column;
 }
 
+=======
+/* Style global */
+>>>>>>> 7e3d90ed70f7a1f1879613e7a86dc052d46a96a2
 body {
     font-family: 'Arial', sans-serif;
     background: url('espace.webp') no-repeat center center fixed;
@@ -17,11 +21,17 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+<<<<<<< HEAD
 }
 .logo a {
     text-decoration: none; /* Supprime le soulignement */
     color: inherit; /* Utilise la couleur par défaut du texte */
     font-weight: bold; /* Pour garder l'effet du logo */
+=======
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Assure que le body occupe au moins la hauteur de la fenêtre */
+>>>>>>> 7e3d90ed70f7a1f1879613e7a86dc052d46a96a2
 }
 
 /* Header */
@@ -38,6 +48,7 @@ body {
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
+<<<<<<< HEAD
     animation: slide-down 0.5s ease-out;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     transform: translateY(0);
@@ -67,10 +78,29 @@ body {
 }
 
 #header nav ul li a {
+=======
+    height: 70px; /* Ajuster la hauteur du header */
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+>>>>>>> 7e3d90ed70f7a1f1879613e7a86dc052d46a96a2
     color: #fff;
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
+<<<<<<< HEAD
     position: relative;
     transition: all 0.3s ease;
 }
@@ -146,6 +176,15 @@ body {
 }
 
 
+=======
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FF5722;
+}
+
+>>>>>>> 7e3d90ed70f7a1f1879613e7a86dc052d46a96a2
 /* Section d'accueil */
 .welcome {
     text-align: center;

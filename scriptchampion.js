@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const personnageList = document.getElementById('personnage-list');
             const searchInput = document.getElementById('search-input');
 
+<<<<<<< HEAD
         // Fonction pour afficher les personnages
 function displayCharacters(list) {
     personnageList.innerHTML = ''; // Réinitialise la liste à chaque affichage
@@ -37,6 +38,22 @@ function displayCharacters(list) {
     });
 }
 
+=======
+            // Fonction pour afficher les personnages
+            function displayCharacters(list) {
+                personnageList.innerHTML = ''; // Réinitialise la liste à chaque affichage
+                list.forEach(perso => {
+                    const persoElement = document.createElement('div');
+                    persoElement.classList.add('personnage-card');
+                    persoElement.innerHTML = `
+                        <img src="${perso.photo}" alt="${perso.nom}" class="personnage-photo">
+                        <h3><a href="characterchampion.html?nom=${encodeURIComponent(perso.nom)}">${perso.nom}</a></h3>
+                        <p><strong>Classe :</strong> ${perso.classe}</p>
+                    `;
+                    personnageList.appendChild(persoElement);
+                });
+            }
+>>>>>>> 7e3d90ed70f7a1f1879613e7a86dc052d46a96a2
 
             // Fonction pour trier les personnages par nom
             function sortCharacters(order, filteredData) {

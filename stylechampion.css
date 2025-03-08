@@ -8,11 +8,14 @@ body {
     padding: 0;
     overflow-x: hidden;
 }
+<<<<<<< HEAD
 .logo a {
     text-decoration: none; /* Supprime le soulignement */
     color: inherit; /* Utilise la couleur par défaut du texte */
     font-weight: bold; /* Pour garder l'effet du logo */
 }
+=======
+>>>>>>> 7e3d90ed70f7a1f1879613e7a86dc052d46a96a2
 
 /* Header */
 #header {
@@ -91,6 +94,7 @@ body {
     transform-origin: left;
 }
 
+<<<<<<< HEAD
 /* Dropdown Menu */
 .dropdown {
     position: relative;
@@ -162,6 +166,8 @@ body {
     transform-origin: left;
 }
 
+=======
+>>>>>>> 7e3d90ed70f7a1f1879613e7a86dc052d46a96a2
 /* Titre - Liste des Personnages */
 main h2 {
     margin-top: 120px; /* Assure qu'il ne soit pas caché sous le header */
@@ -266,6 +272,7 @@ main h2 {
     font-size: 20px;
     margin: 10px 0;
 }
+<<<<<<< HEAD
 .personnage-classe2 {
     display: flex;
     flex-wrap: wrap;
@@ -296,6 +303,8 @@ main h2 {
     animation: pulse 0.5s ease-in-out;
 }
 
+=======
+>>>>>>> 7e3d90ed70f7a1f1879613e7a86dc052d46a96a2
 
 /* Footer */
 footer {

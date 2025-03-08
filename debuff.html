@@ -4,7 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marvel Champions</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="styledebuff.css"
+=======
+    <link rel="stylesheet" href="styledebuff.css">
+    <style>
+        /* Style pour cacher tout le contenu sauf les images et le message sur mobile */
+        .mobile-message {
+            display: none; /* Par défaut, caché */
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        /* Cacher tout le contenu pour mobile et afficher les images et le message */
+        @media (max-width: 768px) {
+            /* Cacher tout le contenu sauf le message */
+             header, nav {
+                display: none; /* Masquer le header et le menu sur mobile */
+            }
+
+            /* Cacher tout le contenu normal sur mobile */
+            body > *:not(.mobile-message) {
+                display: none;
+            }
+
+            /* Afficher les images et le message pour les mobiles */
+            .mobile-message {
+                display: block;
+                overflow-y: scroll; /* Permet de faire défiler la page */
+            }
+
+            /* Ajouter du style aux images */
+            .mobile-message img {
+                width: 50%;
+                margin: 20px auto;
+                display: block;
+            }
+
+            /* Style pour le message d'avertissement */
+            .mobile-message p {
+                font-size: 24px;
+                color: #FF5722;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+>>>>>>> 7e3d90ed70f7a1f1879613e7a86dc052d46a96a2
 
     <!-- Header -->
     <header id="header">
